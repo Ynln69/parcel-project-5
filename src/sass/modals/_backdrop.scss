@@ -1,0 +1,13 @@
+.backdrop {
+  overflow-y: scroll;
+  position: fixed;
+  background-color: $backdrop;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  visibility: visible;
+  transform: scale(1);
+  opacity: 1;
+  transform-origin: bottom;
+}
