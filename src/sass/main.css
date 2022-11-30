@@ -1,0 +1,59 @@
+:root {
+  --wight-text-color:#fff;
+  --black-text-color:#000;
+  --yellow-text-color:#f3c653;
+  --brown-text-color:#c79002;
+  --grey-text-color:#5f5f5f;
+  --second-grey-color:#bababa;
+  --second-yellow-color:rgba(243, 198, 83, 0.7);
+  --hero-address-color:#e5e5e5;
+  --contacts-color: #828282;
+  --mimino-first-color:#828282;
+  --mimino-second-color:#494848;
+  --main-bg-color:#fffdee;
+  --secondary-bg-color:#f0ecd6;
+  --section-title-color:#b4b4b4;
+  --hotel-text-color:#7a7a7a;
+  --modal-text-color:#808080;
+  --footer-bg-color: #0e0c07;
+  --main-box-shadow-color: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: var(--grey-text-color);
+  background-color: var(--main-bg-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}/*# sourceMappingURL=main.css.map */
