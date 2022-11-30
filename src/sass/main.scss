@@ -1,5 +1,6 @@
 @import './utils/base';
-@import './utils/_variables';
+@import './utils/container';
+@import './utils/variables';
 @import './header-footer/header';
 @import './hero';
 @import './about-restaurant';
@@ -9,4 +10,5 @@
 @import './modals/table-modal';
 @import './modals/price-modal';
 @import './modals/room-modal';
+@import './restaurant/menu';
 @import './header-footer/footer';
