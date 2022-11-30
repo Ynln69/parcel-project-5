@@ -1,6 +1,8 @@
-@import './utils/base';
-@import './utils/container';
 @import './utils/variables';
+@import './utils/helpers';
+@import './utils/base';
+@import './utils/visually-hidden';
+@import './utils/container';
 @import './header-footer/header';
 @import './hero';
 @import './about-restaurant';

@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 
     color: var(--grey-text-color);
@@ -18,7 +18,7 @@ h1,
     margin: 0;
     padding: 0;
   }
-  
+
   img {
     display: block;
     max-width: 100%;
@@ -26,10 +26,19 @@ h1,
   }
 
   %list {
+    margin: 0;
+    padding-left: 0;
+
     list-style: none;
   }
-  
+
   %link {
     text-decoration: none;
+    color: currentColor;
   }
 
+  %button {
+    padding: 0;
+    font-family: inherit;
+    cursor: pointer;
+  }
