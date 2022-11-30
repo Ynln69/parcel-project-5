@@ -1,0 +1,33 @@
+@mixin button-primary($bg-color, $border-color){
+
+    background: $bg-color;
+    border: 2px solid $border-color;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.42;
+    letter-spacing: 0.02em;
+    color: #F3C653;
+    padding: 14px 24px;
+}
+
+.button{
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.button__primary--gray{
+@include button-primary(var(--button-bg-color--gray, #ffffff));
+
+    &:hover, &:focus{
+    @include button-primary(#ffffff, #ffffff);
+    }
+}
+
+.button__primary--black {
+@include button-primary(var(--button-bg-color--black, #ffffff));
+
+    &:hover, &:focus {
+        @include button-primary(#ffffff, var(--button-border-accent-color));
+    }
+}
