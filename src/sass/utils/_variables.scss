@@ -18,4 +18,9 @@
     --footer-bg-color: #0e0c07;
     --main-box-shadow-color: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
     --backdrop-color:rgba(0, 0, 0, 0.2);
+
+    // Media Breakpoints
+    $container-width-mobile: 414px;
+    $container-width-tablet: 1024px;
+    $container-width-desktop: 1280px;
 }
