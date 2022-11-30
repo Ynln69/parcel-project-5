@@ -1,8 +1,8 @@
+@import './utils/base';
 @import './utils/variables';
 @import './utils/helpers';
-@import './utils/base';
-@import './utils/visually-hidden';
 @import './utils/container';
+@import './utils/backdrop';
 @import './header-footer/header';
 @import './hero';
 @import './about-restaurant';
@@ -12,5 +12,4 @@
 @import './modals/table-modal';
 @import './modals/price-modal';
 @import './modals/room-modal';
-@import './restaurant/menu';
 @import './header-footer/footer';
