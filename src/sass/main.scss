@@ -1,4 +1,16 @@
+@import './utils/base';
 @import './utils/variables';
 @import './utils/helpers';
-@import './utils/base';
 @import './utils/visually-hidden';
+@import './utils/backdrop';
+@import './header-footer/header';
+@import './hero';
+@import './about-restaurant';
+@import './details-restaurant';
+@import './about-hotel';
+@import './details-hotel';
+@import './modals/modals';
+@import './modals/table-modal';
+@import './modals/price-modal';
+@import './modals/room-modal';
+@import './header-footer/footer';
