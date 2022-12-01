@@ -1,0 +1,41 @@
+// media query mixin
+@mixin mq($type) {
+  $mobile: $container-width-mobile;
+  $tablet: $container-width-tablet;
+  $desktop: $container-width-desktop;
+
+  @if $type == mobile {
+    @media screen and (min-width: $mobile) {
+      @content;
+    }
+  } @else if $type == mobile-only {
+    @media screen and (max-width: #{$tablet - 0.02}) {
+      @content;
+    }
+  } @else if $type == tablet {
+    @media screen and (min-width: $tablet) {
+      @content;
+    }
+  } @else if $type == tablet-only {
+    @media screen and (min-width: $tablet) and (max-width: #{$desktop - 0.02}) {
+      @content;
+    }
+  } @else if $type == desktop {
+    @media screen and (min-width: $desktop) {
+      @content;
+    }
+  } @else if $type == not-desktop {
+    @media screen and (max-width: #{$desktop - 0.02}) {
+      @content;
+    }
+  } @else if $type == retina {
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      @content;
+    }
+  } @else {
+    @error "Unknow type breakpoint #{$type}.";
+  }
+}

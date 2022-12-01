@@ -1,7 +1,43 @@
-@import '~node_modules/modern-normalize/modern-normalize.css';
-li {
-  list-style: none;
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: var(--grey-text-color);
+    background-color: var(--main-bg-color);
 }
-a {
-  text-decoration: none;
-}
+
+h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  th,td {
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  %list {
+    margin: 0;
+    padding-left: 0;
+
+    list-style: none;
+  }
+
+  %link {
+    text-decoration: none;
+    color: currentColor;
+  }
+
+  %button {
+    padding: 0;
+    font-family: inherit;
+    cursor: pointer;
+  }
