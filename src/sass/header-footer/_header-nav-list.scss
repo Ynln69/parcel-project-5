@@ -1,0 +1,65 @@
+.header__nav {
+  display: flex;
+  background-color: black;
+  &-restaurant {
+    display: flex;
+    align-items: center;
+    margin-right: 72px;
+    &__head {
+      display: flex;
+      color: var(--second-yellow-color);
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.22;
+      letter-spacing: 0.02;
+      margin-right: 32px;
+    }
+    &__phone {
+      display: flex;
+      align-items: center;
+      color: var(--white-text-color);
+      border: 1px solid var(--second-yellow-color);
+      border-radius: 2px;
+      padding: 8px;
+      gap: 8px;
+    }
+  }
+  &-hotel {
+    display: flex;
+    align-items: center;
+    &__head {
+      display: flex;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.22;
+      letter-spacing: 0.02;
+      color: var(--second-yellow-color);
+      margin-right: 32px;
+    }
+    &__phone {
+      display: flex;
+      align-items: center;
+      border: 1px solid var(--second-yellow-color);
+      border-radius: 2px;
+      padding: 8px;
+      gap: 16px;
+      &--item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+    }
+  }
+  &-svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--second-yellow-color);
+  }
+}
+.number {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.22;
+  color: var(--white-text-color);
+  letter-spacing: 0.02em;
+}
