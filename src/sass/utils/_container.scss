@@ -3,4 +3,16 @@
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+
+    @include mq(mobile) {
+      width: $container-width-mobile;
+    }
+
+    @include mq(tablet) {
+      width: $container-width-tablet;
+    }
+
+    @include mq(desktop) {
+      width: $container-width-desktop;
+    }
 }
