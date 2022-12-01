@@ -24,10 +24,8 @@
     --button-accent-color:#F3C653;
     --cubic-primary: cubic-bezier(0.4, 0, 0.2, 1);
     --backdrop-color:rgba(0, 0, 0, 0.2);
-
-    // Media Breakpoints
-    $container-width-mobile: 414px;
-    $container-width-tablet: 1024px;
-    $container-width-desktop: 1280px;
-
 }
+// Media Breakpoints
+$container-width-mobile: 414px;
+$container-width-tablet: 1024px;
+$container-width-desktop: 1280px;
