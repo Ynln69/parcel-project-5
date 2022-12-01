@@ -17,11 +17,17 @@
     --modal-text-color:#808080;
     --footer-bg-color: #0e0c07;
     --main-box-shadow-color: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
-
+    
     --button-bg-color--black:#000000;
     --button-bg-color--gray:rgba(0, 0, 0, 0.4);
     --button-border-accent-color: #F3C653;
     --button-accent-color:#F3C653;
-
     --cubic-primary: cubic-bezier(0.4, 0, 0.2, 1);
+    --backdrop-color:rgba(0, 0, 0, 0.2);
+
+    // Media Breakpoints
+    $container-width-mobile: 414px;
+    $container-width-tablet: 1024px;
+    $container-width-desktop: 1280px;
+
 }

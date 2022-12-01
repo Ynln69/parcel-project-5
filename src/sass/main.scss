@@ -1,0 +1,17 @@
+@import '../../node_modules/modern-normalize/modern-normalize.css';
+@import './utils/base';
+@import './utils/variables';
+@import './utils/helpers';
+@import './utils/container';
+@import './utils/backdrop';
+@import './header-footer/header';
+@import './buttons';
+@import './hero';
+@import './about-restaurant';
+@import './details-restaurant';
+@import './about-hotel';
+@import './details-hotel';
+@import './modals/table-modal';
+@import './modals/price-modal';
+@import './modals/room-modal';
+@import './header-footer/footer';
