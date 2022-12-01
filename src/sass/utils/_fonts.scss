@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'TimesNewRoman';
+  src: url('../fonts/TimesNewRoman_400.woff2') format('woff2'),
+    url('../fonts/TimesNewRoman_400.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'TimesNewRoman';
+  src: url('../fonts/TimesNewRoman_700.woff2') format('woff2'),
+    url('../fonts/TimesNewRoman_700.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat_400.woff2') format('woff2'),
+    url('../fonts/Montserrat_400.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat_500.woff2') format('woff2'),
+    url('../fonts/Montserrat_500.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat_600.woff2') format('woff2'),
+    url('../fonts/Montserrat_600.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat_700.woff2') format('woff2'),
+    url('../fonts/Montserrat_700.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'FilmP3';
+  src: url('../fonts/FilmP3_400.woff2') format('woff2'),
+    url('../fonts/FilmP3_400.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'FilmP3';
+  src: url('../fonts/FilmP3_700.woff2') format('woff2'),
+    url('../fonts/FilmP3_700.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+}
+
+$font: (
+  _times_: (
+    'TimesNewRoman',
+    sans-serif,
+  ),
+  _film_: (
+    'FilmP3',
+    sans-serif,
+  ),
+  _montserrat: (
+    'Montserrat',
+    sans-serif,
+  ),
+);
+
+@function font($key) {
+  @return map-get($font, $key);
+}
+
+// body {  font-family: font(_montserrat); }
