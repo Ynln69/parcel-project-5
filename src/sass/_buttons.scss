@@ -2,16 +2,6 @@
 
     background-color: $bg-color;
     border: 2px solid $border-color;
-    border-radius: 25px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.42;
-    letter-spacing: 0.02em;
-    color: #F3C653;
-    padding: 14px 24px;
-
-    transition: border-color 250ms var(--cubic-primary),
-    background-color 250ms var(--cubic-primary);
 }
 
 @mixin button-secondary($bg-color, $border-color, $color) {
@@ -51,15 +41,6 @@
     background-color: $bg-color;
     border: 1px solid $border-color;
     border-radius: $bg-radius;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.20;
-    color: $color;
-    padding: 20px 43px;
-
-    transition: border 250ms var(--cubic-primary),
-    background-color 250ms var(--cubic-primary),
-    color 250ms var(--cubic-primary);
 }
 
 
@@ -70,7 +51,20 @@
 }
 
 // Кнопки десктоп, таблет, мобайл
-.button__primary--gray{
+.button__primary{
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.42;
+    letter-spacing: 0.02em;
+    color: #F3C653;
+    padding: 14px 24px;
+
+    transition: border-color 250ms var(--cubic-primary),
+    background-color 250ms var(--cubic-primary);}
+
+
+.button__primary-gray{
 @include button-primary(var(--button-bg-color--gray), #ffffff);
 
     &:hover, &:focus{
@@ -82,7 +76,7 @@
 @include button-primary(var(--button-bg-color--black), #ffffff);
 
     &:hover, &:focus {
-        @include button-primary(#ffffff, var(--button-border-accent-color));
+    @include button-primary(#ffffff, var(--button-border-accent-color));
     }
 }
 
@@ -104,6 +98,18 @@
 }
 
 // Кнопки мобайл
+.button__mobile{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.20;
+    // color: $color;
+    padding: 20px 43px;
+    
+    transition: border 250ms var(--cubic-primary),
+    background-color 250ms var(--cubic-primary),
+    color 250ms var(--cubic-primary);
+}
+
 .button__mobile--sharp{
     @include button-mobile(var(--button-bg-color--black), var(--button-border-accent-color), 1px, var(--wight-text-color));
 
