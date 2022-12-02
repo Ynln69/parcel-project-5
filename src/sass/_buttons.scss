@@ -10,10 +10,10 @@
     border: 1px solid $border-color;
     border-radius: 25px;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 1.20;
     color: $color;
-    padding: 18px 38px;
+    text-transform: uppercase;
 
     transition: border 250ms var(--cubic-primary),
     background-color 250ms var(--cubic-primary),
@@ -26,10 +26,10 @@
     border: 1px solid $border-color;
     border-radius: 2px;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.20;
     color: $color;
-    padding: 18px 118px;
+    text-transform: uppercase;
 
     transition: border 250ms var(--cubic-primary),
     background-color 250ms var(--cubic-primary),
@@ -47,7 +47,7 @@
 
 
 .button{
-    font-family: inherit;
+    font-family: 'Montserrat', sans-serif;
     cursor: pointer;
 }
 
@@ -56,17 +56,17 @@
     border-radius: 25px;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.42;
+    line-height: 1.25;
     letter-spacing: 0.02em;
     color: #F3C653;
-    padding: 14px 24px;
+
 
     transition: border-color 250ms var(--cubic-primary),
     background-color 250ms var(--cubic-primary);}
 
 
-.button__primary-gray{
-@include button-primary(var(--button-bg-color--gray), #ffffff);
+.button__primary-transparent{
+@include button-primary(transparent, #ffffff);
 
     &:hover, &:focus{
     @include button-primary(#ffffff, #ffffff);
@@ -101,9 +101,9 @@
 // Кнопки мобайл
 .button__mobile{
     font-weight: 500;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.20;
-    padding: 20px 43px;
+    text-transform: uppercase;
     
     transition: border 250ms var(--cubic-primary),
     background-color 250ms var(--cubic-primary),
