@@ -1,6 +1,8 @@
 @import '../../node_modules/modern-normalize/modern-normalize.css';
-@import './utils/base';
+@import './utils/fonts';
 @import './utils/variables';
+@import './utils/mixin';
+@import './utils/base';
 @import './utils/helpers';
 @import './utils/container';
 @import './utils/backdrop';

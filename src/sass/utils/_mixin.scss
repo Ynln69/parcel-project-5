@@ -1,0 +1,39 @@
+@mixin font-w-s-lh-ls($font-weight, $font-size, $line-height, $letter-spacing) {
+  font: {
+    weight: $font-weight;
+    size: $font-size;
+  }
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin transition($prop, $time, $easing: $ease1, $delay: 0ms) {
+  $transition: ();
+  @for $i from 1 through length($prop) {
+    @for $j from 0 to (length($prop)) - (length($time)) {
+      $time: join($time, nth($time, -1));
+    }
+    @for $j from 0 to (length($prop)) - (length($easing)) {
+      $easing: join($easing, nth($easing, -1));
+    }
+    @for $j from 0 to (length($prop)) - (length($delay)) {
+      $delay: join($delay, nth($delay, -1));
+    }
+
+    $transition: append(
+      $transition,
+      (nth($prop, $i) nth($time, $i) nth($easing, $i) nth($delay, $i)),
+      $separator: comma
+    );
+  }
+  transition: $transition;
+}
+
+/* for @mixin transition
+scss input:
+@include transition(height width transform, 0.2s 0.3s, linear, 0s);
+or: @include transition(background-color fill, 250ms, var(--cubic-primary));
+
+css output:
+transition: height 0.2s linear 0s, width 0.3s linear 0s, transform 0.3s linear 0s; 
+*/
