@@ -1,0 +1,41 @@
+<!--
+ Андрій Трюхан @tryuhan
+ Цей partial форми модалки ціни на номер. Використовує для оформлення компонент форми (forms.scss).
+-->
+
+
+  <form class="form" name="application-form" method="post">
+    <p class="form__category-room-title">Двомісний люкс</p>
+    <p class="form__category-room-label ">Категорія номеру</p>
+    <div class="form__wrapper">
+      <div class="form__field-wrapper">
+        <input
+          class="form__input"
+          type="number"
+          name="nights"
+          id="nights"
+          placeholder="1"
+          min="1"
+          max="365"
+        />
+        <label class="form__label" for="nights">Кількість ночей</label>
+      </div>
+
+      <div class="form__field-wrapper">
+        <input
+          class="form__input"
+          type="number"
+          name="price"
+          id="price"
+          placeholder="1000"
+          disabled
+        />
+        <label class="form__label" for="price">грн</label>
+      </div>
+    </div>
+
+    <button class="button button__modal form__submit" type="submit">
+      Забронювати номер
+    </button>
+  </form>
+
