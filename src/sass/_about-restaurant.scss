@@ -1,81 +1,90 @@
 .about {
-  position: relative;
-  margin: 0;
-  padding: 120px 85px;
-}
-
-.container {
-  max: width 100%;
-  height: auto;
-}
-
-.about__thumb {
-  padding-bottom: 162px;
-  display: flex;
-  align-items: baseline;
-}
-
-.about__thumb-second {
-  display: flex;
-  gap: 32px;
-  align-items: center;
+  @include mq(mobile) {
+    padding-top: 16px;
+  }
 }
 
 .about__text {
-  width: 518px;
+  width: 258px;
+  @include mq(mobile){
+    margin-bottom: 28px;
+  }
+}
+
+.about__thumb {
+  @include mq(mobile){
+    margin-bottom: 32px;
+  }
 }
 
 .about__title {
-  display: block;
-  margin-bottom: 4px;
-  font-family: "Times New Roman";
+font-family: 'Times New Roman';
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
-  line-height: calc(37 / 32);
-  color: var(--section-title-color);
+  font-size: 20px;
+  line-height: calc(23/20);
+  
+  color: #B4B4B4;
+
+  @include mq(mobile){
+    margin-bottom: 12px;
+  }
 }
 
-.about__description {
-  display: block;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.02em;
-
-  color: var(--grey-text-color);
-}
-
-.about__image {
-  position: absolute;
-  top: -32px;
-  left: 640px;
+.about__description{
+  font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(15/12);
+    letter-spacing: 0.02em;
+  
+    color: #5F5F5F;
 }
 
 .name {
-  display: block;
-  margin-bottom: 24px;
-  font-family: "Film P3", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: calc(69 / 64);
+font-family: 'Film P3';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: calc(43/40);
 
-  letter-spacing: 0.3em;
+letter-spacing: 0.3em;
 
-  color: var(--mimino-first-color);
+color: #494848;
+
+@include mq(mobile){
+  margin-bottom: 12px;
+}
 }
 
-.about__feature {
-  width: 312px;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: calc(20 / 16);
-  letter-spacing: 0.02em;
-
-  color: var(--brown-text-color);
+.about__feature{
+  font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(15/12);
+    letter-spacing: 0.02em;
+  color: #C79002;
 }
+
+.about__image {
+  @include mq(mobile) {
+    width: 244px;
+    margin-left: auto;
+  }
+}
+
+.about__image--second{
+  @include mq(mobile) {
+      width: 200px;
+      
+    }
+}
+
+.about__thumb-second{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
