@@ -1,7 +1,7 @@
-/*----------  Modal Form  ----------*/
+/*----------  Form  ----------*/
 
 @mixin form-font() {
-  font-family: 'Times New Roman';
+  font-family: font(_times_);
   font-weight: 700;
   font-size: 20px;
   line-height: calc(23 / 20);
@@ -72,6 +72,28 @@
 
   @include mq(tablet) {
     @include card-set-item(2);
+  }
+
+  &:nth-child(3) {
+    @include mq(tablet) {
+      order: 1;
+    }
+  }
+  &:nth-child(2) {
+    @include mq(tablet) {
+      order: 2;
+    }
+  }
+  &:last-child {
+    @include mq(tablet) {
+      order: 3;
+    }
+  }
+}
+
+.form__field-wrapper--empty {
+  @include mq(mobile-only) {
+    display: none;
   }
 }
 
