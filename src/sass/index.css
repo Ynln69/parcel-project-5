@@ -1,0 +1,106 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+:root {
+  --wight-text-color:#fff;
+  --black-text-color:#000;
+  --yellow-text-color:#f3c653;
+  --brown-text-color:#c79002;
+  --grey-text-color:#5f5f5f;
+  --second-grey-color:#bababa;
+  --second-yellow-color:rgba(243, 198, 83, 0.7);
+  --hero-address-color:#e5e5e5;
+  --contacts-color: #828282;
+  --mimino-first-color:#828282;
+  --mimino-second-color:#494848;
+  --main-bg-color:#fffdee;
+  --secondary-bg-color:#f0ecd6;
+  --section-title-color:#b4b4b4;
+  --hotel-text-color:#7a7a7a;
+  --modal-text-color:#808080;
+  --footer-bg-color: #0e0c07;
+  --main-box-shadow-color: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+}
+
+/* montserrat-300 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./fonts/montserrat-v25-latin_cyrillic-300.eot"); /* IE9 Compat Modes */
+  src: local(""), url("./fonts/montserrat-v25-latin_cyrillic-300.eot?#iefix") format("embedded-opentype"), url("./fonts/montserrat-v25-latin_cyrillic-300.woff2") format("woff2"), url("./fonts/montserrat-v25-latin_cyrillic-300.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-300.ttf") format("truetype"), url("../fonts/montserrat-v25-latin_cyrillic-300.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v25-latin_cyrillic-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v25-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-regular.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/montserrat-v25-latin_cyrillic-regular.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-500 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/montserrat-v25-latin_cyrillic-500.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v25-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-500.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-500.ttf") format("truetype"), url("../fonts/montserrat-v25-latin_cyrillic-500.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-600 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/montserrat-v25-latin_cyrillic-600.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-600.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v25-latin_cyrillic-600.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-600.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-600.ttf") format("truetype"), url("../fonts/montserrat-v25-latin_cyrillic-600.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-700 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat-v25-latin_cyrillic-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v25-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v25-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/montserrat-v25-latin_cyrillic-700.woff") format("woff"), url("../fonts/montserrat-v25-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/montserrat-v25-latin_cyrillic-700.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Film P3";
+  src: local(""), local(""), url("..utils/fonts/FilmP3Bold.woff2") format("woff2"), url("..utils/fonts/FilmP3Bold.woff") format("woff"), url("..utils/fonts/FilmP3Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Times New Roman";
+  src: local(""), local(""), url("") format("woff2"), url("../utils/fonts/TimesNewRomanMTStd-Bold.woff") format("woff"), url("../utils/fonts/TimesNewRomanMTStd-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Times New Roman";
+  src: local(""), local(""), url("../utils/fonts/TimesNewRomanMTStd.woff2") format("woff2"), url("../utils/fonts/TimesNewRomanMTStd.woff") format("woff"), url("../utils/fonts/TimesNewRomanMTStd.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+.footer {
+  background-color: var(--footer-bg-color);
+}
+
+.logo {
+  text-decoration: none;
+  color: var(--yellow-text-color);
+  font-family: Film P3;
+  font-weight: Bold;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+}
+
+.footer-nav__list {
+  list-style: none;
+}
+
+.footer-nav__link {
+  text-decoration: none;
+  color: var(--yellow-text-color);
+}
+
+.footer-social-list__link {
+  fill: var(--yellow-text-color);
+}/*# sourceMappingURL=index.css.map */
