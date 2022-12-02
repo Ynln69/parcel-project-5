@@ -58,12 +58,13 @@
   }
 
   &__title {
+    width: 404px;
     text-align: center;
-    font-family: 'Film P3';
+    font-family: font(_film_);
     font-style: normal;
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1, 07;
+    font-size: 96px;
+    line-height: 1.07;
     letter-spacing: 0.3em;
     margin: 0 auto;
     margin-bottom: 24px;
@@ -82,7 +83,6 @@
   &__subtitle {
     text-align: center;
     margin: 0 auto;
-    font-family: 'Montserrat';
     font-weight: 600;
     font-size: 16px;
     line-height: 1.25;
@@ -102,7 +102,7 @@
 
   &__text {
     text-align: center;
-    font-family: 'Times New Roman';
+    font-family: font(_times_);
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -146,7 +146,6 @@
   }
 
   &__address {
-    width: 210px;
     position: absolute;
     top: 60px;
     right: 15px;
@@ -163,7 +162,9 @@
     gap: 20px;
 
     @include mq(desktop) {
-      display: none;
+      position: absolute;
+      top: 38px;
+      right: 85px;
     }
   }
 }
