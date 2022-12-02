@@ -1,0 +1,80 @@
+// media query mixin
+@mixin mq($type) {
+  $mobile: $container-width-mobile;
+  $tablet: $container-width-tablet;
+  $desktop: $container-width-desktop;
+
+  @if $type == mobile {
+    @media screen and (min-width: $mobile) {
+      @content;
+    }
+  } @else if $type == mobile-only {
+    @media screen and (max-width: #{$tablet - 0.02}) {
+      @content;
+    }
+  } @else if $type == tablet {
+    @media screen and (min-width: $tablet) {
+      @content;
+    }
+  } @else if $type == tablet-only {
+    @media screen and (min-width: $tablet) and (max-width: #{$desktop - 0.02}) {
+      @content;
+    }
+  } @else if $type == desktop {
+    @media screen and (min-width: $desktop) {
+      @content;
+    }
+  } @else if $type == not-desktop {
+    @media screen and (max-width: #{$desktop - 0.02}) {
+      @content;
+    }
+  } @else if $type == retina {
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      @content;
+    }
+  } @else {
+    @error "Unknow type breakpoint #{$type}.";
+  }
+}
+// fonts mixin 
+@mixin font-w-s-lh-ls($font-weight, $font-size, $line-height, $letter-spacing) {
+  font: {
+    weight: $font-weight;
+    size: $font-size;
+  }
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+// transition mixin 
+@mixin transition($prop, $time, $easing: $ease1, $delay: 0ms) {
+  $transition: ();
+  @for $i from 1 through length($prop) {
+    @for $j from 0 to (length($prop)) - (length($time)) {
+      $time: join($time, nth($time, -1));
+    }
+    @for $j from 0 to (length($prop)) - (length($easing)) {
+      $easing: join($easing, nth($easing, -1));
+    }
+    @for $j from 0 to (length($prop)) - (length($delay)) {
+      $delay: join($delay, nth($delay, -1));
+    }
+
+    $transition: append(
+      $transition,
+      (nth($prop, $i) nth($time, $i) nth($easing, $i) nth($delay, $i)),
+      $separator: comma
+    );
+  }
+  transition: $transition;
+}
+/* for @mixin transition
+scss input:
+@include transition(height width transform, 0.2s 0.3s, linear, 0s);
+or: @include transition(background-color fill, 250ms, var(--cubic-primary));
+
+css output:
+transition: height 0.2s linear 0s, width 0.3s linear 0s, transform 0.3s linear 0s; 
+*/

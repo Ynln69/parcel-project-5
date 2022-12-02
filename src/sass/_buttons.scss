@@ -1,0 +1,129 @@
+@mixin button-primary($bg-color, $border-color){
+
+    background-color: $bg-color;
+    border: 2px solid $border-color;
+}
+
+@mixin button-secondary($bg-color, $border-color, $color) {
+
+    background-color: $bg-color;
+    border: 1px solid $border-color;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.20;
+    color: $color;
+    text-transform: uppercase;
+
+    transition: border 250ms var(--cubic-primary),
+    background-color 250ms var(--cubic-primary),
+    color 250ms var(--cubic-primary);
+}
+
+@mixin button-modal($bg-color, $border-color, $color) {
+
+    background-color: $bg-color;
+    border: 1px solid $border-color;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.20;
+    color: $color;
+    text-transform: uppercase;
+
+    transition: border 250ms var(--cubic-primary),
+    background-color 250ms var(--cubic-primary),
+    color 250ms var(--cubic-primary);
+}
+
+@mixin button-mobile($bg-color, $border-color, $bg-radius, $color) {
+
+    color: $color;
+    background-color: $bg-color;
+    border: 1px solid $border-color;
+    border-radius: $bg-radius;
+}
+
+
+
+.button{
+    font-family: inherit;
+    cursor: pointer;
+}
+
+// Кнопки десктоп, таблет, мобайл
+.button__primary{
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #F3C653;
+
+
+    transition: border-color 250ms var(--cubic-primary),
+    background-color 250ms var(--cubic-primary);}
+
+
+.button__primary-transparent{
+@include button-primary(transparent, #ffffff);
+
+    &:hover, &:focus{
+    @include button-primary(#ffffff, #ffffff);
+    }
+}
+
+.button__primary--black {
+@include button-primary(var(--button-bg-color--black), #ffffff);
+
+    &:hover, &:focus {
+    @include button-primary(#ffffff, var(--button-border-accent-color));
+    }
+}
+
+.button__secondary{
+    @include button-secondary(var(--button-bg-color--black), var(--button-border-accent-color), var(--wight-text-color));
+    
+    &:hover, &:focus {
+        @include button-secondary(var(--button-accent-color), var(--button-border-accent-color), var(--black-text-color));
+    }
+}
+
+// Кнопки для модалок десктоп і таблет
+.button__modal{
+    @include button-modal(var(--button-bg-color--black), var(--button-border-accent-color), var(--wight-text-color));
+
+    &:hover, &:focus {
+        @include button-modal(var(--button-accent-color), var(--button-border-accent-color), var(--black-text-color));
+    }
+}
+
+// Кнопки мобайл
+.button__mobile{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.20;
+    text-transform: uppercase;
+    
+    transition: border 250ms var(--cubic-primary),
+    background-color 250ms var(--cubic-primary),
+    color 250ms var(--cubic-primary);
+}
+
+.button__mobile--sharp{
+    @include button-mobile(var(--button-bg-color--black), var(--button-border-accent-color), 1px, var(--wight-text-color));
+
+    &:hover, &:focus, &:active{
+        @include button-mobile(var(--button-accent-color), var(--button-border-accent-color), 1px, var(--black-text-color));
+    }
+}
+
+.button__mobile--circled {
+    @include button-mobile(var(--button-bg-color--black), var(--button-border-accent-color), 25px, var(--wight-text-color));
+
+    &:hover, &:focus, &:active{
+        @include button-mobile(var(--button-accent-color), var(--button-border-accent-color), 25px, var(--black-text-color));
+    }
+}
+
+

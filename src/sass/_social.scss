@@ -1,0 +1,14 @@
+.social {
+  &__link {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--second-yellow-color);
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
