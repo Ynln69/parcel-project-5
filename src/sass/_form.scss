@@ -1,7 +1,7 @@
 /*----------  Form  ----------*/
 
 @mixin form-font() {
-  font-family: 'Times New Roman';
+  font-family: font(_times_);
   font-weight: 700;
   font-size: 20px;
   line-height: calc(23 / 20);
