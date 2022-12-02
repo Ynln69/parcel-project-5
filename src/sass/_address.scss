@@ -1,0 +1,27 @@
+.address {
+  padding: 8px 6px;
+  border-radius: 2px;
+  border: 1px solid var(--second-yellow-color);
+
+  &__link {
+    gap: 8px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    position: absolute;
+    fill: var(--yellow-text-color);
+  }
+
+  &__text {
+    color: var(--hero-address-color);
+    margin-left: 34px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+  }
+}
