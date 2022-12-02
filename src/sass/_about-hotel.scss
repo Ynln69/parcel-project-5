@@ -1,1 +1,95 @@
+.about {
+  @include mq(mobile) {
+    padding-top: 16px;
+  }
+}
 
+.about__text-hotel {
+  margin-left: auto;
+  width: 258px;
+  text-align: end;
+
+  @include mq(mobile) {
+    margin-bottom: 28px;
+  }
+}
+
+.about__thumb-hotel {
+
+
+  @include mq(mobile) {
+    margin-bottom: 32px;
+  }
+}
+
+.about__title {
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: calc(23/20);
+
+  color: #B4B4B4;
+
+  @include mq(mobile) {
+    margin-bottom: 12px;
+  }
+}
+
+.about__description {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15/12);
+  letter-spacing: 0.02em;
+
+  color: #5F5F5F;
+}
+
+.name {
+  font-family: 'Film P3';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: calc(43/40);
+
+  letter-spacing: 0.3em;
+
+  color: #494848;
+
+  @include mq(mobile) {
+    margin-bottom: 12px;
+  }
+}
+
+.about__feature {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15/12);
+  letter-spacing: 0.02em;
+  color: #C79002;
+}
+
+.about__image-hotel {
+  @include mq(mobile) {
+    width: 244px;
+    margin-right: auto;
+  }
+}
+
+.about__image--second {
+  @include mq(mobile) {
+    width: 200px;
+
+  }
+}
+
+.about__thumb-second {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: row-reverse;
+}
