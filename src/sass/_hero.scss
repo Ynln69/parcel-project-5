@@ -141,6 +141,10 @@
     }
   }
 
+  &__button {
+    cursor: pointer;
+  }
+
   &__address {
     width: 210px;
     position: absolute;
