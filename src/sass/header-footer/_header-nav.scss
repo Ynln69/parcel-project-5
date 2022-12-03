@@ -1,10 +1,20 @@
 .header {
-  margin-top: 25px;
-  margin-bottom: -69px;
+  position: absolute;
+    top: 17px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
   background-color: transparent;
+
+    @include mq(tablet){
+      top: 24px;
+    }
 }
 
+
 .header-nav{
+
+.header-nav__list{
   margin-top: 25px;
   display: flex;
   align-items: center;
@@ -16,17 +26,16 @@
   @include mq(tablet-only){
   justify-content: space-evenly
   }
-
-  &__item {
-    display: flex;
-    align-items: center;
-
-    &:nth-child(2) {
-        margin-right: 34px;
-      }
-    
- 
 }
+     &__item {
+       display: flex;
+       align-items: center;
+  
+       &:nth-child(2) {
+         margin-right: 34px;
+       }
+     }
+
     &__link {
       display: flex;
       @extend %link;
@@ -99,4 +108,5 @@
     display: block;
   }
 }
+
 }
