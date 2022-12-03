@@ -15,7 +15,13 @@
     opacity var(--transition-duration) var(--cubic-primary);
 }
 
-.backdrop--hidden {
+.backdrop--is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop--not-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
