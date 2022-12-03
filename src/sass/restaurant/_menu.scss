@@ -4,8 +4,14 @@
     padding-right: 18px;
     padding-bottom: 32px;
     padding-left: 15px;
-}
 
+    @include mq (tablet){
+        padding-top: 58px;
+        padding-right: 47px;
+        padding-bottom: 40px;
+        padding-left: 47px;
+    }
+}
 .menu__title {
     font-family: font(_times_);
     margin-bottom: 40px;
@@ -16,13 +22,21 @@
     font-size: 32px;
     line-height: calc(37/32);
 }
-.menu__table {
-    table-layout: fixed;
-}
 
+.menu__content {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 16px;
+    @include mq (tablet){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
 .menu__caption {
     font-family: font(_times_);
-    margin-top: 20px;
     margin-bottom: 16px;
 
     color: var(--black-text-color);
@@ -31,17 +45,22 @@
     line-height: 23px;
     text-align: start;
 }
-.menu__tbody {
-    display: flex;
-    flex-direction: column;
+.menu__tbody-desert{
+    max-width: 430px;
+    max-height: 132px;
 }
+
 .menu__tr-dish {
     display: flex;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .menu__dish {
-    margin-bottom: 4px;
+    width: 225px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 
     color: var(--black-text-color);
     font-weight: 500;
@@ -49,14 +68,9 @@
     line-height: calc(17/14);
     letter-spacing: 0.02em;
     text-align: start;
-    &--small {
-        width: 220px;
-    }
 }
-
-.menu__tr-desc {
-    display: flex;
-    justify-content: space-between;
+.menu__dish-des {
+    margin-bottom: 11px;
 }
 
 .menu__desc {
@@ -69,20 +83,30 @@
     line-height: calc(12/10);
     letter-spacing: 0.02em;
 }
-.menu__td-empty {
-    width: 28px;
-    flex-grow: 1;
-}
-.menu__td-heft {
+.menu__heft {
     width: 37px;
     text-align: end;
     white-space: nowrap;
+    margin-right: 32px;
+    margin-left: 32px;
+
+    color: var(--black-text-color);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: calc(17/14);
+    letter-spacing: 0.02em;
 }
-.menu__td-null {
-    width: 28px;
+.menu__price {
     text-align: end;
-}
-.menu__td-cost {
-    width: 58px;
     white-space: nowrap;
+    color: var(--black-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(17/14);
+    letter-spacing: 0.02em;
+}
+
+.button {
+    width: 100%;
+
 }
