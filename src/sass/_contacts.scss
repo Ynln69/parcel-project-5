@@ -1,0 +1,102 @@
+.contacts__system {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; //center;
+  align-items: baseline;
+  gap: 32px;
+
+  @include mq(tablet) {
+    flex-wrap: wrap;
+    //flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
+    gap: 101px;
+  }
+  @include mq(desktop) {
+    //display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: left;
+    gap: 108px;
+  }
+}
+
+.contacts__sys-item {
+  flex-direction: column;
+  //width: 100%;
+  padding-top: 32px;
+
+  @media screen and (min-width: 414px) {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+
+
+
+.contacts__list {
+  @extend %link;
+  //@extend %list;
+}
+
+.contacts__item-restaurant,
+.contacts__item-hotel,
+.contacts__item-address {
+  @extend %list;
+  //background-color: orange;
+}
+
+/*
+.contacts__item--restaurant-text
+{
+
+}*/
+.contacts__map {
+  width: 100%;
+  height: 220px;
+
+  @media screen and (min-width: 414px) {
+    width: 535px;
+    height: 412px;
+  }
+
+  /*@media screen and (min-width: 1024px) {
+        width: 535px;
+        height: 412px;
+      }*/
+  @media screen and (min-width: 1280px) {
+    max-width: 634px;
+    height: 412px;
+  }
+}
+
+.contacts__sys-item .contacts__logo {
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: calc(69 / 64);
+  text-decoration: none;
+  font-family: font(_montserrat);
+  color: var(--contacts-color);
+  margin-top: 36px;
+  //outline: 2px orange solid;
+}
+
+.contacts__sub-logo {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: calc(20 / 16);
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--contacts-color);
+  margin-top: 36px;
+  //outline: 2px orange solid;
+}
+
+.contacts__thumb {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
