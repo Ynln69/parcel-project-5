@@ -1,5 +1,6 @@
 .vertical-line {
   $color: var(--ligth-v-line-color);
+  height: 100%;
 
   @mixin color-line($position) {
     $color-bg: transparent;
