@@ -1,0 +1,63 @@
+<!--
+ Андрій Трюхан @tryuhan
+ Цей partial форми модалки бронювання столика. Використовує для оформлення компонент форми (forms.scss).
+-->
+
+ <form class="form" name="application-form" method="post">
+    <div class="form__wrapper">
+      <div class="form__field-wrapper">
+        <input
+          class="form__input"
+          type="text"
+          name="person-name"
+          id="person-name"
+          placeholder="Ваше ім'я"
+          minlength="2"
+          maxlength="64"
+        />
+        <label class="form__label" for="person-name"
+          >На кого забронювати столик?</label
+        >
+      </div>
+
+      <div class="form__field-wrapper">
+        <input class="form__input" type="tel" name="phone" id="phone" placeholder="+38 (___) ___-__-__" pattern="^\+[0-9]{2}\s\((\d+)\)\s\d{3}-\d{2}-\d{2}" title="Введіть телефон у форматі +38 (___) ___-__-__"/>
+        <label class="form__label" for="phone">Номер телефону</label>
+      </div>
+
+      <div class="form__field-wrapper">
+        <div class="form__select-wrapper">
+          <select class="form__select" name="city" id="number-select">
+            <option value="1">1</option>
+            <option value="2" selected>2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">6+</option>
+          </select>
+        </div>
+        <label class="form__label" for="number-select"
+          >Столик на яку кількість осіб?</label
+        >
+      </div>
+
+      <div class="form__field-wrapper">
+        <div class="form__select-wrapper">
+          <select class="form__select" name="city" id="data-select">
+            <option value="Сьогодні" selected>Сьогодні</option>
+            <option value="Завтра">Завтра</option>
+          </select>
+          <!-- <input class="form__input-date" type="date" name="date" id="date-select" /> -->
+        </div>
+        <label class="form__label" for="date-select"
+          >На яку дату бронювати?</label
+        >
+      </div>
+    </div>
+
+    <button class="button button__modal form__submit" type="submit">
+      Оформити бронювання
+    </button>
+  </form>
+
