@@ -1,6 +1,13 @@
 .footer {
-  padding: 40px 0;
   background-color: var(--footer-bg-color);
+
+  &__container {
+    padding-block: 40px;
+
+    @media screen and (min-width: $container-width-tablet) {
+      padding-block: 80px;
+    }
+  }
 }
 .logo {
   text-decoration: none;

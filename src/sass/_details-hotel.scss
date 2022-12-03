@@ -1,0 +1,103 @@
+.logo-hotel {
+    font-family: 'FilmP3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 69px;
+    letter-spacing: 0.3em;
+    text-decoration: none;
+    margin-left: 640px;
+
+    color: #FFFFFF;
+}
+
+
+.details-hotel {
+    background-image: url(../images/desktop/homepage-hotel-amet-desktop.jpg);
+
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url(../images/desktop/homepage-hotel-amet-desktop.jpg);
+
+    width: 1280px;
+height: 620px;
+}
+
+.box__logo {
+    padding-top: 48px;
+}
+
+.service__list {
+    display: flex;
+    margin-right: 33px;
+}
+
+.details-hotel__title {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+letter-spacing: 0.02em;
+margin-left: 745px;
+margin-top: 16px;
+
+color: #FFFFFF;
+}
+
+.details-hotel__text {
+    width: 585px;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0.02em;
+margin-left: 285px;
+margin-top: 8px;
+
+color: #BABABA;
+}
+
+.service {
+    display: flex;
+    margin-left: 37px;
+    margin-top: 40px;
+}
+
+.box-button {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.button {
+    padding: 14px 26px;
+}
+
+.service__images--centered {
+    margin: 0 52px;
+    height: 270px;
+}
+
+.details-hotel__button--margin {
+    margin-top: 16px;
+}
+
+
+.details-hotel__icon {
+    fill:#FFFFFF;
+}
+
+
+.details-hotel__icon--centered {
+    margin-left: 745px;
+    margin-top: 24px;
+}
+
+.details-hotel__icon--margin {
+    margin-left: 32px;
+}
+
