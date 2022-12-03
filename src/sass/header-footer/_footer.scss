@@ -12,16 +12,16 @@
 .logo {
   text-decoration: none;
   color: var(--yellow-text-color);
-  font-family: FilmP3;
+  font-family: font(_film_);
   font-weight: Bold;
   font-size: 40px;
   line-height: 1;
   letter-spacing: 0.03em;
 }
-.footer-nav {
-  // display: flex;
-  // justify-content: space-evenly;
-}
+// .footer-nav {
+//   // display: flex;
+//   // justify-content: space-evenly;
+// }
 .footer-nav__list {
   list-style: none;
   padding: 0;
