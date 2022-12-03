@@ -24,8 +24,8 @@
 
   background: rgba(255, 255, 255, 0);
 
-  %mod {
-  }
+  // %mod {
+  // }
 
   &--ligth {
     @include color-line(140px 274px);
