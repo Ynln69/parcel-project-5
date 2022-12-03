@@ -44,7 +44,7 @@
 }
 
 .about__title {
-  font-family: 'Times New Roman';
+  font-family: font(_times_);
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -65,7 +65,7 @@
 }
 
 .about__description {
-  font-family: 'Montserrat';
+  font-family: font(_montserrat_);
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -82,7 +82,7 @@
 }
 
 .name {
-  font-family: 'FilmP3';
+  font-family: font(_film_);
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -90,6 +90,7 @@
 
   letter-spacing: 0.3em;
   margin-bottom: 12px;
+  text-transform: uppercase;
   color: var(--mimino-first-color);
 
   @include mq(tablet) {
@@ -103,7 +104,7 @@
 }
 
 .about__feature {
-  font-family: 'Montserrat';
+  font-family: font(_montserrat_);
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
