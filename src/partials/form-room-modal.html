@@ -43,11 +43,14 @@
 
       <div class="form__field-wrapper">
         <div class="form__select-wrapper">
-          <select class="form__select" name="city" id="data-select">
+          <!-- <select class="form__select" name="city" id="data-select">
             <option value="Сьогодні" selected>Сьогодні</option>
             <option value="Завтра">Завтра</option>
-          </select>
+          </select> -->
           <!-- <input class="form__input-date" type="date" name="date" id="date-select" /> -->
+          <input class="form__input" type="text" placeholder="Сьогодні"
+          onfocus="(this.type='date')"
+          onblur="(this.type='text')">
         </div>
         <label class="form__label" for="date-select"
           >Дата заїзду</label
@@ -61,6 +64,9 @@
             <option value="Завтра">Завтра</option>
           </select>
           <!-- <input class="form__input-date" type="date" name="date" id="date-select" /> -->
+          <input class="form__input" type="text" placeholder="Сьогодні"
+          onfocus="(this.type='date')"
+          onblur="(this.type='text')">
         </div>
         <label class="form__label" for="date-select"
           >Дата виїзду</label
