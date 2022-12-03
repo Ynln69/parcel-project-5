@@ -8,6 +8,9 @@
 @import './buttons';
 @import './social';
 @import './backdrop';
+@import './modals/modals';
+@import './form';
+@import './vertical-line';
 @import './header-footer/header';
 @import './address';
 @import './header-footer/header-nav-list';
@@ -16,6 +19,13 @@
 @import './details-restaurant';
 @import './about-hotel';
 @import './details-hotel';
+@import './restaurant/hero-restaurant';
+@import './restaurant/about-kitchen';
+@import './restaurant/menu';
+@import './hotel/hero-hotel';
+@import './hotel/rooms-hotel';
+@import './room/hero-room';
+@import './room/amenities';
 @import './modals/table-modal';
 @import './modals/price-modal';
 @import './modals/room-modal';
