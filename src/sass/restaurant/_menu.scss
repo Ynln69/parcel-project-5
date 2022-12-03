@@ -5,7 +5,9 @@
     padding-bottom: 32px;
     padding-left: 15px;
 }
+
 .menu__title {
+    font-family: font(_times_);
     margin-bottom: 40px;
 
     color: var(--black-text-color);
@@ -14,7 +16,13 @@
     font-size: 32px;
     line-height: calc(37/32);
 }
+.menu__table {
+    table-layout: fixed;
+}
+
 .menu__caption {
+    font-family: font(_times_);
+    margin-top: 20px;
     margin-bottom: 16px;
 
     color: var(--black-text-color);
@@ -23,11 +31,16 @@
     line-height: 23px;
     text-align: start;
 }
-.menu__table {
-    table-layout: fixed;
+.menu__tbody {
+    display: flex;
+    flex-direction: column;
 }
+.menu__tr-dish {
+    display: flex;
+    justify-content: flex-start;
+}
+
 .menu__dish {
-    display: inline-block;
     margin-bottom: 4px;
 
     color: var(--black-text-color);
@@ -36,14 +49,40 @@
     line-height: calc(17/14);
     letter-spacing: 0.02em;
     text-align: start;
+    &--small {
+        width: 220px;
+    }
 }
-// .menu__desc {
-//     display: inline-block;
-//     width: 220px;
 
-//     color: var(--black-text-color);
-//     font-weight: 400;
-//     font-size: 10px;
-//     line-height: calc(12/10);
-//     letter-spacing: 0.02em;
-// }
+.menu__tr-desc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__desc {
+    max-width: 223px;
+    margin-bottom: 8px;
+
+    color: var(--black-text-color);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: calc(12/10);
+    letter-spacing: 0.02em;
+}
+.menu__td-empty {
+    width: 28px;
+    flex-grow: 1;
+}
+.menu__td-heft {
+    width: 37px;
+    text-align: end;
+    white-space: nowrap;
+}
+.menu__td-null {
+    width: 28px;
+    text-align: end;
+}
+.menu__td-cost {
+    width: 58px;
+    white-space: nowrap;
+}
