@@ -12,16 +12,16 @@
 .logo {
   text-decoration: none;
   color: var(--yellow-text-color);
-  font-family: Film P3;
+  font-family: font(_film_);
   font-weight: Bold;
   font-size: 40px;
   line-height: 1;
   letter-spacing: 0.03em;
 }
-.footer-nav {
-  display: flex;
-  justify-content: space-evenly;
-}
+// .footer-nav {
+//   // display: flex;
+//   // justify-content: space-evenly;
+// }
 .footer-nav__list {
   list-style: none;
   padding: 0;
@@ -41,10 +41,10 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  justify-content: flex-end;
+  // display: flex;
+  // align-items: center;
+  // gap: 20px;
+  // justify-content: flex-end;
 }
 
 .footer-social-list__item {

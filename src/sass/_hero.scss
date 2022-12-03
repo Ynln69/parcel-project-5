@@ -158,6 +158,7 @@
   }
 
   &__social {
+    @extend %list;
     display: flex;
     gap: 20px;
 

@@ -1,0 +1,23 @@
+.logo{
+    @extend %link;
+    font-family: font(_film_);
+
+&--header{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.08;
+    color: var(--wight-text-color);
+    letter-spacing: 0.3em;
+    margin-right: 26px;
+
+    @include mq(tablet){
+    font-size: 40px;
+    }
+
+    @include mq(desktop){
+    margin-left :60px;
+    margin-right: 94px;
+    }
+
+}
+}

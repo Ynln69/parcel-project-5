@@ -65,8 +65,8 @@
     background-color 250ms var(--cubic-primary);}
 
 
-.button__primary-transparent{
-@include button-primary(transparent, #ffffff);
+.button__primary--transparent{
+@include button-primary(var(--button-bg-color--transparent), #ffffff);
 
     &:hover, &:focus{
     @include button-primary(#ffffff, #ffffff);
