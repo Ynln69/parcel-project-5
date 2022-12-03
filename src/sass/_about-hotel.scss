@@ -82,6 +82,7 @@
 }
 
 .name {
+  display: block;
   font-family: font(_film_);
   font-style: normal;
   font-weight: 700;
@@ -91,16 +92,16 @@
   letter-spacing: 0.3em;
   margin-bottom: 12px;
   text-transform: uppercase;
-  color: var(--mimino-first-color);
+  color: var(--mimino-second-color);
 
   @include mq(tablet) {
     font-size: 64px;
     line-height: calc(69/64);
-  }
-
-  @include mq(desktop) {
     margin-bottom: 24px;
   }
+    @include mq(desktop) {
+      color: var(--mimino-first-color);
+    }
 }
 
 .about__feature {
@@ -162,7 +163,7 @@
   @include mq(tablet) {
     margin: 0;
     gap: 48px;
-    margin-right: 47px;
+    margin-right: 33px;
     position: relative;
     top: -58px;
     right: 20px;
@@ -171,6 +172,6 @@
   @include mq(desktop) {
     gap: 45px;
     top: -112px;
-    margin-right: 104px;
+    
   }
 }
