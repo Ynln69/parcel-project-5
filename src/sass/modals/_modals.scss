@@ -1,43 +1,59 @@
 .modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform:translate(-50%, -50%);
-  min-width: 414px;
+  width: 100%;
+  min-width: 380px;
   height: auto;
   padding: 60px 15px;
-  background-color: var(--main-bg-color);
   border-radius: 2px;
+
+  background-color: var(--main-bg-color);
+  transform: translate(-50%, -50%) scale(1);
+
+  transition: transform var(--transition-duration) var(--cubic-primary),
+    opacity var(--transition-duration) var(--cubic-primary);
+
+    @include mq(mobile-only) {
+      max-width: $container-width-mobile;
+    }
+
+    @include mq(tablet) {
+      width: 712px;
+      padding: 60px;
+    }
 }
 
 .modal__close-button {
-  display: block;
-  box-sizing: border-box;
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  width: 24px;
-  height: 24px;
-
-  margin: 0;
-  padding: 0;
-  
   display: flex;
   justify-content: center;
   align-items: center;
+
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
   border: none;
+  color: var(--black-text-color);
   background-color: var(--main-bg-color);
   cursor: pointer;
 }
 
+.modal__close-icon {
+  fill: currentColor;
+}
+
 .modal__title {
-  
-  font-family: serif;
+  margin-bottom: 40px;
+
+  font-family: font(_times_);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: calc(28 / 24);
   text-align: center;
   text-transform: uppercase;
-  font-weight: 700;
-    font-size: 24px;
-    line-height: calc(28/24);
-    letter-spacing: 0.05em;
-    color: var(--black-text-color);
+  letter-spacing: 0.05em;
+  color: var(--black-text-color);
+
+  @include mq(tablet) {
+    font-size: 40px;
+    line-height: calc(46 / 40);
+  }
 }

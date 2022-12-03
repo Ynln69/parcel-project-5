@@ -1,5 +1,5 @@
 .logo-hotel {
-    font-family: 'FilmP3';
+    font-family: font(_film_);
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
@@ -7,8 +7,7 @@
     letter-spacing: 0.3em;
     text-decoration: none;
     margin-left: 640px;
-
-    color: #FFFFFF;
+    color: var(--wight-text-color);
 
     @media screen and (min-width: 414px) {
         font-size: 40px;
@@ -112,15 +111,13 @@ height: 270px;
 
 .details-hotel__title {
     font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 29px;
-letter-spacing: 0.02em;
-margin-left: 745px;
-margin-top: 16px;
-
-color: #FFFFFF;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    margin-left: 745px;
+    margin-top: 16px;
+    color:var(--wight-text-color);
 
 @media screen and (min-width: 414px) {
     font-size: 20px;
@@ -139,16 +136,16 @@ color: #FFFFFF;
 
 .details-hotel__text {
     width: 585px;
-    font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 20px;
-letter-spacing: 0.02em;
-margin-left: 285px;
-margin-top: 8px;
 
-color: #BABABA;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    margin-left: 285px;
+    margin-top: 8px;
+
+    color: var(--second-grey-color);
 
 @media screen and (min-width: 414px) {
     width: 243px;
@@ -246,7 +243,7 @@ height: 48px;
 
 
 .details-hotel__icon {
-    fill:#FFFFFF;
+    fill:var(--wight-text-color);
 }
 
 
