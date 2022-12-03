@@ -1,11 +1,8 @@
 .logo{
     @extend %link;
-    font-family: 'FilmP3', sans-serif;
+    font-family: font(_film_);
 
 &--header{
-    font-weight: 700;
-
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.08;

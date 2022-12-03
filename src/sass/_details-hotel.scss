@@ -1,5 +1,5 @@
 .logo-hotel {
-    font-family: 'FilmP3';
+    font-family: font(_film_);
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
@@ -8,7 +8,7 @@
     text-decoration: none;
     margin-left: 640px;
 
-    color: #FFFFFF;
+    color: var(--wight-text-color);
 }
 
 
@@ -35,30 +35,26 @@ height: 620px;
 }
 
 .details-hotel__title {
-    font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 29px;
-letter-spacing: 0.02em;
-margin-left: 745px;
-margin-top: 16px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    margin-left: 745px;
+    margin-top: 16px;
 
-color: #FFFFFF;
+    color:var(--wight-text-color);
 }
 
 .details-hotel__text {
     width: 585px;
-    font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 20px;
-letter-spacing: 0.02em;
-margin-left: 285px;
-margin-top: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    margin-left: 285px;
+    margin-top: 8px;
 
-color: #BABABA;
+    color: var(--second-grey-color);
 }
 
 .service {
@@ -88,7 +84,7 @@ color: #BABABA;
 
 
 .details-hotel__icon {
-    fill:#FFFFFF;
+    fill:var(--wight-text-color);
 }
 
 
