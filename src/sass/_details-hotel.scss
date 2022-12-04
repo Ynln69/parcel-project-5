@@ -127,9 +127,9 @@ padding: 0;
 
     @media screen and (min-width: 414px) and (max-width: 1023px) {
         position: relative;
-        top: 20px;
-        left: -280px;
-        width: 600px;
+        top: 0px;
+        left: -130px;
+        width: 440px;
     height: 270px;
         }
 
@@ -256,7 +256,7 @@ color: var(--second-grey-color);
     }
 
     @media screen and (min-width: 1280px) {
-        margin-left: 40px;
+        margin-left: 45px;
         display: flex;
          margin-top: 40px;
     }
@@ -282,9 +282,7 @@ color: var(--second-grey-color);
     flex-direction: column;
     margin-top: 150px;
     @media screen and (min-width: 414px) {
-      
         margin-top: 40px;
-    
     }
 
     @media screen and (min-width: 1024px) {
@@ -347,4 +345,11 @@ height: 48px;
 
 .details-hotel__button--margin {
     margin-top: 16px;
+}
+
+.service__images--opacity {
+    @media screen and (min-width: 414px) and (max-width: 1023px) {
+        // opacity: 0;
+        display: none;
+        }
 }

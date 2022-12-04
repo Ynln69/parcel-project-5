@@ -7,14 +7,18 @@
   height: 100vh;
 
   background-color: var(--backdrop-color);
+  box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0);
 
   visibility: visible;
   opacity: 1;
-
-  transition: visibility var(--transition-duration) var(--cubic-primary),
-    opacity var(--transition-duration) var(--cubic-primary);
-
   z-index: 1001; //хто більше?
+  @include transition(
+    opacity visibility box-shadow background-color,
+    500ms 500ms 250ms 250ms,
+    var(--cubic-primary),
+    0ms 0ms 0ms 250ms
+  );
+
 }
 
 .backdrop--is-hidden {
@@ -31,6 +35,12 @@
 
 .backdrop__modal {
   position: absolute;
-  top: 50%;
   left: 50%;
+  margin-bottom: -5vh;
+  top: 5vh;
+
+  @include mq(tablet) {
+    margin-bottom: 15vh;
+    top: 15vh;
+  }
 }
