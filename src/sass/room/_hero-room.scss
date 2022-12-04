@@ -1,9 +1,30 @@
-.hero-room__img {
+.hero-room {
+  background-color: gray;
+
+  &__container {
+    padding-bottom: 20px;
+    padding-top: 483px;
+    position: relative;
+    color: var(--wight-text-color);
+
+    @include mq(tablet) {
+      padding-bottom: 24px;
+      padding-top: 468px;
+    }
+
+    @include mq(desktop) {
+      padding-bottom: 48px;
+      padding-top: 524px;
+    }
+  }
+
+  &__img {
     position: absolute;
     top: 0;
     left: 0;
-}
-.hero-room__title {
+  }
+
+  &__title {
     width: 100%;
     margin-bottom: 14px;
 
@@ -12,21 +33,96 @@
     font-weight: 700;
     font-size: 28px;
     text-transform: uppercase;
-    line-height: calc(32/28);
+    line-height: calc(32 / 28);
     letter-spacing: 0.05em;
-}
-.hero-room__title-little {
-    text-transform: lowercase;
-}
-.hero-room__text {
-    width: 100%;
-    margin-bottom: 30px;
 
+    @include mq(tablet) {
+      font-size: 36px;
+      line-height: calc(41 / 36);
+    }
+
+    @include mq(desktop) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__title-little {
+    text-transform: lowercase;
+  }
+
+  &__text {
+    width: 325px;
+    margin-bottom: 14px;
     color: var(--wight-text-color);
     font-weight: 700;
     font-size: 12px;
-    line-height: calc(15/12);
+    line-height: calc(15 / 12);
     letter-spacing: 0.02em;
+
+    @include mq(tablet) {
+      margin-bottom: 30px;
+      width: 400px;
+      font-size: 16px;
+      line-height: calc(20 / 16);
+    }
+
+    @include mq(desktop) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__address {
+    @include mq(mobile-only) {
+      position: absolute;
+      top: 60px;
+      right: 15px;
+    }
+
+    @include mq(desktop) {
+      display: none;
+    }
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+    width: 24px;
+    gap: 8px;
+
+    @include mq(tablet) {
+      gap: 20px;
+      flex-direction: row;
+    }
+
+    @include mq(desktop) {
+      position: absolute;
+      top: 38px;
+      left: 1083px;
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    padding: 14px 35px;
+    position: absolute;
+    bottom: 40px;
+    right: 73px;
+
+    @include mq(tablet) {
+      bottom: 64px;
+      right: 47px;
+    }
+
+    @include mq(desktop) {
+      bottom: 66px;
+      right: 85px;
+    }
+  }
 }
-
-
