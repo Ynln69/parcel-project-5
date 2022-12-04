@@ -31,7 +31,6 @@
   background-color: transparent;
   border: 1px solid var(--brown-text-color);
   border-radius: 2px;
-  outline: transparent;
 }
 
 @mixin card-set ($indent-row:20px, $indent-column:16px) {
@@ -74,6 +73,9 @@
     @include card-set-item(2);
   }
 
+}
+
+.form__field-wrapper--ordered {
   &:nth-child(3) {
     @include mq(tablet) {
       order: 1;
@@ -132,7 +134,7 @@
   background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.45383 7.93955C2.73512 7.65834 3.11658 7.50037 3.51433 7.50037C3.91207 7.50037 4.29354 7.65834 4.57483 7.93955L11.9998 15.3645L19.4248 7.93955C19.7077 7.66631 20.0866 7.51512 20.4799 7.51853C20.8732 7.52195 21.2494 7.67971 21.5276 7.95782C21.8057 8.23593 21.9634 8.61215 21.9668 9.00544C21.9703 9.39874 21.8191 9.77764 21.5458 10.0605L13.0603 18.546C12.779 18.8273 12.3976 18.9852 11.9998 18.9852C11.6021 18.9852 11.2206 18.8273 10.9393 18.546L2.45383 10.0605C2.17262 9.77925 2.01465 9.39779 2.01465 9.00005C2.01465 8.6023 2.17262 8.22084 2.45383 7.93955Z' fill='%23C79002'/%3E%3C/svg%3E%0A");
 }
 
-.form__select, .form__input-date {
+.form__select {
   @include input-view();
 
   @include form-font();
@@ -141,6 +143,33 @@
 
   margin-bottom: 8px;
   padding-right: 40px;
+}
+
+// .form__input-date {
+//   @include input-view();
+
+//   @include form-font();
+
+//   margin-bottom: 8px;
+//   padding-right: 40px;
+
+//   background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.45383 7.93955C2.73512 7.65834 3.11658 7.50037 3.51433 7.50037C3.91207 7.50037 4.29354 7.65834 4.57483 7.93955L11.9998 15.3645L19.4248 7.93955C19.7077 7.66631 20.0866 7.51512 20.4799 7.51853C20.8732 7.52195 21.2494 7.67971 21.5276 7.95782C21.8057 8.23593 21.9634 8.61215 21.9668 9.00544C21.9703 9.39874 21.8191 9.77764 21.5458 10.0605L13.0603 18.546C12.779 18.8273 12.3976 18.9852 11.9998 18.9852C11.6021 18.9852 11.2206 18.8273 10.9393 18.546L2.45383 10.0605C2.17262 9.77925 2.01465 9.39779 2.01465 9.00005C2.01465 8.6023 2.17262 8.22084 2.45383 7.93955Z' fill='%23C79002'/%3E%3C/svg%3E%0A");
+//   background-repeat: no-repeat;
+//   background-position: 96.1% center;
+
+//   &::-webkit-inner-spin-button {
+//     display: none;
+//   }
+//   &::-webkit-calendar-picker-indicator {
+//     opacity: 0;
+//   }
+// }
+
+.form__input[type=date]::-webkit-inner-spin-button {
+  display: none;
+}
+.form__input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
 }
 
 .form__submit {

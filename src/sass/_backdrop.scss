@@ -11,13 +11,14 @@
 
   visibility: visible;
   opacity: 1;
-
+  z-index: 1001; //хто більше?
   @include transition(
     opacity visibility box-shadow background-color,
     500ms 500ms 250ms 250ms,
     var(--cubic-primary),
     0ms 0ms 0ms 250ms
   );
+
 }
 
 .backdrop--is-hidden {
