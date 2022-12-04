@@ -73,6 +73,9 @@
     @include card-set-item(2);
   }
 
+}
+
+.form__field-wrapper--ordered {
   &:nth-child(3) {
     @include mq(tablet) {
       order: 1;
