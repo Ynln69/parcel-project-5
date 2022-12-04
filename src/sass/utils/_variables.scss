@@ -16,7 +16,6 @@
   --hotel-text-color: #7a7a7a;
   --modal-text-color: #808080;
   --footer-bg-color: #0e0c07;
-  --footer-line-color: #7a7a7a66;
   --main-box-shadow-color: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
 
   --button-bg-color--black: #000000;
@@ -25,6 +24,12 @@
   --button-accent-color: #f3c653;
   --cubic-primary: cubic-bezier(0.4, 0, 0.2, 1);
   --backdrop-color: rgba(0, 0, 0, 0.2);
+
+  --ligth-v-line-color: rgba(186, 186, 186, 0.4);
+  --dark-v-line-color: rgba(122, 122, 122, 0.4);
+
+  --scrollbar-width: 15;
+  --coef: 1;
 }
 // Media Breakpoints
 $container-width-mobile: 414px;

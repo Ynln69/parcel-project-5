@@ -1,9 +1,9 @@
 .amenities {
     width: 100%;
-    padding: 32px 15px;
+    padding: 32px 0;
 
-    @include mq(tablet){
-        padding: 48px 47px;
+    @include mq(tablet-only){
+        padding: 48px 0;
     }
 
     &__title {
@@ -48,7 +48,10 @@
         text-transform: none;
 
         @include mq (mobile){
-            width: 384px;;
+            width: 384px;
+        }
+        @include mq (mobile){
+            width: 400px;
         }
     }
     &__text--about {
@@ -69,10 +72,23 @@
         font-size: 16px;
         line-height: calc(20/16);
         letter-spacing: 0.02em;
+        
+        @include mq (tablet){
+            font-size: 20px;
+        line-height: calc(24/20);
+        }
     }
+    &__content-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        @include mq (tablet){
+            align-items: flex-end;
+        }
 }
-.amenities__content-nav {
-    display: flex;
+
+   
 }
 .button__secondary {
     display: block;
@@ -83,5 +99,11 @@
 
     @include mq (mobile){
         width: 384px;
+    }
+    @include mq (tablet){
+        width: 434px;
+        padding: 18px 38px;
+        font-size: 23px;
+        line-height: calc(29/23);
     }
 }
