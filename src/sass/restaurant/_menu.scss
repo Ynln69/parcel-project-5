@@ -1,26 +1,38 @@
 .menu {
     position: relative;
     width: 100%;
-    padding: 32px 0;
+    padding:0;
 
     @include mq (tablet){
-        padding-top: 58px;
-        padding-bottom: 40px;
+        
+        
         background-color: var(--secondary-bg-color);
     }
-    @include mq (desktop){
+}
+
+.container-padding {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    @include mq(tablet){
+        padding-top: 58px;
+        padding-bottom: 40px;
+    }
+
+    @include mq(desktop){
         padding-bottom: 60px;
     }
 }
-.container__menu {
-    position: relative;
-    @include mq (tablet){
-      padding-bottom: 40px;
-    }
-    @include mq (desktop){
-      padding-bottom: 60px;
-    }
-  }
+
+// .container__menu {
+//     position: relative;
+//     @include mq (tablet){
+//       padding-bottom: 40px;
+//     }
+//     @include mq (desktop){
+//       padding-bottom: 60px;
+//     }
+//   }
 .menu__title {
     font-family: font(_times_);
     margin-bottom: 40px;
@@ -37,6 +49,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     gap: 16px;
+    margin-bottom: 32px;
     @include mq (tablet){
         display: flex;
         flex-direction: row;
@@ -124,17 +137,22 @@
 .container__btn {
     display: flex;
     justify-content: center;
+
+    @include mq(tablet){
+        justify-content: flex-end;
+    }
+    
 }
 .button__menu {
     width: 100%;
-    margin-top: 32px;
+    
     padding: 15px 24px;
     letter-spacing: 0;
     @include mq (mobile){
         width: 236px;
     }
     @include mq (tablet){
-        position: absolute;
+        position: relative;
         bottom: 0;
         right: 0;
     }
