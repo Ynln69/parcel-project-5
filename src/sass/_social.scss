@@ -1,4 +1,7 @@
 .social {
+  z-index: 1000;
+  position: relative;
+  @extend %list;
   &__link {
     width: 24px;
     height: 24px;

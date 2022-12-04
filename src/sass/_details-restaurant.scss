@@ -38,29 +38,35 @@
         ),
         url(../images/desktop/homepage-book-a-table-desktop@2x.jpg);
     }
+  }}
+.details__title{
+  margin-bottom: 12px;
+  @include mq(tablet){
+    margin-bottom: 16px;
   }
 }
-.details__title {
+.logo-details{
   font-family: font(_film_);
   font-weight: 700;
   font-size: 40px;
+  text-decoration: none;
+  color: var(--wight-text-color);
 
   line-height: calc(43 / 40);
   letter-spacing: 0.3em;
-  color: var(--wight-text-color);
-  margin-bottom: 12px;
+  
 
   text-transform: uppercase;
   @include mq(tablet) {
     font-size: 64px;
     line-height: calc(69 / 64);
-    margin-bottom: 16px;
+    
   }
 
   @include mq(desktop) {
     font-size: 64px;
     line-height: 69px;
-    margin-bottom: 16px;
+    
   }
 }
 .details__subtitle {
@@ -90,30 +96,78 @@
   }
 }
 .details__thumb {
+ 
   padding-bottom: 40px;
   @include mq(tablet) {
+    display: flex;
     padding-bottom: 96px;
+    flex-direction: row-reverse;
   }
 
   @include mq(desktop) {
     padding-bottom: 94px;
   }
 }
-
-.details__btn__thumb .button {
-  padding: 14px 24px;
+.details__pictures{
+  @extend %list;
   display: flex;
-  flex-direction: column;
-  margin-bottom: 16px;
+  gap: 20px;
+  margin-left: 33px;
+
+
+  position: relative;
+  height: 270px;
+  @media screen and (min-width: 1024px) {
+    height: 270px;
+  }
 }
-.details__btn__thumb {
-  margin-bottom: -16px;
-  @include mq(tablet) {
-    padding-left: 47px;
+.details__pictures-thumb{
+  position: relative;
+  height: 270px;
+  @media screen and (min-width: 1024px) {
+    height: 270px;
+}}
+.details__item{
+  @media screen and (max-width: 1023px) {
+    position: absolute;
+    top: -20px;
+    right: 90px;
+    height: 270px;
   }
 
   @include mq(desktop) {
-    padding-left: 85px;
+    height: 270px;
+  }
+}
+
+.details__pic{
+  width: 100%;
+  display: block;
+}
+
+.details__btn__thumb .button {
+  padding: 14px 26px;
+  margin-bottom: 16px;
+  width: 236px;
+  
+  
+  
+}
+
+.details__btn__thumb {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -16px;
+  margin-left: 89px;
+  margin-top: 80px;
+  
+  @include mq(tablet) {
+    margin-left: 47px;
+    margin-top:198px;
+  }
+
+  @include mq(desktop) {
+    margin-left: 85px;
   }
 }
 
