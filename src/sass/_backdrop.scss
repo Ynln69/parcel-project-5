@@ -13,6 +13,8 @@
 
   transition: visibility var(--transition-duration) var(--cubic-primary),
     opacity var(--transition-duration) var(--cubic-primary);
+
+  z-index: 1001; //хто більше?
 }
 
 .backdrop--is-hidden {
