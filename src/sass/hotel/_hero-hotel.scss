@@ -150,17 +150,4 @@
     }
   }
 }
-.rooms__container-btn{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 16px;
-}
-.rooms__btn {
-  width: 236px;
-  padding: 14px 37px;
-  letter-spacing: 0;
-  &--s {
-    padding:14px 65px;
-  }
-}
+
