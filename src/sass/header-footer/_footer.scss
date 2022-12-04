@@ -25,7 +25,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 85px;
+  gap: res(85px);
 
   @include mq(tablet) {
     gap: 163px;
@@ -41,7 +41,7 @@
   color: var(--yellow-text-color);
   font-family: font(_film_);
   font-weight: Bold;
-  font-size: 40px;
+  font-size: res(40px);
   line-height: calc(43 / 40);
   letter-spacing: 0.3em;
 
@@ -52,9 +52,9 @@
 }
 .nav-thumb {
   display: block;
-  padding-right: 15px;
+  padding-right: res(15px);
   @include mq(mobile) {
-    width: 127px;
+    width: res(127px);
   }
 
   @include mq(tablet) {
@@ -89,7 +89,7 @@
 }
 .footer-nav__link {
   font-weight: 500;
-  font-size: 20px;
+  font-size: res(20px);
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -99,7 +99,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: res(20px);
   justify-content: flex-end;
 
   @include mq(tablet) {

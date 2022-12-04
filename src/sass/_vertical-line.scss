@@ -20,23 +20,17 @@
     background: linear-gradient(90deg, $background);
   }
 
-  /* height: 1000px;          для тесту
-   margin-inline: auto;   */
-
   background: rgba(255, 255, 255, 0);
 
-  // %mod {
-  // }
-
   &--ligth {
-    @include color-line(140px 274px);
+    @include color-line(res(140px) res(274px));
 
     @media screen and (min-width: $container-width-tablet) {
-      @include color-line(278px 511px 746px);
+      @include color-line(res(278px) res(511px) res(746px));
     }
 
     @media screen and (min-width: $container-width-desktop) {
-      @include color-line(338px 640px 942px);
+      @include color-line(res(338px) res(640px) res(942px));
     }
   }
 
@@ -48,14 +42,14 @@
   &--footer {
     $color: var(--dark-v-line-color);
 
-    @include color-line(264px);
+    @include color-line(res(264px));
 
     @media screen and (min-width: $container-width-tablet) {
-      @include color-line(511px 750px);
+      @include color-line(res(511px) res(750px));
     }
 
     @media screen and (min-width: $container-width-desktop) {
-      @include color-line(640px 942px);
+      @include color-line(res(640px) res(942px));
     }
   }
 }
