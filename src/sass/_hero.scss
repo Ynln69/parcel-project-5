@@ -1,4 +1,6 @@
 .hero {
+  margin-inline: auto;
+  max-width: $container-width-mobile;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url(../images/mobile/homepage-hero-mobile.jpg);
   background-position: center;
@@ -11,6 +13,7 @@
   }
 
   @include mq(tablet) {
+    max-width: $container-width-tablet;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/tablet/homepage-hero-tablet.jpg);
 
@@ -24,6 +27,7 @@
   }
 
   @include mq(desktop) {
+    max-width: $container-width-desktop;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/desktop/homepage-hero-desktop.jpg);
 
