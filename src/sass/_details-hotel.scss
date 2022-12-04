@@ -78,7 +78,7 @@ height: 620px;
 
 .service__list {
     // width: 274px;
-
+@extend %list;
     display: flex;
     margin-right: 33px;
 
@@ -210,7 +210,7 @@ color: #BABABA;
     }
 }
 
-.button {
+.box-button--position {
     
     @media screen and (min-width: 414px) {
     font-size: 15px;
