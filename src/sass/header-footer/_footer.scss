@@ -1,5 +1,15 @@
 .footer {
+  margin-inline: auto;
+  max-width: $container-width-mobile;
   background-color: var(--footer-bg-color);
+
+  @media screen and (min-width: $container-width-tablet) {
+    max-width: $container-width-tablet;
+  }
+
+  @media screen and (min-width: $container-width-desktop) {
+    max-width: $container-width-desktop;
+  }
 
   &__container {
     padding-block: 40px;
