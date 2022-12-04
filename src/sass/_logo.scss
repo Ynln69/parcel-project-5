@@ -11,9 +11,8 @@
   @include mq(tablet) {
     font-size: 40px;
   }
-
-  //@include mq(desktop) {
-    // margin-left: 60px;
-    // margin-right: 94px;
-  }
-
+}
+  // @include mq(desktop) {
+  //   margin-left: 60px;
+  //   margin-right: 94px;
+  // }
