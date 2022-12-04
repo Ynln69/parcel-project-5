@@ -1,12 +1,20 @@
 .rooms-about {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 32px;
   padding-bottom: 20px;
 
+  @include mq (mobile){
+    width: $container-width-mobile;
+  }
   @include mq (tablet){
+    width: $container-width-tablet;
     padding-top: 62px;
     padding-bottom: 40px;
   }
   @include mq (desktop){
+    width: $container-width-desktop;
     padding-top: 72px;
   }
 
@@ -151,38 +159,53 @@
 }
 
 .rooms-about__img {
+  margin-bottom: 32px;
   margin-left: auto;
   box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 
   @include mq(tablet) {
     width: 400px;
-    margin: 0;
-
-    &--reverso {
-      width: 400px;
-      box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
-      border-radius: 2px;
-    }
+    margin-bottom: 48px;
   }
-
   @include mq(desktop) {
     width: 460px;
-
-    &--reverso {
-      width: 460px;
-    }
+  }
+}
+.rooms-about__img--reverso {
+  margin-bottom: 32px;
+  box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  @include mq (tablet){
+    margin-bottom: 48px;
+    width: 400px;
+  }
+  @include mq(desktop) {
+    width: 460px;
   }
 }
 .rooms__container-btn{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 20px;
+    margin-bottom: 32px;
+
+  @include mq (tablet){
+    position: absolute;
+    right: 47px;
+    bottom: 145px;
+    align-items: flex-end;
+    margin-bottom: 32px;
+  }
 }
 .rooms__container-button {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  @include mq (tablet){
+    align-items: flex-start;
+  }
 }
 .rooms__btn {
   width: 236px;
