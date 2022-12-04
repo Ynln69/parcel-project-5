@@ -1,12 +1,34 @@
 .visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: inset 0px 0px 250px 1px rgba(255, 255, 255, 0.7),
+    inset 1px 30px 500px 20px rgba(0, 0, 250, 0.37);
+
+  &:not(.not-hidden) {
+    @include transition(
+      opacity visibility box-shadow background-color,
+      700ms 750ms 250ms 250ms,
+      var(--cubic-primary),
+      0ms 0ms 0ms 250ms
+    );
   }
+}
+
+.o-padding {
+  overflow: hidden;
+}

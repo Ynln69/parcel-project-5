@@ -1,0 +1,73 @@
+.vertical-line {
+  $color: var(--ligth-v-line-color);
+  height: 100%;
+
+  @mixin color-line($position) {
+    $color-bg: transparent;
+    $background: ();
+
+    @each $i in $position {
+      $background: append(
+        $background,
+        (
+          $color-bg calc(#{$i} - 1px),
+          $color #{$i},
+          $color-bg calc(#{$i} + 1px)
+        ),
+        $separator: comma
+      );
+    }
+    background: linear-gradient(90deg, $background);
+  }
+
+  /* height: 1000px;          для тесту
+   margin-inline: auto;   */
+
+  background: rgba(255, 255, 255, 0);
+
+  // %mod {
+  // }
+
+  &--ligth {
+    @include color-line(140px 274px);
+
+    @media screen and (min-width: $container-width-tablet) {
+      @include color-line(278px 511px 746px);
+    }
+
+    @media screen and (min-width: $container-width-desktop) {
+      @include color-line(338px 640px 942px);
+    }
+  }
+
+  &--dark {
+    @extend .vertical-line--ligth;
+    $color: var(--dark-v-line-color);
+  }
+
+  &--footer {
+    $color: var(--dark-v-line-color);
+
+    @include color-line(264px);
+
+    @media screen and (min-width: $container-width-tablet) {
+      @include color-line(511px 750px);
+    }
+
+    @media screen and (min-width: $container-width-desktop) {
+      @include color-line(640px 942px);
+    }
+  }
+}
+
+/*
+<div class="vertical-line vertical-line--ligth">
+</div>
+
+<div class="vertical-line vertical-line--dark">
+</div>
+
+<div class="vertical-line vertical-line--footer">
+</div>
+
+*/

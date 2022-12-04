@@ -1,29 +1,39 @@
-<ul class="header__nav">
-  <li class="header__nav-restaurant">
-    <a href="#" class="header__nav-restaurant__head">Ресторан</a>
-    <a href="tel:+380955559533" class="header__nav-restaurant__phone">
-      <svg class="header__nav-svg">
-        <use href="./images/symbol-defs.svg#icon-phone"></use>
-      </svg>
-      <span class="number">095 555 95 33</span>
-    </a>
-  </li>
-  <li class="header__nav-hotel">
-    <a href="#" class="header__nav-hotel__head">Готель</a>
-    <ul class="header__nav-hotel__phone">
-      <li>
-        <a href="tel:+3800668491089" class="header__nav-hotel__phone--item">
-          <svg class="header__nav-svg">
-            <use href="./images/symbol-defs.svg#icon-phone"></use>
-          </svg>
-          <span class="number"> 066 849 10 89</span>
-        </a>
-      </li>
-      <li>
-        <a href="tel:+380672758540" class="header__nav-hotel__phone--item">
-          <span class="number">067 275 85 40</span></a
-        >
-      </li>
-    </ul>
-  </li>
-</ul>
+<header class="header">
+  <div class="container">
+    <nav class="header-nav">
+      <ul class="header-nav__list">
+        <a class="logo--header" href="./index.html">mimiho</a>
+        <li class="header-nav__item">
+          <a href="./page-restaurant.html" class="header-nav__link">Ресторан</a>
+          <a
+            href="tel:+380955559533"
+            class="header-nav__phone header-nav__phone--restaraunt"
+          >
+            <svg class="header-nav__svg">
+              <use href="./images/symbol-defs.svg#icon-phone"></use>
+            </svg>
+            <span class="header-nav__number">095 555 95 33</span>
+          </a>
+        </li>
+        <li class="header-nav__item">
+          <a href="./page-hotel.html" class="header-nav__link">Готель</a>
+          <ul class="header-nav__numbers">
+            <li>
+              <a href="tel:+3800668491089" class="header-nav__phone">
+                <svg class="header-nav__svg">
+                  <use href="./images/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                <span class="header-nav__number"> 066 849 10 89</span>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+380672758540" class="header-nav__phone">
+                <span class="header-nav__number">067 275 85 40</span></a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
