@@ -1,258 +1,210 @@
+//M Startsev-часткова корекція стилів, вимагає доробки
 .logo-hotel {
-    font-family: font(_film_);
-    font-style: normal;
-    font-weight: 700;
+  font-family: font(_film_);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 69px;
+  letter-spacing: 0.3em;
+  text-decoration: none;
+  color: var(--wight-text-color);
+
+  font-size: 40px;
+  margin-left: 150px;
+
+  @media screen and (min-width: 1024px) {
+    margin-left: 520px;
     font-size: 64px;
-    line-height: 69px;
-    letter-spacing: 0.3em;
-    text-decoration: none;
+  }
+
+  @media screen and (min-width: 1280px) {
     margin-left: 640px;
-    color: var(--wight-text-color);
-
-    @media screen and (min-width: 414px) {
-        font-size: 40px;
-        margin-left: 150px;
-    }
-
-    @media screen and (min-width: 1024px) {
-
-        margin-left: 520px;
-        font-size: 64px;
-    }
+  }
 }
 
-
 .details-hotel {
+  margin-inline: auto;
+
+  background-image: url(../images/mobile/homepage-hotel-amet-mobile.jpg);
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/mobile/homepage-hotel-amet-mobile.jpg);
+
+  width: 414px;
+  height: 735px;
+
+  @media screen and (min-width: 1024px) {
+    background-image: url(../images/tablet/homepage-hotel-amet-tablet.jpg);
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../images/tablet/homepage-hotel-amet-tablet.jpg);
+    width: 1024px;
+    height: 620px;
+  }
+
+  @media screen and (min-width: 1280px) {
     background-image: url(../images/desktop/homepage-hotel-amet-desktop.jpg);
 
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
-      ),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url(../images/desktop/homepage-hotel-amet-desktop.jpg);
 
     width: 1280px;
-height: 620px;
-
-@media screen and (min-width: 414px) {
-
-    background-image: url(../images/mobile/homepage-hotel-amet-mobile.jpg);
-
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
-      ),
-      url(../images/mobile/homepage-hotel-amet-mobile.jpg);
-
-    width: 414px;
-    height: 735px;
-}
-
-@media screen and (min-width: 1024px) {
-
-    background-image: url(../images/tablet/homepage-hotel-amet-tablet.jpg);
-
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
-      ),
-      url(../images/tablet/homepage-hotel-amet-tablet.jpg);
-    width: 1024px;
-height: 620px;
-}
+    height: 620px;
+  }
 }
 
 .box__logo {
-    
-    @media screen and (min-width: 414px) {
-        padding-top: 24px;
-    }
+  padding-top: 24px;
 
-    @media screen and (min-width: 1024px) {
-        padding-top: 30px;
-    }
+  @media screen and (min-width: 1024px) {
+    padding-top: 30px;
+  }
 }
 
-
-
 .service__list {
-    // width: 274px;
+  // width: 274px;
 
-    display: flex;
-    margin-right: 33px;
+  display: flex;
+  margin-right: 33px;
 
-    @media screen and (min-width: 414px) {
-        position: relative;
+  position: relative;
+  height: 270px;
+
+  @media screen and (min-width: 1024px) {
     height: 270px;
-        }
-
-        @media screen and (min-width: 1024px) {
-           
-        height: 270px;
-            }
- 
+  }
 }
 
 .service__item {
-
-    @media screen and (min-width: 414px) and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     position: absolute;
     top: -20px;
     left: 90px;
-height: 270px;
-    }
-
-    @media screen and (min-width: 1024px) {
-       
     height: 270px;
-        }
- 
+  }
+
+  @media screen and (min-width: 1024px) {
+    height: 270px;
+  }
 }
 
 .details-hotel__title {
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    letter-spacing: 0.02em;
-    margin-left: 745px;
-    margin-top: 16px;
-    color:var(--wight-text-color);
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+  color: var(--wight-text-color);
 
-@media screen and (min-width: 414px) {
-    font-size: 20px;
-    margin-left: 205px;
-    margin-top: 12px;
+  font-size: 20px;
+  margin-left: 205px;
+  margin-top: 12px;
 
-}
-
-@media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     font-size: 24px;
     margin-left: 635px;
     margin-top: 16px;
+  }
 
-}
+  @media screen and (min-width: 1280px) {
+    margin-left: 745px;
+  }
 }
 
 .details-hotel__text {
-    width: 585px;
+  width: 585px;
 
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.02em;
-    margin-left: 285px;
-    margin-top: 8px;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.02em;
 
-    color: var(--second-grey-color);
+  color: var(--second-grey-color);
 
-@media screen and (min-width: 414px) {
-    width: 243px;
-    font-size: 12px;
-    margin-left: 32px;
-    margin-top: 20px;
+  width: 243px;
+  font-size: 12px;
+  margin-left: 32px;
+  margin-top: 20px;
 
-}
-
-@media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     width: 549px;
     font-size: 16px;
     margin-left: 175px;
     margin-top: 8px;
+  }
 
-}
+  @media screen and (min-width: 1280px) {
+    margin-left: 285px;
+  }
 }
 
 .service {
+  margin-top: 48px;
+  margin-inline: auto;
 
-    @media screen and (min-width: 414px) {
-        margin-top: 48px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    @media screen and (min-width: 1024px) {
-        margin-left: 25px;
-        display: flex;
-         margin-top: 40px;
-    }
-  
+  @media screen and (min-width: 1024px) {
+    margin-left: 25px;
+    display: flex;
+    margin-top: 40px;
+  }
 }
 
 .service__images--centered {
-    @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     margin-right: 34px;
     margin-left: 34px;
-    // height: 270px;   
-    }
-    
+    // height: 270px;
+  }
 }
 
 .box-button {
+  display: flex;
+  flex-direction: column;
+  //   margin-top: 150px;
 
-    display: flex;
-    flex-direction: column;
-    margin-top: 150px;
-    @media screen and (min-width: 414px) {
-      
-        margin-top: 40px;
-    
-    }
+  margin-top: 40px;
 
-    @media screen and (min-width: 1024px) {
-      
-        margin-top: 155px;
-    
-    }
+  @media screen and (min-width: 1024px) {
+    margin-top: 155px;
+  }
 }
 
 .button {
-    
-    @media screen and (min-width: 414px) {
+  font-size: 15px;
+  width: 236px;
+  height: 48px;
+  padding: 14px 26px;
+  margin-left: 70px;
+
+  @media screen and (min-width: 1024px) {
     font-size: 15px;
     width: 236px;
-height: 48px;
-    padding: 14px 26px;
-    margin-left: 70px;
-    
-    }
-
-    @media screen and (min-width: 1024px) {
-        font-size: 15px;
-        width: 236px;
     height: 48px;
-        padding: 14px 26px;
-       
-        margin-left: auto;
-        margin-right: auto;
-        }
+    padding: 14px 26px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .service__images--tablet {
-   
-    @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     width: 162px;
-    height: 270px; 
-        }
+    height: 270px;
+  }
 }
 
 .details-hotel__button--margin {
-    margin-top: 16px;
+  margin-top: 16px;
 }
-
 
 .details-hotel__icon {
-    fill:var(--wight-text-color);
+  fill: var(--wight-text-color);
 }
 
-
 .details-hotel__icon--centered {
-    margin-left: 745px;
-    margin-top: 24px;
+  margin-left: 745px;
+  margin-top: 24px;
 }
 
 // .details-hotel__icon--margin {
 //     margin-left: 32px;
 // }
-
