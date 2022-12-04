@@ -6,6 +6,12 @@
   }
 }
 
+.container-about{
+  @include mq(mobile-only){
+    overflow: hidden;
+  }
+}
+
 .about__text {
   width: 258px;
   margin-bottom: 28px;
