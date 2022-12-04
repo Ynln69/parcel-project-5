@@ -1,161 +1,133 @@
 .details {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../images/mobile/homepage-book-a-table-mobile.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include mq(retina) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-            url(../images/mobile/homepage-book-a-table-mobile.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        
-    
-        @include mq(retina) {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-                url(../images/mobile/homepage-book-a-table-mobile@2x.jpg);
-        }
-    
-        @include mq(tablet) {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-                url(../images/tablet/homepage-book-a-table-tablet.jpg);
-    
-            @include mq(retina) {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.65),
-                        rgba(0, 0, 0, 0.65)),
-                    url(../images/tablet/homepage-book-a-table-tablet@2x.jpg);
-            }
-        }
-    
-        @include mq(desktop) {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-                url(../images/desktop/homepage-book-a-table-desktop.jpg);
-    
-            @include mq(retina) {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.65),
-                        rgba(0, 0, 0, 0.65)),
-                    url(../images/desktop/homepage-book-a-table-desktop@2x.jpg);
-            }
-        }
-             
+      url(../images/mobile/homepage-book-a-table-mobile@2x.jpg);
+  }
 
+  @include mq(tablet) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/tablet/homepage-book-a-table-tablet.jpg);
 
+    @include mq(retina) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/tablet/homepage-book-a-table-tablet@2x.jpg);
+    }
+  }
+
+  @include mq(desktop) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/desktop/homepage-book-a-table-desktop.jpg);
+
+    @include mq(retina) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/desktop/homepage-book-a-table-desktop@2x.jpg);
+    }
+  }
 }
-.details__title{
-    font-family: "Film P3", sans-serif;
-    
-    font-weight: 700;
-    font-size: 40px;
-    
-    line-height: calc(43 / 40);
-    letter-spacing: 0.3em;
-    color: var(--wight-text-color);
-    margin-bottom: 12px;
-   
-    text-transform: uppercase;
-    @include mq(tablet) {
-            font-size: 64px;
-            line-height: calc(69 / 64);
-            margin-bottom: 16px;
-    
-        }
-    
-        @include mq(desktop) {
-        font-size: 64px;
-        line-height: 69px;
-        margin-bottom: 16px;
-        
-        }
-}
-.details__subtitle{
+.details__title {
+  font-family: 'Film P3', sans-serif;
 
-    
-    font-weight: 700;
-   
-    letter-spacing: 0.02em;
-    color: var(--wight-text-color);
-    margin-bottom: 20px;
-    font-size: 20px;
-    line-height: calc(24 / 20);
+  font-weight: 700;
+  font-size: 40px;
 
-    @include mq(tablet) {
-        font-size: 24px;
-        line-height: calc(29 / 24);
-        margin-bottom: 8px;
-    
-        }
-    
-      
-}
-.details__text{
-   
-        
-        font-weight: 600;
-        
-        line-height: calc(20 / 16);
-        letter-spacing: 0.02em;
-        color: var(--second-grey-color);
-        max-width: 250px;
-        @include mq(tablet) {
-        max-width: 610px;
-        }
-        
-}
-.details__thumb{
-    
-    padding-bottom: 40px;
-    @include mq(tablet) {
-        padding-bottom:96px;
-    
-        }
-    
-        @include mq(desktop) {
-        padding-bottom: 94px;
-       
-        }
-   
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
+  color: var(--wight-text-color);
+  margin-bottom: 12px;
 
+  text-transform: uppercase;
+  @include mq(tablet) {
+    font-size: 64px;
+    line-height: calc(69 / 64);
+    margin-bottom: 16px;
+  }
+
+  @include mq(desktop) {
+    font-size: 64px;
+    line-height: 69px;
+    margin-bottom: 16px;
+  }
+}
+.details__subtitle {
+  font-weight: 700;
+
+  letter-spacing: 0.02em;
+  color: var(--wight-text-color);
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+
+  @include mq(tablet) {
+    font-size: 24px;
+    line-height: calc(29 / 24);
+    margin-bottom: 8px;
+  }
+}
+.details__text {
+  font-weight: 600;
+
+  line-height: calc(20 / 16);
+  letter-spacing: 0.02em;
+  color: var(--second-grey-color);
+  max-width: 250px;
+  @include mq(tablet) {
+    max-width: 610px;
+  }
+}
+.details__thumb {
+  padding-bottom: 40px;
+  @include mq(tablet) {
+    padding-bottom: 96px;
+  }
+
+  @include mq(desktop) {
+    padding-bottom: 94px;
+  }
 }
 
-.details__btn__thumb .button{
-
+.details__btn__thumb .button {
   padding: 14px 24px;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   margin-bottom: 16px;
-  
- 
-
 }
-.details__btn__thumb{
-   
-    margin-bottom: -16px;
-    @include mq(tablet) {
-        padding-left:47px;
-    
-        }
-    
-        @include mq(desktop) {
-        padding-left: 85px;
-       
-        }
-   
+.details__btn__thumb {
+  margin-bottom: -16px;
+  @include mq(tablet) {
+    padding-left: 47px;
+  }
+
+  @include mq(desktop) {
+    padding-left: 85px;
+  }
 }
- 
 
-.details__main{
-padding-top: 24px;
-padding-bottom: 49px;
-padding-left: 140px;
+.details__main {
+  padding-top: 24px;
+  padding-bottom: 49px;
+  padding-left: 140px;
 
-
-     @include mq(tablet) {
+  @include mq(tablet) {
     padding-top: 50px;
     padding-bottom: 40px;
     padding-left: 278;
-        
+  }
 
-     }
-
-    @include mq(desktop) {
+  @include mq(desktop) {
     padding-top: 50px;
     padding-bottom: 40px;
-padding-left: 338;
-    
-    }
+    padding-left: 338;
+  }
 }
