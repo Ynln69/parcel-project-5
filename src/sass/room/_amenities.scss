@@ -5,6 +5,10 @@
     @include mq(tablet-only){
         padding: 48px 0;
     }
+    @include mq(desktop){
+        padding-top: 48px;
+        padding-left: 85px;
+    }
 
     &__title {
         font-family: font(_times_);
@@ -90,7 +94,7 @@
 
    
 }
-.button__secondary {
+.amenities__button {
     display: block;
     width: 100%;
     margin-top: 32px;
@@ -103,7 +107,5 @@
     @include mq (tablet){
         width: 434px;
         padding: 18px 38px;
-        font-size: 23px;
-        line-height: calc(29/23);
     }
 }
