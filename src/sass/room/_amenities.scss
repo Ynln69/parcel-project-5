@@ -1,13 +1,8 @@
 .amenities {
   width: 100%;
-  padding: 32px 0;
+  padding:  0;
 
-  @include mq(tablet-only) {
-    padding: 48px 0;
-  }
-  @include mq(desktop) {
-    padding-top: 48px;
-  }
+  
 
   &__title {
     font-family: font(_times_);
