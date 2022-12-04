@@ -1,18 +1,21 @@
 .container {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
 
     @include mq(mobile) {
       width: $container-width-mobile;
+      padding: 0 15px;
     }
 
     @include mq(tablet) {
       width: $container-width-tablet;
+      padding: 0 47px;
     }
 
     @include mq(desktop) {
       width: $container-width-desktop;
+      padding: 0 85px;
     }
 }
+

@@ -1,19 +1,32 @@
-.hero-room
-{
-    /**/
+.hero-room__img {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
-.hero-room__background
-{
-    background-color: var(--main-bg-color);
-}
-.hero-room__title
-{
-    font-family: 'Times New Roman', Times, serif;
+.hero-room__title {
+    width: 100%;
+    margin-bottom: 14px;
+
     color: var(--wight-text-color);
+    font-family: font(_times_);
+    font-weight: 700;
+    font-size: 28px;
+    text-transform: uppercase;
+    line-height: calc(32/28);
+    letter-spacing: 0.05em;
 }
-.hero-room__description
-{
-    font-family: 'Times New Roman', Times, serif;
+.hero-room__title-little {
+    text-transform: lowercase;
+}
+.hero-room__text {
+    width: 100%;
+    margin-bottom: 30px;
+
     color: var(--wight-text-color);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: calc(15/12);
+    letter-spacing: 0.02em;
 }
+
 

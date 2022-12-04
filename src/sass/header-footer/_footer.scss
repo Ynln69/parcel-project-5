@@ -1,0 +1,141 @@
+.footer {
+  padding: 0;
+  margin: 0 auto;
+  background-color: var(--footer-bg-color);
+
+  @include mq(mobile) {
+    max-width: $container-width-mobile;
+  }
+
+  @include mq(tablet) {
+    max-width: $container-width-tablet;
+  }
+  @include mq(desktop) {
+    max-width: $container-width-desktop;
+  }
+
+  &__container {
+    padding-block: 40px;
+    @include mq(tablet) {
+      padding-block: 80px;
+    }
+  }
+}
+.footer-thumb {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 85px;
+
+  @include mq(tablet) {
+    gap: 163px;
+
+    @include mq(desktop) {
+      gap: 231px;
+    }
+  }
+}
+.logo {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--yellow-text-color);
+  font-family: font(_film_);
+  font-weight: Bold;
+  font-size: 40px;
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
+
+  @include mq(tablet) {
+    font-size: 64px;
+    line-height: 1.078;
+  }
+}
+.nav-thumb {
+  display: block;
+  padding-right: 15px;
+  @include mq(mobile) {
+    width: 127px;
+  }
+
+  @include mq(tablet) {
+    width: 458px;
+    display: flex;
+    gap: 137px;
+  }
+
+  @include mq(desktop) {
+    width: 546px;
+    gap: 199px;
+  }
+}
+.footer-nav__list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 32px;
+
+  @include mq(tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+}
+
+.footer-nav__item {
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+.footer-nav__link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--yellow-text-color);
+}
+.social-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-end;
+
+  @include mq(tablet) {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+.social-list__item {
+  padding: 0;
+  margin: 0;
+
+  @include mq(tablet) {
+    padding: 10px 12px;
+    border: 0.5px solid var(--yellow-text-color);
+    border-radius: 2px;
+    width: 144px;
+  }
+}
+
+.social-list__link {
+  fill: var(--yellow-text-color);
+  color: var(--yellow-text-color);
+  text-decoration: none;
+
+  @include mq(tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.social-list__hidden {
+  display: none;
+
+  @include mq(tablet) {
+    display: flex;
+  }
+}

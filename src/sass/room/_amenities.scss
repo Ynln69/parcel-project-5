@@ -1,8 +1,17 @@
 .amenities {
     width: 100%;
-    padding: 32px 15px;
+    padding: 32px 0;
+
+    @include mq(tablet-only){
+        padding: 48px 0;
+    }
+    @include mq(desktop){
+        padding-top: 48px;
+        padding-left: 85px;
+    }
 
     &__title {
+        font-family: font(_times_);
         margin-bottom: 16px;
 
         color: var(--black-text-color);
@@ -15,28 +24,88 @@
         @extend %list;
     }
     &__subtitle {
+        font-family: font(_times_);
         margin-top: 32px;
         margin-bottom: 16px;
 
         color: var(--black-text-color);
         font-weight: 700;
         font-size: 24px;
-        line-height: 28px;
+        line-height: calc(28/24);
         text-transform: uppercase;
     }
+    &__content{
+        @include mq (tablet){
+            display: flex;
+            gap: 80px;
+        }
+    }
     &__text {
-        width: 384px;
+        width: 100%;
         margin-bottom: 16px;
 
         color: var(--hotel-text-color);
         font-weight: 700;
         font-size: 16px;
-        line-height: 20px;
+        line-height: calc(20/16);
         letter-spacing: 0.02em;
         text-transform: none;
+
+        @include mq (mobile){
+            width: 384px;
+        }
+        @include mq (mobile){
+            width: 400px;
+        }
     }
+    &__text--about {
+        @include mq(tablet){
+            width: 757px;
+        }
+    }
+    &__link {
+        @extend %link;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    
+        color: var( --brown-text-color);
+        fill: currentColor;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: calc(20/16);
+        letter-spacing: 0.02em;
+        
+        @include mq (tablet){
+            font-size: 20px;
+        line-height: calc(24/20);
+        }
+    }
+    &__content-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        @include mq (tablet){
+            align-items: flex-end;
+        }
 }
-.button__secondary {
+
+   
+}
+.amenities__button {
     display: block;
+    width: 100%;
     margin-top: 32px;
+    margin-bottom: 20px;
+    padding: 20px 43px;
+
+    @include mq (mobile){
+        width: 384px;
+    }
+    @include mq (tablet){
+        width: 434px;
+        padding: 18px 38px;
+    }
 }

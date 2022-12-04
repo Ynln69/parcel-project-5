@@ -1,21 +1,42 @@
-<section class="hotel-about">
+<section class="rooms-about">
   <div class="container">
-    <p class="hotel-about__descr">Amet minim mollit non</p>
-    <h2 class="hotel-about__title">MIMIHO</h2>
-    <h3 class="hotel-about__subtitle">ДВОМІСНИЙ НОМЕР</h3>
-    <p class="hotel-about__text">
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-      Velit officia consequat duis enim velit mollit. Exercitation veniam
-      consequat sunt nostrud amet.
-    </p>
-    <img
-      srcset="
-        ./images/mobile/room-content1-mobile.jpg    1x,
-        ./images/mobile/room-content1-mobile@2x.jpg 2x
-      "
-      src="./images/mobile/room-content1-mobile.jpg"
-      alt="кімната"
-      class="hotel-about__img"
-    />
+    <div class="rooms-about__wrapper">
+      <div class="rooms-about__text-wrapper">
+        <p class="rooms-about__descr">Amet minim mollit non</p>
+        <h2 class="rooms-about__title">MIMIHO</h2>
+        <h3 class="rooms-about__subtitle">ДВОМІСНИЙ НОМЕР</h3>
+        <p class="rooms-about__text">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+      </div>
+      <img
+        srcset="
+          ./images/mobile/room-content1-mobile.jpg    1x,
+          ./images/mobile/room-content1-mobile@2x.jpg 2x
+        "
+        src="./images/mobile/room-content1-mobile.jpg"
+        alt="кімната"
+        class="rooms-about__img"
+      />
+    </div>
+    <!-- Slider -->
+    <div class="rooms__container-btn">
+      <a href="./page-room.html" target="_blank"
+        ><button
+          type="button"
+          class="button button__primary button__primary--black rooms__btn rooms__btn--s"
+        >
+          Детальніше
+        </button></a
+      >
+      <button
+        type="button"
+        class="button button__primary button__primary--black rooms__btn data-price-modal-open"
+      >
+        Переглянути ціни
+      </button>
+    </div>
   </div>
 </section>

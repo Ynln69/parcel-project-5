@@ -1,0 +1,168 @@
+.rooms-about {
+  padding-top: 32px;
+  padding-bottom: 20px;
+
+  &--dark {
+    background-color: var(--secondary-bg-color);
+  }
+}
+
+.rooms-about__wrapper {
+  @include mq(tablet) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+
+    position: relative;
+    top: -58px;
+    right: 20px;
+
+    &--reverso {
+      display: flex;
+      flex-direction: row-reverse;
+      left: 20px;
+    }
+  }
+
+  @include mq(desktop) {
+    gap: 48px;
+  }
+}
+
+.rooms-about__text-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  &--reverso {
+    align-items: end;
+  }
+
+  @include mq(tablet) {
+    max-width: 424px;
+  }
+
+  @include mq(desktop) {
+    max-width: 509px;
+  }
+}
+
+.rooms-about__descr {
+  margin-bottom: 8px;
+
+  font-family: 'Times New Roman';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  color: var(--section-title-color);
+
+  &--reverso {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  @include mq(tablet) {
+    margin-bottom: 4px;
+
+    font-size: 32px;
+  }
+}
+
+.rooms-about__title {
+  margin-bottom: 32px;
+
+  font-family: 'Film P3';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
+  color: var(--mimino-second-color);
+
+  &--reverso {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  @include mq(tablet) {
+    margin-bottom: 62px;
+
+    font-size: 64px;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: 72px;
+  }
+}
+
+.rooms-about__subtitle {
+  margin-bottom: 12px;
+
+  font-family: 'Times New Roman';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.05em;
+  color: var(--black-text-color);
+  text-transform: uppercase;
+
+  & span {
+    text-transform: lowercase;
+  }
+
+  @include mq(tablet) {
+    margin-bottom: 16px;
+
+    font-size: 30px;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: 24px;
+
+    font-size: 36px;
+  }
+}
+
+.rooms-about__text {
+  margin-bottom: 32px;
+  max-width: 258px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.02em;
+
+  @include mq(tablet) {
+    font-size: 16px;
+
+    max-width: 439px;
+  }
+
+  @include mq(desktop) {
+    font-weight: 700;
+  }
+}
+
+.rooms-about__img {
+  margin-left: auto;
+  box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+
+  @include mq(tablet) {
+    width: 400px;
+    margin: 0;
+
+    &--reverso {
+      width: 400px;
+      box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+      border-radius: 2px;
+    }
+  }
+
+  @include mq(desktop) {
+    width: 460px;
+
+    &--reverso {
+      width: 460px;
+    }
+  }
+}
