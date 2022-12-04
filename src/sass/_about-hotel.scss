@@ -1,10 +1,4 @@
-.about {
-  padding-top: 16px;
 
-  @include mq(tablet) {
-    padding: 0;
-  }
-}
 
 .about__text-hotel {
   margin-left: auto;
