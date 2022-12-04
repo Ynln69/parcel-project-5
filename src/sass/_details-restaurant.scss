@@ -1,4 +1,6 @@
 .details {
+  margin-inline: auto;
+  width: $container-width-mobile;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url(../images/mobile/homepage-book-a-table-mobile.jpg);
   background-position: center;
@@ -11,6 +13,7 @@
   }
 
   @include mq(tablet) {
+    width: $container-width-tablet;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/tablet/homepage-book-a-table-tablet.jpg);
 
@@ -24,6 +27,7 @@
   }
 
   @include mq(desktop) {
+    width: $container-width-desktop;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/desktop/homepage-book-a-table-desktop.jpg);
 
@@ -37,8 +41,7 @@
   }
 }
 .details__title {
-  font-family: 'Film P3', sans-serif;
-
+  font-family: font(_film_);
   font-weight: 700;
   font-size: 40px;
 
