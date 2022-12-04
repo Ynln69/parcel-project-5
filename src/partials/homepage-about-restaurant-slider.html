@@ -1,0 +1,67 @@
+<!--
+ Андрій Трюхан @tryuhan
+ Цей partial для слайдера в секції About. Використовує для оформлення компонент slider (_slider.scss).
+ Підключати в свою секцію через include.
+ Позіціонувати або вішаете в цьому файлі свій мікс клас на div з классом swiper. Або у себе в секції обгортаете цей include в додаткову обгортку зі своїм класом-елементом та позіціонуєте її.
+-->
+
+<!-- Slider main container -->
+
+<div class="about-section-slider swiper">
+  <!-- Additional required wrapper -->
+  <div class="about-section-slider__wrapper swiper-wrapper">
+    <!-- Slides -->
+    <div class="about-section-slider__slide swiper-slide">
+      <img
+        srcset="
+          ./images/mobile/img-slider-1.jpg  245w,
+          ./images/tablet/img-slider-1.jpg  194w,
+          ./images/desktop/img-slider-1.jpg 254w
+        "
+        sizes="(min-width: 1280px) 254px, (min-width: 1024px) 194px, (min-width: 414px) 245w, 100vw"
+        class="about-section-slider__img"
+        src="./images/mobile/img-slider-1.jpg"
+
+        alt=""
+      />
+    </div>
+    <div class="about-section-slider__slide swiper-slide">
+      <img
+      srcset="
+      ./images/mobile/img-slider-2.jpg  245w,
+      ./images/tablet/img-slider-2.jpg  194w,
+      ./images/desktop/img-slider-2.jpg 254w
+    "
+    sizes="(min-width: 1280px) 254px, (min-width: 1024px) 194px, (min-width: 414px) 245w, 100vw"
+        class="about-section-slider__img"
+        src="./images/mobile/img-slider-2.jpg"
+
+        alt=""
+      />
+    </div>
+    <div class="about-section-slider__slide swiper-slide">
+      <img
+      srcset="
+      ./images/mobile/img-slider-3.jpg  245w,
+      ./images/tablet/img-slider-3.jpg  194w,
+      ./images/desktop/img-slider-3.jpg 254w
+    "
+    sizes="(min-width: 1280px) 254px, (min-width: 1024px) 194px, (min-width: 414px) 245w, 100vw"
+        class="about-section-slider__img"
+        src="./images/mobile/img-slider-3.jpg"
+
+
+        alt=""
+      />
+    </div>
+    <!-- /.swiper-wrapper -->
+  </div>
+  <!-- If we need navigation buttons -->
+  <div
+    class="about-section-slider__button-prev swiper-button-prev"
+  ></div>
+  <div
+    class="about-section-slider__button-next swiper-button-next"
+  ></div>
+  <!-- /swiper -->
+</div>

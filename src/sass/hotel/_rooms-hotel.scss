@@ -2,6 +2,14 @@
   padding-top: 32px;
   padding-bottom: 20px;
 
+  @include mq (tablet){
+    padding-top: 62px;
+    padding-bottom: 40px;
+  }
+  @include mq (desktop){
+    padding-top: 72px;
+  }
+
   &--dark {
     background-color: var(--secondary-bg-color);
   }
@@ -15,7 +23,7 @@
     gap: 42px;
 
     position: relative;
-    top: -58px;
+    top: -98px;
     right: 20px;
 
     &--reverso {
@@ -23,6 +31,10 @@
       flex-direction: row-reverse;
       left: 20px;
     }
+  }
+
+  @include mq(desktop) {
+    gap: 48px;
   }
 }
 
@@ -37,12 +49,16 @@
   @include mq(tablet) {
     max-width: 424px;
   }
+
+  @include mq(desktop) {
+    max-width: 509px;
+  }
 }
 
 .rooms-about__descr {
   margin-bottom: 8px;
 
-  font-family: 'Times New Roman';
+  font-family: font(_times_);
   font-weight: 400;
   font-size: 20px;
   line-height: calc(23 / 20);
@@ -63,7 +79,7 @@
 .rooms-about__title {
   margin-bottom: 32px;
 
-  font-family: 'Film P3';
+  font-family: font(_film_);
   font-weight: 700;
   font-size: 40px;
   line-height: calc(43 / 40);
@@ -80,12 +96,16 @@
 
     font-size: 64px;
   }
+
+  @include mq(desktop) {
+    margin-bottom: 72px;
+  }
 }
 
 .rooms-about__subtitle {
   margin-bottom: 12px;
 
-  font-family: 'Times New Roman';
+  font-family: font(_times_);
   font-weight: 700;
   font-size: 24px;
   line-height: calc(28 / 24);
@@ -101,6 +121,12 @@
     margin-bottom: 16px;
 
     font-size: 30px;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: 24px;
+
+    font-size: 36px;
   }
 }
 
@@ -118,6 +144,10 @@
 
     max-width: 439px;
   }
+
+  @include mq(desktop) {
+    font-weight: 700;
+  }
 }
 
 .rooms-about__img {
@@ -134,5 +164,31 @@
       box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
       border-radius: 2px;
     }
+  }
+
+  @include mq(desktop) {
+    width: 460px;
+
+    &--reverso {
+      width: 460px;
+    }
+  }
+}
+.rooms__container-btn{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+}
+.rooms__container-button {
+  display: flex;
+  align-items: flex-start;
+}
+.rooms__btn {
+  width: 236px;
+  padding: 14px 37px;
+  letter-spacing: 0;
+  &--s {
+    padding:14px 65px;
   }
 }

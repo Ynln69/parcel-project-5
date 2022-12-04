@@ -1,16 +1,14 @@
 .amenities {
     width: 100%;
-    padding: 32px 15px;
+    padding: 32px 0;
 
-    // @include mq(tablet-only){
-    //     padding: 48px 47px;
-    // }
-    // @include mq(desktop){
-    //     padding-top: 48px;
-    //     padding-right: 190px;
-    //     padding-bottom: 48px;
-    //     padding-left: 85px;
-    // }
+    @include mq(tablet-only){
+        padding: 48px 0;
+    }
+    @include mq(desktop){
+        padding-top: 48px;
+        padding-left: 85px;
+    }
 
     &__title {
         font-family: font(_times_);
@@ -96,7 +94,7 @@
 
    
 }
-.button__secondary {
+.amenities__button {
     display: block;
     width: 100%;
     margin-top: 32px;
@@ -109,7 +107,5 @@
     @include mq (tablet){
         width: 434px;
         padding: 18px 38px;
-        font-size: 23px;
-        line-height: calc(29/23);
     }
 }

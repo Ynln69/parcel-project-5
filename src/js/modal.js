@@ -39,9 +39,9 @@
 
   function events() {
     const refs = {
-      openPriceModalBtn: document.querySelector('[data-price-modal-open]'),
-      openRoomModalBtn: document.querySelector('[data-room-modal-open]'),
-      openTableModalBtn: document.querySelector('[data-table-modal-open]'),
+      openPriceModalBtn: document.querySelectorAll('.data-price-modal-open'),
+      openRoomModalBtn: document.querySelectorAll('.data-room-modal-open'),
+      openTableModalBtn: document.querySelectorAll('.data-table-modal-open'),
 
       closePriceModalBtn: document.querySelector('[data-price-modal-close]'),
       closeRoomModalBtn: document.querySelector('[data-room-modal-close]'),
@@ -55,72 +55,58 @@
     };
 
     try {
-      refs.openPriceModalBtn.addEventListener('click', removePriceModal);
-      refs.closePriceModalBtn.addEventListener('click', addPriceModal);
+      for (const button of refs.openPriceModalBtn) {
+        button.addEventListener('click', () => {
+          PriceModal();
+        });
+      }
+      refs.closePriceModalBtn.addEventListener('click', PriceModal);
     } catch (error) {
-      console.log('PriceModal not found: ');
+      console.log('PriceModal not found');
     }
 
     try {
-      refs.openRoomModalBtn.addEventListener('click', removeRoomModal);
-      refs.closeRoomModalBtn.addEventListener('click', addRoomModal);
+      for (const button of refs.openRoomModalBtn) {
+        button.addEventListener('click', () => {
+          RoomModal();
+        });
+      }
+
+      refs.closeRoomModalBtn.addEventListener('click', RoomModal);
     } catch (error) {
-      console.log('RoomModal not found: ');
+      console.log('RoomModal not found');
     }
 
     try {
-      refs.openTableModalBtn.addEventListener('click', removeTableModal);
-      refs.closeTableModalBtn.addEventListener('click', addTableModal);
+      for (const button of refs.openTableModalBtn) {
+        button.addEventListener('click', () => {
+          TableModal();
+        });
+      }
+      refs.closeTableModalBtn.addEventListener('click', TableModal);
     } catch (error) {
-      console.log('TableModal not found: ');
+      console.log('TableModal not found');
     }
 
-    function addPriceModal() {
-      refs.modalPrice.classList.add('backdrop--is-hidden');
-      addHidden();
-    }
-
-    function removePriceModal() {
-      refs.modalPrice.classList.remove('backdrop--is-hidden');
-      removeHidden();
-    }
-
-    function addRoomModal() {
-      refs.modalRoom.classList.add('backdrop--is-hidden');
-      addHidden();
-    }
-
-    function removeRoomModal() {
-      console.log('click3');
-      refs.modalRoom.classList.remove('backdrop--is-hidden');
-      removeHidden();
-    }
-
-    function addTableModal() {
-      console.log('click3');
-      refs.modalTable.classList.add('backdrop--is-hidden');
-      addHidden();
-    }
-
-    function removeTableModal() {
-      console.log('click3');
-      refs.modalTable.classList.remove('backdrop--is-hidden');
-      removeHidden();
-    }
-
-    function addHidden() {
-      refs.o_hidden.classList.remove('o-padding');
-      refs.o_hidden.classList.add('not-padding');
+    function PriceModal() {
+      refs.modalPrice.classList.toggle('backdrop--is-hidden');
       toggleModal();
     }
 
-    function removeHidden() {
-      refs.o_hidden.classList.add('o-padding');
-      refs.o_hidden.classList.remove('not-padding');
+    function RoomModal() {
+      refs.modalRoom.classList.toggle('backdrop--is-hidden');
+      toggleModal();
+    }
+
+    function TableModal() {
+      refs.modalTable.classList.toggle('backdrop--is-hidden');
       toggleModal();
     }
 
     function toggleModal() {
+      refs.o_hidden.classList.toggle('o-padding');
+      refs.o_hidden.classList.toggle('not-padding');
+
       let scrollbar = getComputedStyle(
         document.documentElement
       ).getPropertyValue('--scrollbar-width');

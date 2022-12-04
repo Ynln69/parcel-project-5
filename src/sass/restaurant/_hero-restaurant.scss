@@ -1,4 +1,6 @@
 .hero-restaurant {
+  margin-inline: auto;
+  max-width: $container-width-mobile;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url(../images/mobile/restaurant-hero-mobile.jpg);
   background-position: center;
@@ -11,6 +13,7 @@
   }
 
   @include mq(tablet) {
+    max-width: $container-width-tablet;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/tablet/restaurant-hero-tablet.jpg);
 
@@ -24,6 +27,7 @@
   }
 
   @include mq(desktop) {
+    max-width: $container-width-desktop;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/desktop/restaurant-hero-desktop.jpg);
 
@@ -122,6 +126,7 @@
   }
 
   &__list {
+    @extend %list;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -143,6 +148,15 @@
 
   &__button {
     cursor: pointer;
+    padding: 14px 0 14px 0;
+  }
+
+  &__button--first {
+    min-width: 236px;
+  }
+
+  &__button--second {
+    min-width: 232px;
   }
 
   &__address {
@@ -158,6 +172,7 @@
   }
 
   &__social {
+    @extend %list;
     display: flex;
     gap: 20px;
 
