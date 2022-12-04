@@ -1,48 +1,52 @@
 <section class="about">
   <div class="container container-about vertical-line vertical-line--ligth">
-    <div class="about__thumb">
-      <div class="about__text">
-        <h2 class="visually-hidden">Про наш ресторан</h2>
-        <h3 class="about__title">Lorem ipsum dolor sit</h3>
-        <span class="name">mimiho</span>
-        <p class="about__description">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis
-          aut iusto beatae quas ab nulla minus officiis asperiores, soluta
-          officia voluptatem eum nesciunt, non sequi et.
-        </p>
+    <div class="container__reset">
+      <div class="about__thumb">
+        <div class="about__text">
+          <h2 class="visually-hidden">Про наш ресторан</h2>
+          <h3 class="about__title">Lorem ipsum dolor sit</h3>
+          <span class="name">mimiho</span>
+          <p class="about__description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis
+            aut iusto beatae quas ab nulla minus officiis asperiores, soluta
+            officia voluptatem eum nesciunt, non sequi et.
+          </p>
+        </div>
+
+        <img
+          srcset="
+            ./images/desktop/restaurant-content1-desktop@2x.jpg 2x,
+            ./images/desktop/restaurant-content1-desktop.jpg    1x
+          "
+          src="./images/desktop/restaurant-content1-desktop.jpg"
+          alt="khgd"
+          class="about__image"
+        />
       </div>
 
-      <img
-        srcset="
-          ./images/desktop/restaurant-content1-desktop@2x.jpg 2x,
-          ./images/desktop/restaurant-content1-desktop.jpg    1x
-        "
-        src="./images/desktop/restaurant-content1-desktop.jpg"
-        alt="khgd"
-        class="about__image"
-      />
-    </div>
+      <div class="about__thumb-second">
+        <img
+          srcset="
+            ./images/desktop/restaurant-content2-desktop@2x.jpg 2x,
+            ./images/desktop/restaurant-content2-desktop.jpg    1x
+          "
+          src="./images/desktop/restaurant-content2-desktop.jpg"
+          alt="khgd"
+          class="about__image--second"
+        />
 
-    <div class="about__thumb-second">
-      <img
-        srcset="
-          ./images/desktop/restaurant-content2-desktop@2x.jpg 2x,
-          ./images/desktop/restaurant-content2-desktop.jpg    1x
-        "
-        src="./images/desktop/restaurant-content2-desktop.jpg"
-        alt="khgd"
-        class="about__image--second"
-      />
-
-      <p class="about__feature">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni libero
-        animi doloribus architecto voluptates magnam beatae, eveniet incidunt,
-        reprehenderit necessitatibus repellat provident minima, itaque cumque
-        maiores?
-      </p>
-    </div>
-    <div class="slider-thumb-restaurant">
-      <include src="./partials/restaurant-about-kitchen-slider.html"></include>
+        <p class="about__feature">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni libero
+          animi doloribus architecto voluptates magnam beatae, eveniet incidunt,
+          reprehenderit necessitatibus repellat provident minima, itaque cumque
+          maiores?
+        </p>
+      </div>
+      <div class="slider-thumb-restaurant">
+        <include
+          src="./partials/restaurant-about-kitchen-slider.html"
+        ></include>
+      </div>
     </div>
   </div>
 </section>

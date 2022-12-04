@@ -4,14 +4,14 @@
   background-color: var(--footer-bg-color);
 
   @include mq(mobile) {
-    max-width: $container-width-mobile;
+    width: $container-width-mobile;
   }
 
   @include mq(tablet) {
-    max-width: $container-width-tablet;
+    width: $container-width-tablet;
   }
   @include mq(desktop) {
-    max-width: $container-width-desktop;
+    width: $container-width-desktop;
   }
 
   &__container {
