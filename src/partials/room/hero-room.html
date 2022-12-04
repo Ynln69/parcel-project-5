@@ -1,5 +1,5 @@
 <section class="hero-room">
-  <div class="container">
+  <div class="hero-room__container container">
     <h2 class="hero-room__title">
       Двомісний номер <span class="hero-room__title-little">люкс</span>
     </h2>
@@ -8,33 +8,50 @@
       Velit officia consequat duis enim velit mollit. Exercitation veniam
       consequat sunt nostrud amet.
     </p>
-    <ul class="social">
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <svg class="social__icon" width="24" height="24">
-            <use href="/src/images/symbol-defs.svg#icon-instagram"></use>
+    <div class="hero-room__contacts">
+      <address class="hero-room__address address">
+        <a
+          class="address__link"
+          href="https://goo.gl/maps/Z9ZDGPFKSgUdqrtR8"
+          target="_blank"
+          href=""
+        >
+          <svg class="address__icon" width="24" height="24">
+            <use href="/src/images/symbol-defs.svg#icon-location"></use>
           </svg>
+          <p class="address__text">
+            Україна, м. Полтава,
+            <span class="address__span">вул. Маршала Бірюзова, 15</span>
+          </p>
         </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <svg class="social__icon" width="24" height="24">
-            <use href="/src/images/symbol-defs.svg#icon-facebook"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <svg class="social__icon" width="24" height="24">
-            <use href="/src/images/symbol-defs.svg#icon-telegram"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
+      </address>
+      <ul class="hero-room__social social">
+        <li class="social__item">
+          <a class="social__link" href="https://www.instagram.com/">
+            <svg class="social__icon" width="24" height="24">
+              <use href="/src/images/symbol-defs.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://www.facebook.com/">
+            <svg class="social__icon" width="24" height="24">
+              <use href="/src/images/symbol-defs.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://telegram.org/">
+            <svg class="social__icon" width="24" height="24">
+              <use href="/src/images/symbol-defs.svg#icon-telegram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     <button
       type="button"
-      class="room__btn button button__primary button__primary--transparent data-price-modal-open"
-    >
+      class="hero-room__button button__primary button__primary--transparent data-price-modal-open">
       Переглянути ціни
     </button>
   </div>

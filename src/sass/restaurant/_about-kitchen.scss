@@ -90,9 +90,9 @@
   margin-bottom: 12px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  
-color: var(--mimino-second-color);
-  
+
+  color: var(--mimino-second-color);
+
 
   @include mq(tablet) {
     font-size: 64px;
@@ -156,6 +156,7 @@ color: var(--mimino-second-color);
 
   @include mq(desktop) {
     width: 450px;
+    margin-left: 0;
   }
 }
 
@@ -177,6 +178,6 @@ color: var(--mimino-second-color);
   @include mq(desktop) {
     gap: 32px;
     top: -112px;
-    
+
   }
 }
