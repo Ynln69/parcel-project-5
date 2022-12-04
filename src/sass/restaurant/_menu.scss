@@ -1,4 +1,5 @@
 .menu {
+    position: relative;
     width: 100%;
     padding: 32px 0;
 
@@ -110,7 +111,12 @@
     line-height: calc(17/14);
     letter-spacing: 0.02em;
 }
+
 .button__menu {
     width: 100%;
     margin-top: 32px;
+    padding: 15px 24px;
+    @include mq (mobile){
+        width: 236px;
+    }
 }
