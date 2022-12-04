@@ -6,14 +6,14 @@
   line-height: 1.08;
   color: var(--wight-text-color);
   letter-spacing: 0.3em;
-  margin-right: res(26px);
+  //   margin-right: res(26px);
 
   @include mq(tablet) {
     font-size: 40px;
   }
 
-  @include mq(desktop) {
-    margin-left: 60px;
-    margin-right: 94px;
+  //@include mq(desktop) {
+    // margin-left: 60px;
+    // margin-right: 94px;
   }
 }
