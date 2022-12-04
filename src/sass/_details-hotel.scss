@@ -8,7 +8,12 @@
     text-decoration: none;
     margin-left: 640px;
 
-    color: #FFFFFF;
+    color: var(--wight-text-color);
+
+    @media screen and (min-width: 320px) {
+        font-size: 24px;
+        margin-left: 150px;
+    }
 
     @media screen and (min-width: 414px) {
         font-size: 40px;
@@ -16,24 +21,32 @@
     }
 
     @media screen and (min-width: 1024px) {
-
         margin-left: 520px;
+        font-size: 64px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-left: 740px;
         font-size: 64px;
     }
 }
 
 
 .details-hotel {
-    background-image: url(../images/desktop/homepage-hotel-amet-desktop.jpg);
+
+@media screen and (min-width: 320px) {
+
+    background-image: url(../images/mobile/homepage-hotel-amet-mobile.jpg);
 
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)
       ),
-      url(../images/desktop/homepage-hotel-amet-desktop.jpg);
+      url(../images/mobile/homepage-hotel-amet-mobile.jpg);
 
-    width: 1280px;
-height: 620px;
+    width: 320px;
+    height: 735px;
+}
 
 @media screen and (min-width: 414px) {
 
@@ -61,9 +74,27 @@ height: 620px;
     width: 1024px;
 height: 620px;
 }
+
+@media screen and (min-width: 1280px) {
+
+    background-image: url(../images/desktop/homepage-hotel-amet-desktop.jpg);
+
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url(../images/desktop/homepage-hotel-amet-desktop.jpg);
+
+    width: 1280px;
+height: 620px;
+}
 }
 
 .box__logo {
+
+    @media screen and (min-width: 320px) {
+        padding-top: 24px;
+    }
     
     @media screen and (min-width: 414px) {
         padding-top: 24px;
@@ -71,6 +102,10 @@ height: 620px;
 
     @media screen and (min-width: 1024px) {
         padding-top: 30px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 48px;
     }
 }
 
@@ -82,8 +117,19 @@ height: 620px;
     display: flex;
     margin-right: 33px;
 
-    @media screen and (min-width: 414px) {
+    @media screen and (min-width: 320px) and (max-width: 1023px) {
+        margin-top: 30px;
         position: relative;
+    top: 20px;
+    left: -250px;
+    width: 500px;
+        }
+
+    @media screen and (min-width: 414px) and (max-width: 1023px) {
+        position: relative;
+        top: 20px;
+        left: -280px;
+        width: 600px;
     height: 270px;
         }
 
@@ -96,15 +142,21 @@ height: 620px;
 
 .service__item {
 
+    @media screen and (min-width: 320px) and (max-width: 1023px) {
+        margin-left: 20px;
+            }
+
     @media screen and (min-width: 414px) and (max-width: 1023px) {
-    position: absolute;
-    top: -20px;
-    left: 90px;
+    // position: absolute;
+    // top: -20px;
+    // left: 90px;
+    gap: 15px;
+    margin-left: 20px;
 height: 270px;
     }
 
     @media screen and (min-width: 1024px) {
-       
+      
     height: 270px;
         }
  
@@ -120,20 +172,30 @@ letter-spacing: 0.02em;
 margin-left: 745px;
 margin-top: 16px;
 
-color: #FFFFFF;
+color: var(--wight-text-color);
+
+@media screen and (min-width: 320px) {
+    font-size: 16px;
+    margin-left: 165px;
+
+}
 
 @media screen and (min-width: 414px) {
     font-size: 20px;
     margin-left: 205px;
     margin-top: 12px;
-
 }
 
 @media screen and (min-width: 1024px) {
     font-size: 24px;
     margin-left: 635px;
     margin-top: 16px;
+}
 
+@media screen and (min-width: 1280px) {
+    font-size: 24px;
+    margin-left: 850px;
+    margin-top: 16px;
 }
 }
 
@@ -148,14 +210,20 @@ letter-spacing: 0.02em;
 margin-left: 285px;
 margin-top: 8px;
 
-color: #BABABA;
+color: var(--second-grey-color);
+
+@media screen and (min-width: 320px) {
+    width: 243px;
+    font-size: 12px;
+    margin-left: 12px;
+    margin-top: 20px;
+}
 
 @media screen and (min-width: 414px) {
     width: 243px;
     font-size: 12px;
     margin-left: 32px;
     margin-top: 20px;
-
 }
 
 @media screen and (min-width: 1024px) {
@@ -163,7 +231,13 @@ color: #BABABA;
     font-size: 16px;
     margin-left: 175px;
     margin-top: 8px;
+}
 
+@media screen and (min-width: 1280px) {
+    width: 549px;
+    font-size: 16px;
+    margin-left: 390px;
+    margin-top: 8px;
 }
 }
 
@@ -180,6 +254,12 @@ color: #BABABA;
         display: flex;
          margin-top: 40px;
     }
+
+    @media screen and (min-width: 1280px) {
+        margin-left: 40px;
+        display: flex;
+         margin-top: 40px;
+    }
   
 }
 
@@ -189,7 +269,11 @@ color: #BABABA;
     margin-left: 34px;
     // height: 270px;   
     }
-    
+
+    @media screen and (min-width: 1280px) {
+        margin-right: 86px;
+        margin-left: 86px;
+        }
 }
 
 .box-button {
@@ -204,21 +288,32 @@ color: #BABABA;
     }
 
     @media screen and (min-width: 1024px) {
-      
-        margin-top: 155px;
     
+        margin-top: 155px;
+    }
+
+    @media screen and (min-width: 1280px) {
+
+        margin-top: 155px;
     }
 }
 
 .box-button--position {
+
+    @media screen and (min-width: 320px) {
+        font-size: 15px;
+    height: 48px;
+        padding: 14px 26px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 236px;
+        }
     
     @media screen and (min-width: 414px) {
     font-size: 15px;
     width: 236px;
 height: 48px;
-    padding: 14px 26px;
-    margin-left: 70px;
-    
+    padding: 14px 26px; 
     }
 
     @media screen and (min-width: 1024px) {
@@ -230,6 +325,11 @@ height: 48px;
         margin-left: auto;
         margin-right: auto;
         }
+
+        @media screen and (min-width: 1280px) {
+            margin-left: auto;
+            margin-right: auto;
+            }
 }
 
 .service__images--tablet {
@@ -237,25 +337,15 @@ height: 48px;
     @media screen and (min-width: 1024px) {
     width: 162px;
     height: 270px; 
-        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 270px;
+        height: 270px; 
+            }
 }
 
 .details-hotel__button--margin {
     margin-top: 16px;
 }
-
-
-.details-hotel__icon {
-    fill:#FFFFFF;
-}
-
-
-.details-hotel__icon--centered {
-    margin-left: 745px;
-    margin-top: 24px;
-}
-
-// .details-hotel__icon--margin {
-//     margin-left: 32px;
-// }
 
