@@ -1,110 +1,116 @@
 .amenities {
+  width: 100%;
+  padding: 32px 0;
+
+  @include mq(tablet-only) {
+    padding: 48px 0;
+  }
+  @include mq(desktop) {
+    padding-top: 48px;
+  }
+
+  &__title {
+    font-family: font(_times_);
+    margin-bottom: 16px;
+
+    color: var(--black-text-color);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: calc(37 / 32);
+    text-transform: uppercase;
+  }
+  &__item {
+    @extend %list;
+  }
+  &__subtitle {
+    font-family: font(_times_);
+    margin-top: 32px;
+    margin-bottom: 16px;
+
+    color: var(--black-text-color);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    text-transform: uppercase;
+  }
+  &__content {
+    @include mq(tablet) {
+      display: flex;
+      gap: 80px;
+    }
+  }
+  &__text {
     width: 100%;
-    padding: 32px 0;
+    margin-bottom: 16px;
 
-    @include mq(tablet-only){
-        padding: 48px 0;
+    color: var(--hotel-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.02em;
+    text-transform: none;
+
+    @include mq(mobile) {
+      width: 384px;
     }
-    @include mq(desktop){
-        padding-top: 48px;
+    @include mq(mobile) {
+      width: 400px;
+    }
+  }
+  &__text--about {
+    @include mq(tablet) {
+      width: 757px;
+    }
+  }
+  &__link {
+    @extend %link;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    color: var(--brown-text-color);
+    fill: currentColor;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.02em;
+
+    @include mq(tablet) {
+      font-size: 20px;
+      line-height: calc(24 / 20);
     }
 
-    &__title {
-        font-family: font(_times_);
-        margin-bottom: 16px;
+    @include mq(desktop) {
+      justify-content: start;
+    }
+  }
 
-        color: var(--black-text-color);
-        font-weight: 400;
-        font-size: 32px;
-        line-height: calc(37/32);
-        text-transform: uppercase;
-    }
-    &__item {
-        @extend %list;
-    }
-    &__subtitle {
-        font-family: font(_times_);
-        margin-top: 32px;
-        margin-bottom: 16px;
+  &__content-nav {
+    display: flex;
+    flex-direction: column;
 
-        color: var(--black-text-color);
-        font-weight: 700;
-        font-size: 24px;
-        line-height: calc(28/24);
-        text-transform: uppercase;
+    @include mq(tablet-only) {
+      align-items: center;
+      align-items: flex-end;
     }
-    &__content{
-        @include mq (tablet){
-            display: flex;
-            gap: 80px;
-        }
-    }
-    &__text {
-        width: 100%;
-        margin-bottom: 16px;
 
-        color: var(--hotel-text-color);
-        font-weight: 700;
-        font-size: 16px;
-        line-height: calc(20/16);
-        letter-spacing: 0.02em;
-        text-transform: none;
-
-        @include mq (mobile){
-            width: 384px;
-        }
-        @include mq (mobile){
-            width: 400px;
-        }
+    @include mq(desktop) {
+      margin-left: 480px;
     }
-    &__text--about {
-        @include mq(tablet){
-            width: 757px;
-        }
-    }
-    &__link {
-        @extend %link;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 12px;
-    
-        color: var( --brown-text-color);
-        fill: currentColor;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: calc(20/16);
-        letter-spacing: 0.02em;
-        
-        @include mq (tablet){
-            font-size: 20px;
-        line-height: calc(24/20);
-        }
-    }
-    &__content-nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-        @include mq (tablet){
-            align-items: flex-end;
-        }
-}
-
-   
+  }
 }
 .amenities__button {
-    display: block;
-    width: 100%;
-    margin-top: 32px;
-    margin-bottom: 20px;
-    padding: 20px 43px;
+  display: block;
+  width: 100%;
+  margin-top: 32px;
+  margin-bottom: 20px;
+  padding: 20px 43px;
 
-    @include mq (mobile){
-        width: 384px;
-    }
-    @include mq (tablet){
-        width: 434px;
-        padding: 18px 38px;
-    }
+  @include mq(mobile) {
+    width: 384px;
+  }
+  @include mq(tablet) {
+    width: 434px;
+    padding: 18px 38px;
+  }
 }
