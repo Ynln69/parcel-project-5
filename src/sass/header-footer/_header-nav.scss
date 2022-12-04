@@ -70,7 +70,7 @@
        @include mq(tablet) {
        border: 1px solid var(--second-yellow-color);
         border-radius: 2px;
-        adding: 8px;
+        padding: 8px;
         }
   }
     &__item--hotel {
