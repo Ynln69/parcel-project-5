@@ -1,15 +1,14 @@
 .menu {
+    position: relative;
     width: 100%;
-    padding-top: 32px;
-    padding-right: 18px;
-    padding-bottom: 32px;
-    padding-left: 15px;
+    padding: 32px 0;
 
     @include mq (tablet){
         padding-top: 58px;
-        padding-right: 47px;
         padding-bottom: 40px;
-        padding-left: 47px;
+    }
+    @include mq (desktop){
+        padding-bottom: 60px;
     }
 }
 .menu__title {
@@ -25,14 +24,17 @@
 
 .menu__content {
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 16px;
     @include mq (tablet){
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 88px;
+    }
+    @include mq (desktop){
+        gap:140px;
     }
 }
 .menu__caption {
@@ -45,11 +47,6 @@
     line-height: 23px;
     text-align: start;
 }
-.menu__tbody-desert{
-    max-width: 430px;
-    max-height: 132px;
-}
-
 .menu__tr-dish {
     display: flex;
     align-items: center;
@@ -68,13 +65,16 @@
     line-height: calc(17/14);
     letter-spacing: 0.02em;
     text-align: start;
+    @include mq (desktop){
+        width: 258px;
+    }
 }
 .menu__dish-des {
     margin-bottom: 11px;
 }
 
 .menu__desc {
-    max-width: 223px;
+    width: 223px;
     margin-bottom: 8px;
 
     color: var(--black-text-color);
@@ -82,19 +82,25 @@
     font-size: 10px;
     line-height: calc(12/10);
     letter-spacing: 0.02em;
+
+    @include mq (desktop){
+        width: 258px;
+    }
 }
 .menu__heft {
     width: 37px;
     text-align: end;
     white-space: nowrap;
-    margin-right: 32px;
-    margin-left: 32px;
+    margin: 0 32px;
 
     color: var(--black-text-color);
     font-weight: 300;
     font-size: 14px;
     line-height: calc(17/14);
     letter-spacing: 0.02em;
+    @include mq (tablet){
+        margin: 0 59px;
+    }
 }
 .menu__price {
     text-align: end;
@@ -106,7 +112,11 @@
     letter-spacing: 0.02em;
 }
 
-.button {
+.button__menu {
     width: 100%;
-
+    margin-top: 32px;
+    padding: 15px 24px;
+    @include mq (mobile){
+        width: 236px;
+    }
 }

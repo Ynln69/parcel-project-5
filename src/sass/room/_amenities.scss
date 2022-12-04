@@ -1,15 +1,9 @@
 .amenities {
     width: 100%;
-    padding: 32px 15px;
+    padding: 32px 0;
 
     @include mq(tablet-only){
-        padding: 48px 47px;
-    }
-    @include mq(desktop){
-        padding-top: 48px;
-        padding-right: 190px;
-        padding-bottom: 48px;
-        padding-left: 85px;
+        padding: 48px 0;
     }
 
     &__title {

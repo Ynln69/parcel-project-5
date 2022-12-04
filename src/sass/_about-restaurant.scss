@@ -81,28 +81,26 @@
 }
 
 .name {
+  display: block;
   font-family: font(_film_);
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: calc(43/40);
-
+  margin-bottom: 12px;
   letter-spacing: 0.3em;
 text-transform: uppercase;
-  color: var(--mimino-first-color);
-
-  @include mq(mobile) {
-    margin-bottom: 12px;
-  }
+  
+color: var(--mimino-second-color);
 
   @include mq(tablet) {
     font-size: 64px;
     line-height: calc(69/64);
-  }
-
-  @include mq(desktop) {
     margin-bottom: 24px;
   }
+    @include mq(desktop) {
+      color: var(--mimino-first-color);
+    }
 }
 
 .about__feature {
@@ -168,7 +166,7 @@ text-transform: uppercase;
   @include mq(tablet) {
     margin: 0;
     gap: 48px;
-    margin-left: 47px;
+    margin-left: 33px;
     position: relative;
     top: -58px;
     left: 20px;
@@ -177,7 +175,7 @@ text-transform: uppercase;
   @include mq(desktop) {
     gap: 32px;
     top: -112px;
-    margin-left: 104px;
+    // margin-left: 104px;
   }
 }
 
