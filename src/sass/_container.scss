@@ -9,7 +9,7 @@
 
   @include mq(tablet) {
     width: $container-width-tablet;
-    padding: 0 47px;
+    padding: 0 46px;
   }
 
   @include mq(desktop) {

@@ -66,11 +66,20 @@
     font-family: font(_film_);
     font-style: normal;
     font-weight: 700;
-    font-size: 96px;
+    font-size: 85px;
     line-height: 1.07;
     letter-spacing: 0.3em;
     margin: 0 auto;
     margin-bottom: 24px;
+
+    @include mq(mobile-only){
+      width: 268px;
+      padding-left: 0;
+    }
+
+        @include mq(tablet) {
+          padding-left: 40px;
+        }
 
     @include mq(tablet) {
       font-size: 128px;
@@ -79,6 +88,7 @@
     }
 
     @include mq(desktop) {
+      padding-left: 37px;
       margin-bottom: 32px;
     }
   }
@@ -130,6 +140,7 @@
     align-items: center;
     margin-bottom: 58px;
     gap: 20px;
+    list-style: none;
 
     @include mq(tablet) {
       flex-direction: row;
