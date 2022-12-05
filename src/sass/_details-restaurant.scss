@@ -137,8 +137,10 @@
   }
 }
 
-.details__pic {
-  width: 100%;
+
+.details__pic{
+  max-width: 100%;
+  height: auto;
   display: block;
 }
 
