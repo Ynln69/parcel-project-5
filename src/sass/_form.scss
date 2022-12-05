@@ -114,6 +114,11 @@
 
   margin-bottom: 8px;
   padding-right: 15px;
+
+}
+
+.form__input::placeholder {
+  @include form-font();
 }
 
 .form__select-wrapper {
