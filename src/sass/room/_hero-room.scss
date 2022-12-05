@@ -1,8 +1,11 @@
 .hero-room {
-  background-color: gray;
+  background: linear-gradient(45deg, black, grey);
+  width: 414px;
+    margin-left: auto;
+    margin-right: auto;
 
   &__container {
-    padding-bottom: 20px;
+    padding-bottom: 17px;
     padding-top: 483px;
     position: relative;
     color: var(--wight-text-color);
@@ -126,4 +129,16 @@
       right: 85px;
     }
   }
+}
+
+.hero-room__img{
+  width: 414px;
+  height:740px;
+  object-fit: cover;
+}
+
+.header-room__container{
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.55) 54.17%, rgba(0, 0, 0, 0) 100%);
+  // width: 414px;
+  // height: 143px;
 }

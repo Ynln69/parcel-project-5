@@ -1,5 +1,55 @@
 <section class="hero-room">
   <div class="hero-room__container container">
+    <div class="header-room__container">
+      <header class="header">
+        <nav class="header-nav">
+          <a class="logo--header" href="./index.html">mimiho</a>
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a href="./page-restaurant.html" class="header-nav__link"
+                >Ресторан</a
+              >
+              <a
+                href="tel:+380955559533"
+                class="header-nav__phone header-nav__phone--restaraunt"
+              >
+                <svg class="header-nav__svg">
+                  <use href="./images/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                <span class="header-nav__number">095 555 95 33</span>
+              </a>
+            </li>
+            <li class="header-nav__item">
+              <a href="./page-hotel.html" class="header-nav__link">Готель</a>
+              <ul class="header-nav__numbers">
+                <li>
+                  <a href="tel:+3800668491089" class="header-nav__phone">
+                    <svg class="header-nav__svg">
+                      <use href="./images/symbol-defs.svg#icon-phone"></use>
+                    </svg>
+                    <span class="header-nav__number"> 066 849 10 89</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+380672758540" class="header-nav__phone">
+                    <span class="header-nav__number">067 275 85 40</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <img
+      srcset="
+        ./images/desktop/room-hero-desktop@2x.jpg 2x,
+        ./images/desktop/room-hero-desktop.jpg    1x
+      "
+      src="./images/desktop/room-hero-desktop.jpg"
+      alt="cozy bedroom"
+      class="hero-room__img"
+    />
     <h2 class="hero-room__title">
       Двомісний номер <span class="hero-room__title-little">люкс</span>
     </h2>
@@ -51,7 +101,8 @@
     </div>
     <button
       type="button"
-      class="hero-room__button button__primary button__primary--transparent data-price-modal-open">
+      class="hero-room__button button__primary button__primary--transparent data-price-modal-open"
+    >
       Переглянути ціни
     </button>
   </div>
