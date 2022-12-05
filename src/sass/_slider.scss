@@ -117,3 +117,14 @@ margin-top: -38px;
     right: $desktop-slider-width - (32px * 3);
   }
 }
+
+.swiper-double-lux {
+  @include mq(tablet-only) {
+    margin-left: 458px;
+   
+  }
+
+  @include mq (desktop) {
+    margin-top: -200px;
+  }
+}
