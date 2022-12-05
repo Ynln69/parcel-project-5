@@ -1,16 +1,5 @@
 .contacts {
-  padding: 35px 0;
-  @include mq(tablet) {
-    margin: 0;
-  }
-
-  @include mq(tablet) {
-    padding-top: 56px;
-    padding-bottom: 40px;
-  }
-  @include mq(desktop) {
-    padding-bottom: 73px;
-  }
+  
   &-container {
     @include mq(tablet) {
       padding: 0;
@@ -193,8 +182,6 @@
       display: block;
     }
   }
-  &__map-thumb {
-  }
   &__map-item {
     width: res(384px);
     height: 220px;
@@ -206,5 +193,17 @@
     @include mq(desktop) {
       width: 634px;
     }
+  }
+}
+.container-padding__contacts {
+  padding: 35px 0;
+
+  @include mq(tablet-only){
+    padding-top: 56px;
+    padding-bottom: 40px;
+  }
+
+  @include mq(desktop){
+    padding-bottom: 73px;
   }
 }
