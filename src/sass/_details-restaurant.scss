@@ -99,10 +99,12 @@
     display: flex;
     padding-bottom: 96px;
     flex-direction: row-reverse;
+    margin-left: 47px;
   }
 
   @include mq(desktop) {
     padding-bottom: 94px;
+    margin-left: 85px;
   }
 }
 .details__pictures {
@@ -120,11 +122,14 @@
 .details__pictures-thumb {
   position: relative;
   height: 270px;
+ 
   @media screen and (min-width: 1024px) {
     height: 270px;
+   
   }
 }
 .details__item {
+  height: 270px;
   @media screen and (max-width: 1023px) {
     position: absolute;
     top: -20px;
@@ -140,30 +145,58 @@
 
 .details__pic{
   max-width: 100%;
-  height: auto;
   display: block;
 }
 
 .details__btn__thumb .button {
-  padding: 14px 26px;
-  margin-bottom: 16px;
+  @media screen and (min-width: 320px) {
+    font-size: 15px;
+    height: 48px;
+    padding: 14px 26px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 236px;
+    }
+
+@media screen and (min-width: 414px) {
+font-size: 15px;
+width: 236px;
+height: 48px;
+padding: 14px 26px; 
+}
+
+@media screen and (min-width: 1024px) {
+    font-size: 15px;
+    width: 236px;
+height: 48px;
+    padding: 14px 26px;
+   
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-left: auto;
+        margin-right: auto;
+        }
+
 }
 
 .details__btn__thumb {
   display: flex;
   flex-direction: column;
-  margin-bottom: -16px;
-  margin-left: 89px;
-  margin-top: 80px;
+  row-gap: 16px;
+  align-items: center;
+  
 
   @include mq(tablet) {
-    margin-left: 47px;
+    margin-right: 20px;
     margin-top: 198px;
   }
-
-  @include mq(desktop) {
-    margin-left: 85px;
+  @include mq(desktop){
+    margin-right: 23px;
   }
+
 }
 
 .details__main {
@@ -175,11 +208,13 @@
     padding-top: 50px;
     padding-bottom: 40px;
     padding-left: 278;
+   
   }
 
   @include mq(desktop) {
     padding-top: 50px;
     padding-bottom: 40px;
     padding-left: 338;
+   
   }
 }
