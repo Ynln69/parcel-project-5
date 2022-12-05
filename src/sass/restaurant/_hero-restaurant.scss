@@ -72,6 +72,10 @@
     margin: 0 auto;
     margin-bottom: 24px;
 
+    @include mq(mobile-only){
+      padding-left: 26px;
+    }
+
     @include mq(tablet) {
       font-size: 128px;
       line-height: 1.07;

@@ -18,6 +18,10 @@
   justify-content: space-between;
   gap: res(52px);
 
+  @include mq(mobile-only){
+    gap: calc(24px * var(--coef));
+  }
+
   @include mq(desktop) {
     gap: 96px;
     justify-content: flex-start;
