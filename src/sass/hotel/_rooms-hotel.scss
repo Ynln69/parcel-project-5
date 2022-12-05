@@ -49,16 +49,13 @@
     &--reverso {
       display: flex;
       flex-direction: row-reverse;
-      justify-content: space-evenly;
       left: 20px;
     }
-    &--two {
-      gap: 114px;
-    }
   }
-
   @include mq(desktop) {
-    gap: 48px;
+    &--two {
+      gap: 113px;
+    }
   }
 }
 

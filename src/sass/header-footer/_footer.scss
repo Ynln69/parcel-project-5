@@ -1,18 +1,19 @@
 .footer {
+  width: 100%;
   padding: 0;
   margin: 0 auto;
   background-color: var(--footer-bg-color);
 
-  @include mq(mobile) {
-    width: $container-width-mobile;
-  }
+  // @include mq(mobile) {
+  //   width: $container-width-mobile;
+  // }
 
-  @include mq(tablet) {
-    width: $container-width-tablet;
-  }
-  @include mq(desktop) {
-    width: $container-width-desktop;
-  }
+  // @include mq(tablet) {
+  //   width: $container-width-tablet;
+  // }
+  // @include mq(desktop) {
+  //   width: $container-width-desktop;
+  // }
 
   &__container {
     padding-block: 40px;
