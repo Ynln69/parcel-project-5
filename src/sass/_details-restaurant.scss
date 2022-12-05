@@ -1,6 +1,6 @@
 .details {
   margin-inline: auto;
-  width: $container-width-mobile;
+  width: res($container-width-mobile);
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url(../images/mobile/homepage-book-a-table-mobile.jpg);
   background-position: center;
@@ -13,7 +13,7 @@
   }
 
   @include mq(tablet) {
-    width: $container-width-tablet;
+    width: res($container-width-tablet);
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/tablet/homepage-book-a-table-tablet.jpg);
 
@@ -27,7 +27,7 @@
   }
 
   @include mq(desktop) {
-    width: $container-width-desktop;
+    width: res($container-width-desktop);
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/desktop/homepage-book-a-table-desktop.jpg);
 
@@ -38,14 +38,15 @@
         ),
         url(../images/desktop/homepage-book-a-table-desktop@2x.jpg);
     }
-  }}
-.details__title{
+  }
+}
+.details__title {
   margin-bottom: 12px;
-  @include mq(tablet){
+  @include mq(tablet) {
     margin-bottom: 16px;
   }
 }
-.logo-details{
+.logo-details {
   font-family: font(_film_);
   font-weight: 700;
   font-size: 40px;
@@ -54,19 +55,16 @@
 
   line-height: calc(43 / 40);
   letter-spacing: 0.3em;
-  
 
   text-transform: uppercase;
   @include mq(tablet) {
     font-size: 64px;
     line-height: calc(69 / 64);
-    
   }
 
   @include mq(desktop) {
     font-size: 64px;
     line-height: 69px;
-    
   }
 }
 .details__subtitle {
@@ -96,7 +94,6 @@
   }
 }
 .details__thumb {
- 
   padding-bottom: 40px;
   @include mq(tablet) {
     display: flex;
@@ -108,12 +105,11 @@
     padding-bottom: 94px;
   }
 }
-.details__pictures{
+.details__pictures {
   @extend %list;
   display: flex;
   gap: 20px;
   margin-left: 33px;
-
 
   position: relative;
   height: 270px;
@@ -121,13 +117,14 @@
     height: 270px;
   }
 }
-.details__pictures-thumb{
+.details__pictures-thumb {
   position: relative;
   height: 270px;
   @media screen and (min-width: 1024px) {
     height: 270px;
-}}
-.details__item{
+  }
+}
+.details__item {
   @media screen and (max-width: 1023px) {
     position: absolute;
     top: -20px;
@@ -140,21 +137,14 @@
   }
 }
 
-.details__pic{
+.details__pic {
   width: 100%;
   display: block;
 }
 
-
-
 .details__btn__thumb .button {
   padding: 14px 26px;
   margin-bottom: 16px;
-  
-  
-  
-  
-  
 }
 
 .details__btn__thumb {
@@ -163,10 +153,10 @@
   margin-bottom: -16px;
   margin-left: 89px;
   margin-top: 80px;
-  
+
   @include mq(tablet) {
     margin-left: 47px;
-    margin-top:198px;
+    margin-top: 198px;
   }
 
   @include mq(desktop) {
