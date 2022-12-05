@@ -51,11 +51,11 @@
   }
 
   &__text {
-    width: 325px;
+    width: res(325px);
     margin-bottom: 14px;
     color: var(--wight-text-color);
     font-weight: 700;
-    font-size: 12px;
+    font-size: res(12px);
     line-height: calc(15 / 12);
     letter-spacing: 0.02em;
 
@@ -113,7 +113,8 @@
     padding: 14px 35px;
     position: absolute;
     bottom: 40px;
-    right: 73px;
+    right: 50%;
+    transform: translateX(50%) scale(1);
 
     @include mq(tablet) {
       bottom: 64px;
