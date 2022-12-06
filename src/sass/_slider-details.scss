@@ -1,0 +1,79 @@
+$mobile-slider-width: 568px;
+$mobile-slider-height: 318px;
+$mobile-slider-space-between: 20px;
+
+$tablet-slider-width: 878px;
+$slider-height: 326px;
+$tablet-slider-space-between: 34px;
+
+$desktop-slider-width: 874px;
+$desktop-slider-space-between: 86px;
+
+$arrow-width: 32px;
+
+
+// .details-section-slider {
+//   width: $mobile-slider-width;
+//   height: $mobile-slider-height;
+
+//   position: relative;
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding: 0;
+
+//   overflow-x: hidden;
+//   z-index: 1;
+
+//   list-style: none;
+
+//   @include mq(tablet) {
+//     width: $tablet-slider-width;
+//     height: $slider-height;
+//   }
+// }
+
+// .details-section-slider__slide {
+//   display: flex;
+//   justify-content: center;
+//   align-items: start;
+
+//   &.swiper-slide-next {
+//     @include mq(mobile-only) {
+//       justify-content: start;
+//     }
+//   }
+// }
+
+// .details-section-slider .swiper-button-next::after,
+// .details-section-slider .swiper-button-prev::after {
+//   content: '';
+// }
+
+// .details-section-slider__button {
+//   width: 32px;
+//   top: 99%;
+
+//   background-repeat: no-repeat;
+// }
+
+// .details-section-slider .swiper-button-prev {
+//   left: 0;
+
+//   background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M31.0832 14.9999H5.00568L11.0054 9.00025L9.59118 7.58606L1.17725 16L9.59118 24.4139L11.0054 22.9997L5.00556 16.9999H31.0832V14.9999Z' fill='white'/%3E%3C/svg%3E%0A");
+// }
+
+// .details-section-slider .swiper-button-next {
+//   right: $mobile-slider-width - $arrow-width * 3;
+
+//   background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.4921 7.58606L21.0779 9.00025L27.0777 15.0001H1V17.0001H27.0775L21.0779 22.9997L22.4921 24.4139L30.9061 16L22.4921 7.58606Z' fill='white'/%3E%3C/svg%3E ");
+
+//   @include mq(tablet) {
+//     right: $tablet-slider-width - $arrow-width * 3;
+//   }
+// }
+
+// .details-section-slider__slide--width-auto {
+//   @include mq(tablet) {
+//     width: auto;
+//   }
+// }

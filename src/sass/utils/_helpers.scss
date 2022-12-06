@@ -5,7 +5,11 @@
   $desktop: $container-width-desktop;
 
   @if $type == mobile {
-    @media screen and (min-width: $mobile) {
+    @media screen and (min-width: #{$mobile + 0.02}) {
+      @content;
+    }
+  } @else if $type == upto-mobile {
+    @media screen and (max-width: $mobile) {
       @content;
     }
   } @else if $type == mobile-only {
@@ -76,7 +80,7 @@ scss input:
 or: @include transition(background-color fill, 250ms, var(--cubic-primary));
 
 css output:
-transition: height 0.2s linear 0s, width 0.3s linear 0s, transform 0.3s linear 0s; 
+transition: height 0.2s linear 0s, width 0.3s linear 0s, transform 0.3s linear 0s;
 */
 
 //coefficient responsive
