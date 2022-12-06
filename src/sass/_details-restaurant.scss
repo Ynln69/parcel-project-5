@@ -1,6 +1,6 @@
 .details {
   margin-inline: auto;
-  width: res($container-width-mobile);
+  max-width: $container-width-mobile;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url(../images/mobile/homepage-book-a-table-mobile.jpg);
   background-position: center;
@@ -12,8 +12,8 @@
       url(../images/mobile/homepage-book-a-table-mobile@2x.jpg);
   }
 
-  @include mq(tablet) {
-    width: res($container-width-tablet);
+  @media screen and (min-width: $container-width-mobile) {
+    max-width: $container-width-tablet;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/tablet/homepage-book-a-table-tablet.jpg);
 
@@ -26,8 +26,8 @@
     }
   }
 
-  @include mq(desktop) {
-    width: res($container-width-desktop);
+  @media screen and (min-width: $container-width-tablet) {
+    max-width: res($container-width-desktop);
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/desktop/homepage-book-a-table-desktop.jpg);
 
@@ -122,10 +122,9 @@
 .details__pictures-thumb {
   position: relative;
   height: 270px;
- 
+
   @media screen and (min-width: 1024px) {
     height: 270px;
-   
   }
 }
 .details__item {
@@ -142,8 +141,7 @@
   }
 }
 
-
-.details__pic{
+.details__pic {
   max-width: 100%;
   display: block;
 }
@@ -156,30 +154,29 @@
     margin-right: auto;
     margin-left: auto;
     width: 236px;
-    }
+  }
 
-@media screen and (min-width: 414px) {
-font-size: 15px;
-width: 236px;
-height: 48px;
-padding: 14px 26px; 
-}
-
-@media screen and (min-width: 1024px) {
+  @media screen and (min-width: 414px) {
     font-size: 15px;
     width: 236px;
-height: 48px;
+    height: 48px;
     padding: 14px 26px;
-   
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 15px;
+    width: 236px;
+    height: 48px;
+    padding: 14px 26px;
+
     margin-left: auto;
     margin-right: auto;
-    }
+  }
 
-    @media screen and (min-width: 1280px) {
-        margin-left: auto;
-        margin-right: auto;
-        }
-
+  @media screen and (min-width: 1280px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .details__btn__thumb {
@@ -187,16 +184,14 @@ height: 48px;
   flex-direction: column;
   row-gap: 16px;
   align-items: center;
-  
 
   @include mq(tablet) {
     margin-right: 20px;
     margin-top: 198px;
   }
-  @include mq(desktop){
+  @include mq(desktop) {
     margin-right: 23px;
   }
-
 }
 
 .details__main {
@@ -208,13 +203,11 @@ height: 48px;
     padding-top: 50px;
     padding-bottom: 40px;
     padding-left: 278;
-   
   }
 
   @include mq(desktop) {
     padding-top: 50px;
     padding-bottom: 40px;
     padding-left: 338;
-   
   }
 }
