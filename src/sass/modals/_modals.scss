@@ -1,8 +1,7 @@
 .modal {
-  width: 100%;
-  min-width: 380px;
+  width: calc(var(--window-client-width) * 1px);
   height: auto;
-  padding: 60px 15px;
+  padding: 60px res(15px);
   border-radius: 2px;
 
   background-color: var(--main-bg-color);
@@ -45,7 +44,7 @@
   margin-bottom: 40px;
 
   font-family: font(_times_);
-  font-size: 24px;
+  font-size: res(24px);
   font-weight: 700;
   line-height: calc(28 / 24);
   text-align: center;

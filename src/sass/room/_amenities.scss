@@ -48,7 +48,7 @@
     @include mq(mobile) {
       width: 384px;
     }
-    @include mq(mobile) {
+    @include mq(tablet) {
       width: 400px;
     }
   }
