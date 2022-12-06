@@ -1,12 +1,12 @@
-$mobile-slider-width: 568px;
-$mobile-slider-height: 318px;
+$mobile-slider-width: 560px;
+$mobile-slider-height: 340px;
 $mobile-slider-space-between: 20px;
 
 $tablet-slider-width: 878px;
 $slider-height: 326px;
 $tablet-slider-space-between: 34px;
 
-$desktop-slider-width: 874px;
+$desktop-slider-width: 878px;
 $desktop-slider-space-between: 86px;
 
 $arrow-width: 32px;
@@ -51,7 +51,7 @@ $arrow-width: 32px;
 
 .details-section-slider__button {
   width: 32px;
-  top: 99%;
+  top: 90%;
 
   background-repeat: no-repeat;
 }
@@ -72,6 +72,9 @@ $arrow-width: 32px;
   }
 }
 
+.details-section-slider__img {
+  border-radius: 2px;
+}
 // .details-section-slider__slide--width-auto {
 //   @include mq(tablet) {
 //     width: auto;
