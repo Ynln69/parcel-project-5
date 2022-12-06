@@ -6,6 +6,17 @@
   z-index: 999;
   background-color: transparent;
 
+  @include mq(mobile) {
+    width: res($container-width-mobile);
+  }
+
+  @include mq(tablet) {
+    width: res($container-width-tablet);
+  }
+  @include mq(desktop) {
+    width: res($container-width-desktop);
+  }
+
   @include mq(tablet) {
     top: 24px;
   }
@@ -17,6 +28,21 @@
   padding-top: 25px;
   justify-content: space-between;
   gap: res(52px);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  // padding-left: 15px;
+
+  @include mq(mobile) {
+    width: res($container-width-mobile - 30px);
+  }
+
+  @include mq(tablet) {
+    width: res($container-width-tablet - 94px);
+  }
+  @include mq(desktop) {
+    width: res($container-width-desktop - 170px);
+  }
 
   @include mq(desktop) {
     gap: 96px;
@@ -35,7 +61,7 @@
   &__item {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: res(6px);
 
     @include mq(tablet) {
       gap: 32px;

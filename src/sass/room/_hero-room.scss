@@ -1,5 +1,17 @@
 .hero-room {
   background-color: gray;
+  margin-inline: auto;
+
+  @include mq(mobile) {
+    width: res($container-width-mobile);
+  }
+
+  @include mq(tablet) {
+    width: res($container-width-tablet);
+  }
+  @include mq(desktop) {
+    width: res($container-width-desktop);
+  }
 
   &__container {
     padding-bottom: 20px;
@@ -109,8 +121,9 @@
   }
 
   &__button {
+    width: res(232px);
     cursor: pointer;
-    padding: 14px 35px;
+    padding-block: 14px;
     position: absolute;
     bottom: 40px;
     right: 50%;
@@ -119,6 +132,7 @@
     @include mq(tablet) {
       bottom: 64px;
       right: 47px;
+      transform: translateX(0%) scale(1);
     }
 
     @include mq(desktop) {
