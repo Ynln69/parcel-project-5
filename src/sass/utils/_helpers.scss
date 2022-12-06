@@ -5,15 +5,19 @@
   $desktop: $container-width-desktop;
 
   @if $type == mobile {
-    @media screen and (min-width: #{$mobile + 0.02}) {
+    @media screen and (min-width: #{$mobile + 0.2}) {
       @content;
     }
   } @else if $type == upto-mobile {
     @media screen and (max-width: $mobile) {
       @content;
     }
+  } @else if $type == upto-tablet {
+    @media screen and (min-width: #{$mobile + 0.2}) and (max-width: #{$tablet - 0.2}) {
+      @content;
+    }
   } @else if $type == mobile-only {
-    @media screen and (max-width: #{$tablet - 0.02}) {
+    @media screen and (max-width: #{$tablet - 0.2}) {
       @content;
     }
   } @else if $type == tablet {
@@ -21,7 +25,7 @@
       @content;
     }
   } @else if $type == tablet-only {
-    @media screen and (min-width: $tablet) and (max-width: #{$desktop - 0.02}) {
+    @media screen and (min-width: $tablet) and (max-width: #{$desktop - 0.2}) {
       @content;
     }
   } @else if $type == desktop {
@@ -29,7 +33,7 @@
       @content;
     }
   } @else if $type == not-desktop {
-    @media screen and (max-width: #{$desktop - 0.02}) {
+    @media screen and (max-width: #{$desktop - 0.2}) {
       @content;
     }
   } @else if $type == retina {
