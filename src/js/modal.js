@@ -27,14 +27,14 @@
       document.documentElement.style.setProperty('--coef', coef);
     }
 
-    console.log(
-      'clientWidth:',
-      getComputedStyle(document.documentElement).getPropertyValue(
-        '--window-client-width'
-      ),
-      '; innerWidth:',
-      windowInnerWidth
-    );
+    // console.log(
+    //   'clientWidth:',
+    //   getComputedStyle(document.documentElement).getPropertyValue(
+    //     '--window-client-width'
+    //   ),
+    //   '; innerWidth:',
+    //   windowInnerWidth
+    // );
   }
 
   function events() {

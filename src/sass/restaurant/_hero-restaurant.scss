@@ -12,7 +12,7 @@
       url(../images/mobile/restaurant-hero-mobile@2x.jpg);
   }
 
-  @include mq(tablet) {
+  @media screen and (min-width: $container-width-mobile) {
     max-width: $container-width-tablet;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/tablet/restaurant-hero-tablet.jpg);
@@ -26,7 +26,7 @@
     }
   }
 
-  @include mq(desktop) {
+  @media screen and (min-width: $container-width-tablet) {
     max-width: $container-width-desktop;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/desktop/restaurant-hero-desktop.jpg);
