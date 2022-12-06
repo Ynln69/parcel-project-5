@@ -3,14 +3,19 @@ $mobile-slider-height: 340px;
 $mobile-slider-space-between: 20px;
 
 $tablet-slider-width: 878px;
-$slider-height: 326px;
+$slider-height: 348px;
 $tablet-slider-space-between: 34px;
 
-$desktop-slider-width: 878px;
+$desktop-slider-width: 982px;
 $desktop-slider-space-between: 86px;
 
 $arrow-width: 32px;
 
+.slider-container {
+  @include mq(tablet) {
+    overflow-x: hidden;
+  }
+}
 
 .details-section-slider {
   width: $mobile-slider-width;
@@ -29,6 +34,10 @@ $arrow-width: 32px;
   @include mq(tablet) {
     width: $tablet-slider-width;
     height: $slider-height;
+  }
+
+  @include mq(tablet) {
+    width: $desktop-slider-width;
   }
 }
 
