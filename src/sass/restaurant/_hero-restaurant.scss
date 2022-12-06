@@ -66,14 +66,13 @@
     font-family: font(_film_);
     font-style: normal;
     font-weight: 700;
-    font-size: 96px;
+    font-size: res(96px);
     line-height: 1.07;
     letter-spacing: 0.3em;
-    margin: 0 auto;
     margin-bottom: 24px;
 
-    @include mq(mobile-only){
-      padding-left: 26px;
+    @include mq(mobile-only) {
+      padding-left: res(26px);
     }
 
     @include mq(tablet) {
