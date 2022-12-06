@@ -118,6 +118,7 @@ margin-top: -38px;
 
 .about-section-slider__button-next--left {
   right: 217px;
+  
 
   @include mq(tablet) {
     right: $tablet-slider-width - (32px * 3);
