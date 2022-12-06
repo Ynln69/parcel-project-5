@@ -1,0 +1,44 @@
+<!--
+ Андрій Трюхан @tryuhan
+ Цей partial для слайдера в секції Details. Використовує для оформлення компонент slider (_slider.scss).
+ Підключати в свою секцію через include.
+ Позіціонувати або вішаете в цьому файлі свій мікс клас на div з классом swiper. Або у себе в секції обгортаете цей include в додаткову обгортку зі своїм класом-елементом та позіціонуєте її.
+-->
+
+<!-- Slider main container -->
+
+<div class="details-section-slider">
+  <!-- Additional required wrapper -->
+  <div class="details-section-slider__wrapper swiper-wrapper">
+    <!-- Slides -->
+    <div class="details-section-slider__slide swiper-slide">
+      <img
+
+        class="details-section-slider__img"
+        src="./images/tablet/img-content-details270-1-desk-tablet.jpg"
+        alt="М'ясне блюдо з ресторану"
+      />
+    </div>
+    <div class="details-section-slider__slide wiper-slide">
+      <img
+
+        class="details-section-slider__img"
+        src="./images/tablet/img-content-details270-2-desk-tablet.jpg"
+        alt=""
+      />
+    </div>
+    <div class="details-section-slider__slide swiper-slide">
+      <img
+
+        class="details-section-slider__img"
+        src="./images/tablet/img-content-details270-3-desk-tablet.jpg"
+        alt=""
+      />
+    </div>
+    <!-- /.swiper-wrapper -->
+  </div>
+  <!-- If we need navigation buttons -->
+  <div class="details-section-slider__button swiper-button-prev"></div>
+  <div class="details-section-slider__button swiper-button-next"></div>
+  <!-- /swiper -->
+</div>

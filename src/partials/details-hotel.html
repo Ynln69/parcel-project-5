@@ -1,72 +1,28 @@
-<section class="details-hotel section">
+<section class="details-hotel section container">
   <div class="container vertical-line vertical-line--ligth">
-    <div class="box__logo">
-      <a class="logo-hotel" lang="en" href="./index.html">MIMIHO</a>
-    </div>
-    <h3 class="details-hotel__title">Готель</h3>
-    <p class="details-hotel__text">
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-      Velit officia consequat duis enim velit mollit.
-    </p>
-    <div class="service">
-      <ul class="service__list list">
-        <li class="service__item">
-          <div class="paragraph-title">
-            <img
-              class="service__images service__images--tablet service__images--opacity"
-              srcset="
-                ./images/desktop/img-content-details270-4-desk-tablet.jpg,
-                ./images/desktop/img-content-details270-4-desk-tablet@2x.jpg 2x
-              "
-              src="./images/desktop/img-content-details270-4-desk-tablet.jpg"
-              alt="номер готелю"
-              loading="lazy"
-            />
-          </div>
-        </li>
-        <li class="service__item">
-          <div class="paragraph-title">
-            <img
-              class="service__images service__images--centered"
-              srcset="
-                ./images/desktop/img-content-details270-5-desk-tablet.jpg,
-                ./images/desktop/img-content-details270-5-desk-tablet@2x.jpg 2x
-              "
-              src="./images/desktop/img-content-details270-5-desk-tablet.jpg"
-              alt="сніданок"
-            />
-          </div>
-        </li>
-        <li class="service__item">
-          <div class="paragraph-title">
-            <img
-              class="service__images"
-              srcset="
-                ./images/desktop/img-content-details270-6-desk-tablet.jpg,
-                ./images/desktop/img-content-details270-6-desk-tablet@2x.jpg 2x
-              "
-              src="./images/desktop/img-content-details270-6-desk-tablet.jpg"
-              alt="рецепція готелю"
-              width="270"
-              loading="lazy"
-            />
-          </div>
-        </li>
-      </ul>
-      <div class="box-button">
-        <button
-          type="button"
-          class="hero-hotel__button button__primary button__primary--transparent data-room-modal-open box-button--position"
-        >
-          Забронювати номер
-        </button>
-        <button
-          type="button"
-          class="button button__primary button__primary--transparent rooms__btn data-price-modal-open details-hotel__button--margin box-button--position"
-        >
-          Переглянути ціни
-        </button>
-      </div>
-    </div>
+  <div class="box__logo">
+    <a class="logo-hotel" lang="en" href="./index.html">MIMIHO</a>
   </div>
+  <h3 class="details-hotel__title">Готель</h3>
+  <p class="details-hotel__text">
+    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+    Velit officia consequat duis enim velit mollit.
+  </p>
+  <include src="./partials/homepage-details-hotel-slider.html"></include>
+
+    <div class="box-button">
+      <button
+        type="button"
+        class="hero-hotel__button button__primary button__primary--transparent data-room-modal-open box-button--position"
+      >
+        Забронювати номер
+      </button>
+
+      <button
+        type="button"
+        class="button button__primary button__primary--transparent rooms__btn data-price-modal-open details-hotel__button--margin box-button--position"
+      >
+        Переглянути ціни
+      </button>
+    </div>
 </section>

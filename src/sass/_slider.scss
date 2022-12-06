@@ -9,7 +9,17 @@ $desktop-slider-width: 548px;
 .about-section-slider {
   width: $mobile-slider-width;
   height: 297px;
-  
+
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+
+  overflow-x: hidden;
+  z-index: 1;
+
+  list-style: none;
+
 
   @include mq(mobile-only) {
     transform: translateX(69px);
@@ -92,7 +102,7 @@ margin-top: -38px;
   }
 
     @include mq(desktop) {
-      
+
       margin-top: -50px;
     }
 
@@ -122,7 +132,7 @@ margin-top: -38px;
 .swiper-double-lux {
   @include mq(tablet-only) {
     margin-left: 458px;
-   
+
   }
 
   @include mq (desktop) {
