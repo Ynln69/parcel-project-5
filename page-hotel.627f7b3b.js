@@ -1,0 +1,2 @@
+var swiperAbout=new Swiper(".about-section-slider",{loop:!0,slidesPerView:2,spaceBetween:25,breakpoints:{1024:{spaceBetween:40}},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}}),swiperDetails=new Swiper(".details-section-slider",{loop:!0,slidesPerView:2,spaceBetween:20,breakpoints:{1024:{slidesPerView:3,spaceBetween:34},1280:{slidesPerView:3,spaceBetween:86}},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});
+//# sourceMappingURL=page-hotel.627f7b3b.js.map
