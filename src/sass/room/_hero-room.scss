@@ -1,5 +1,10 @@
+.container-header-gradient {
+  background: gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.55) 54.17%, rgba(0, 0, 0, 0) 100%);
+  z-index: 1000;
+}
 .hero-room {
   background-color: gray;
+  background-image: url(../images/desktop/room-hero-desktop.jpg);
   margin-inline: auto;
 
   @include mq(mobile) {
