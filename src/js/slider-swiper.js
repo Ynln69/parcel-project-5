@@ -53,7 +53,7 @@ const swiperHero = new Swiper('.hero-slider', {
   centeredSlides: true,
   loop: true,
   slidesPerView: 1,
-  autoHeight: true,
+  // autoHeight: true,
 
   // Navigation arrows
   navigation: {
