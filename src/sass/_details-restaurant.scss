@@ -185,10 +185,16 @@
   row-gap: 16px;
   align-items: center;
 
-  @include mq(tablet) {
-    margin-right: 20px;
-    margin-top: 198px;
+  @media screen and (min-width:320px) and (max-width:1023px) {
+    margin-bottom: 40px;
   }
+
+  @include mq(tablet) {
+    margin-left: 528px;
+      position: relative;
+      bottom: 40px;
+    }
+  
   @include mq(desktop) {
     margin-right: 23px;
   }
