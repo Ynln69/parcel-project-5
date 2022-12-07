@@ -111,7 +111,7 @@
         '--window-client-width'
       );
 
-      if ('--window-client-width' < 414) {
+      if (width > 414) {
         let scrollbar = getComputedStyle(
           document.documentElement
         ).getPropertyValue('--scrollbar-width');
