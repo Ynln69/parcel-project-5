@@ -12,7 +12,7 @@
       url(../images/mobile/homepage-hero-mobile@2x.jpg);
   }
 
-  @include mq(tablet) {
+  @media screen and (min-width: $container-width-mobile) {
     max-width: $container-width-tablet;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/tablet/homepage-hero-tablet.jpg);
@@ -26,7 +26,7 @@
     }
   }
 
-  @include mq(desktop) {
+  @media screen and (min-width: $container-width-tablet) {
     max-width: $container-width-desktop;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/desktop/homepage-hero-desktop.jpg);
@@ -66,20 +66,14 @@
     font-family: font(_film_);
     font-style: normal;
     font-weight: 700;
-    font-size: 85px;
+    font-size: res(96px);
     line-height: 1.07;
     letter-spacing: 0.3em;
-    margin: 0 auto;
     margin-bottom: 24px;
 
-    @include mq(mobile-only){
-      width: 268px;
-      padding-left: 0;
+    @include mq(mobile-only) {
+      padding-left: res(26px);
     }
-
-        @include mq(tablet) {
-          padding-left: 40px;
-        }
 
     @include mq(tablet) {
       font-size: 128px;

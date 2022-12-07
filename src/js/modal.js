@@ -27,14 +27,14 @@
       document.documentElement.style.setProperty('--coef', coef);
     }
 
-    console.log(
-      'clientWidth:',
-      getComputedStyle(document.documentElement).getPropertyValue(
-        '--window-client-width'
-      ),
-      '; innerWidth:',
-      windowInnerWidth
-    );
+    // console.log(
+    //   'clientWidth:',
+    //   getComputedStyle(document.documentElement).getPropertyValue(
+    //     '--window-client-width'
+    //   ),
+    //   '; innerWidth:',
+    //   windowInnerWidth
+    // );
   }
 
   function events() {
@@ -107,19 +107,25 @@
       refs.o_hidden.classList.toggle('o-padding');
       refs.o_hidden.classList.toggle('not-padding');
 
-      let scrollbar = getComputedStyle(
-        document.documentElement
-      ).getPropertyValue('--scrollbar-width');
+      let width = getComputedStyle(document.documentElement).getPropertyValue(
+        '--window-client-width'
+      );
 
-      try {
-        let elem = document.querySelector('.o-padding').style;
-        elem.paddingRight = scrollbar + 'px';
-        document.querySelector('.modal').style.marginLeft = 0;
-      } catch (err) {
-        let elem = document.querySelector('.not-padding').style;
-        elem.paddingRight = 0;
-        document.querySelector('.modal').style.marginLeft =
-          scrollbar / 2 + 'px';
+      if ('--window-client-width' < 414) {
+        let scrollbar = getComputedStyle(
+          document.documentElement
+        ).getPropertyValue('--scrollbar-width');
+
+        try {
+          let elem = document.querySelector('.o-padding').style;
+          elem.paddingRight = scrollbar + 'px';
+          document.querySelector('.modal').style.marginLeft = 0;
+        } catch (err) {
+          let elem = document.querySelector('.not-padding').style;
+          elem.paddingRight = 0;
+          document.querySelector('.modal').style.marginLeft =
+            scrollbar / 2 + 'px';
+        }
       }
     }
   }
