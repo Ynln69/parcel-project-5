@@ -46,3 +46,18 @@ const swiperDetails = new Swiper('.details-section-slider', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+const swiperHero = new Swiper('.hero-slider', {
+  // Optional parameters
+  // direction: 'vertical',
+  centeredSlides: true,
+  loop: true,
+  slidesPerView: 1,
+  autoHeight: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

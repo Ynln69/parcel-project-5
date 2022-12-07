@@ -1,0 +1,82 @@
+.hero-room-slider {
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  max-width: $container-width-mobile;
+  margin-left: auto;
+  margin-right: auto;
+
+  overflow: hidden;
+  z-index: 0;
+
+  @media screen and (min-width: $container-width-mobile) {
+    max-width: $container-width-tablet;
+  }
+
+  @media screen and (min-width: $container-width-tablet) {
+    max-width: $container-width-desktop;
+  }
+
+}
+.hero-slider {
+  width: $container-width-mobile;
+  // height: 740px;
+
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+
+  overflow-x: hidden;
+  z-index: 1;
+
+  list-style: none;
+
+  @include mq(mobile) {
+    width: $container-width-mobile;
+  }
+  // @include mq(upto-tablet) {
+  //   width: $container-width-tablet - 0.02;
+  // }
+
+  @include mq(tablet) {
+    width: $container-width-tablet
+  }
+
+  // @include mq(tablet-only) {
+  //   width: $container-width-desktop;
+  // }
+
+
+  @include mq(desktop) {
+    width: $container-width-desktop;
+  }
+}
+
+.hero-slider .swiper-button-next::after,
+.hero-slider .swiper-button-prev::after {
+  content: '';
+}
+
+.hero-slider__button-prev {
+  width: 40px;
+  height: 40px;
+
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='40' height='40' fill='black' fill-opacity='0.65'/%3E%3Cpath d='M38.8542 18.75H6.25723L13.7568 11.2504L11.9891 9.48267L1.47168 20.0001L11.9891 30.5175L13.7568 28.7498L6.25707 21.25H38.8542V18.75Z' fill='%23F3C653'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+}
+
+.hero-slider__button-next {
+  width: 40px;
+  height: 40px;
+
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='40' height='40' fill='black' fill-opacity='0.65'/%3E%3Cpath d='M28.1151 9.48267L26.3473 11.2504L33.8471 18.7502H1.25V21.2502H33.8469L26.3473 28.7498L28.1151 30.5175L38.6327 20.0001L28.1151 9.48267Z' fill='%23F3C653'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+}
+
+.hero-slider__img {
+  object-fit: cover;
+  object-position: center;
+}
