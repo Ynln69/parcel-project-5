@@ -86,9 +86,12 @@
   background-repeat: no-repeat;
 
   @include mq(upto-tablet) {
-    right: calc(1024px - 100vw);
+  right: calc(#{$container-width-tablet} - 100vw + 15px);
   }
 
+  @include mq(tablet-only) {
+    right: calc(#{$container-width-desktop} - 100vw + 15px);
+  }
 
 }
 
