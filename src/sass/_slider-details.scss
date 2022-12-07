@@ -30,7 +30,7 @@ $arrow-width: 32px;
   z-index: 1;
 
   list-style: none;
-
+  
   @include mq(tablet) {
     width: $tablet-slider-width;
     height: $slider-height;
@@ -42,8 +42,13 @@ $arrow-width: 32px;
 }
 
 .details-section-slider--left {
+
   @include mq(mobile-only) {
-    transform: translateX(-200px);
+    transform: translate(-200px);
+  }
+
+  @media screen and (min-width:320px) and (max-width:406px){
+    transform: translate(-276px);
   }
 
   & .swiper-slide-active {
