@@ -1,0 +1,385 @@
+.slider{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    overflow:hidden;
+    z-index: 2;
+  }
+  .prev{
+    position:absolute;
+    top:45%;
+    left:2.5%;
+    cursor:pointer;
+    z-index: 4;
+  }
+  .next{
+    position:absolute;
+    top:45%;
+    right:2.5%;
+    cursor:pointer;
+    z-index: 4;
+  }
+  .transition {
+    transition:.5s linear;
+  }
+  .slide{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0%;
+    left:0%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  /*.slide p {
+    font-size:4em;
+    color:#fff;
+    font-weight:900;
+  }*/
+
+  .slide_1{
+    //background:red;
+    max-width: 100%;
+      background-repeat: no-repeat;
+      //margin: 0 auto;
+      margin-inline: auto;
+      background-position: bottom; //center;
+      background-size: cover;
+      background-attachment: scroll;
+    
+      background-image: linear-gradient(180deg,
+            rgba(0, 0, 0, 1) 0px,
+            rgba(0, 0, 0, 0.55) 64px,
+            rgba(0, 0, 0, 0) 143px),
+            url(../images/mobile/homepage-hotel-amet-mobile.jpg);
+    
+      @include mq(mobile) {
+        width: res($container-width-mobile);
+        background-image: 
+        linear-gradient(180deg,
+            rgba(0, 0, 0, 1) 0px,
+            rgba(0, 0, 0, 0.55) 64px,
+            rgba(0, 0, 0, 0) 143px),
+        url(../images/mobile/homepage-hotel-amet-mobile.jpg);
+    
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: 
+          linear-gradient(180deg,
+              rgba(0, 0, 0, 1) 0px,
+              rgba(0, 0, 0, 0.55) 64px,
+              rgba(0, 0, 0, 0) 143px),
+              url(../images/mobile/homepage-hotel-amet-mobile@2x.jpg);
+        }
+      }
+    
+      @include mq(tablet) {
+        width: res($container-width-tablet);
+        background-image: 
+        linear-gradient(180deg,
+            rgba(0, 0, 0, 1) 0px,
+            rgba(0, 0, 0, 0.55) 64px,
+            rgba(0, 0, 0, 0) 143px), url(../images/tablet/homepage-hotel-amet-tablet.jpg);
+    
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: linear-gradient(180deg,
+              rgba(0, 0, 0, 1) 0px,
+              rgba(0, 0, 0, 0.55) 64px,
+              rgba(0, 0, 0, 0) 143px),
+              url(../images/tablet/homepage-hotel-amet-tablet@2x.jpg);
+        }
+      }
+    
+      @include mq(desktop) {
+        width: res($container-width-desktop);
+        background-image: linear-gradient(180deg,
+            rgba(0, 0, 0, 1) 0px,
+            rgba(0, 0, 0, 0.55) 64px,
+            rgba(0, 0, 0, 0) 143px),
+            url(../images/desktop/homepage-hotel-amet-desktop.jpg);
+    
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: linear-gradient(180deg,
+              rgba(0, 0, 0, 1) 0px,
+              rgba(0, 0, 0, 0.55) 64px,
+              rgba(0, 0, 0, 0) 143px),
+          url(../images/desktop/homepage-hotel-amet-desktop@2x.jpg);
+        }
+      }
+  }
+  .slide_2{
+    background-color: gray;
+      background-image: linear-gradient(180deg,
+          rgba(0, 0, 0, 1) 0px,
+          rgba(0, 0, 0, 0.55) 64px,
+          rgba(0, 0, 0, 0) 143px);
+    /*max-width: 100%;
+      background-repeat: no-repeat;
+      //margin: 0 auto;
+      margin-inline: auto;
+      background-position: bottom; //center;
+      background-size: cover;
+      background-attachment: scroll;
+    
+      background-image: url(../images/mobile/room-hero-mobile.jpg);
+    
+      @include mq(mobile) {
+        width: res($container-width-mobile);
+        background-image: url(../images/mobile/room-hero-mobile.jpg);
+    
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url(../images/mobile/room-hero-mobile-alt@2x.jpg);
+        }
+      }
+    
+      @include mq(tablet) {
+        width: res($container-width-tablet);
+        background-image: url(../images/tablet/room-hero-tablet.jpg);
+    
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url(../images/tablet/room-hero-tablet@2x.jpg);
+        }
+      }
+    
+      @include mq(desktop) {
+        width: res($container-width-desktop);
+        background-image: url(../images/desktop/room-hero-desktop.jpg);
+    
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url(../images/desktop/room-hero-desktop@2x.jpg);
+        }
+      }*/
+  }
+  .slide_3{
+    //background:pink;
+    max-width: 100%;
+      background-repeat: no-repeat;
+      //margin: 0 auto;
+      margin-inline: auto;
+      background-position: bottom; //center;
+      background-size: cover; //cover;
+      background-attachment: scroll;
+    
+      background-image: linear-gradient(180deg,
+          rgba(0, 0, 0, 1) 0px,
+          rgba(0, 0, 0, 0.55) 64px,
+          rgba(0, 0, 0, 0) 143px), url(../images/mobile/homepage-hotel-amet-mobile.jpg);
+    
+      @include mq(mobile) {
+        width: res($container-width-mobile);
+        background-image: linear-gradient(180deg,
+            rgba(0, 0, 0, 1) 0px,
+            rgba(0, 0, 0, 0.55) 64px,
+            rgba(0, 0, 0, 0) 143px), url(../images/mobile/homepage-hotel-amet-mobile.jpg);
+    
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: linear-gradient(180deg,
+              rgba(0, 0, 0, 1) 0px,
+              rgba(0, 0, 0, 0.55) 64px,
+              rgba(0, 0, 0, 0) 143px), url(../images/mobile/homepage-hotel-amet-mobile@2x.jpg);
+        }
+      }
+    
+      @include mq(tablet) {
+        width: res($container-width-tablet);
+        background-image: linear-gradient(180deg,
+            rgba(0, 0, 0, 1) 0px,
+            rgba(0, 0, 0, 0.55) 64px,
+            rgba(0, 0, 0, 0) 143px), url(../images/tablet/homepage-hotel-amet-tablet.jpg);
+    
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: linear-gradient(180deg,
+              rgba(0, 0, 0, 1) 0px,
+              rgba(0, 0, 0, 0.55) 64px,
+              rgba(0, 0, 0, 0) 143px), url(../images/tablet/homepage-hotel-amet-tablet@2x.jpg);
+        }
+      }
+    
+      @include mq(desktop) {
+        width: res($container-width-desktop);
+        background-image: linear-gradient(180deg,
+            rgba(0, 0, 0, 1) 0px,
+            rgba(0, 0, 0, 0.55) 64px,
+            rgba(0, 0, 0, 0) 143px), url(../images/desktop/homepage-hotel-amet-desktop.jpg);
+    
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: linear-gradient(180deg,
+              rgba(0, 0, 0, 1) 0px,
+              rgba(0, 0, 0, 0.55) 64px,
+              rgba(0, 0, 0, 0) 143px), url(../images/desktop/homepage-hotel-amet-desktop@2x.jpg);
+        }
+      }
+  }
+  .slide_4{
+    max-width: 100%;
+      background-repeat: no-repeat;
+      //margin: 0 auto;
+      margin-inline: auto;
+      background-position: bottom; //center;
+      background-size: cover; //cover;
+      background-attachment: scroll;
+    
+      background-image: url(../images/mobile/homepage-hotel-amet-mobile.jpg);
+    
+      @include mq(mobile) {
+        width: res($container-width-mobile);
+        background-image: url(../images/mobile/homepage-hotel-amet-mobile.jpg);
+    
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: linear-gradient(180deg,
+              rgba(0, 0, 0, 1) 0px,
+              rgba(0, 0, 0, 0.55) 64px,
+              rgba(0, 0, 0, 0) 143px), url(../images/mobile/homepage-hotel-amet-mobile@2x.jpg);
+        }
+      }
+    
+      @include mq(tablet) {
+        width: res($container-width-tablet);
+        background-image: linear-gradient(180deg,
+            rgba(0, 0, 0, 1) 0px,
+            rgba(0, 0, 0, 0.55) 64px,
+            rgba(0, 0, 0, 0) 143px), url(../images/tablet/homepage-hotel-amet-tablet.jpg);
+    
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: linear-gradient(180deg,
+              rgba(0, 0, 0, 1) 0px,
+              rgba(0, 0, 0, 0.55) 64px,
+              rgba(0, 0, 0, 0) 143px), url(../images/tablet/homepage-hotel-amet-tablet@2x.jpg);
+        }
+      }
+    
+      @include mq(desktop) {
+        width: res($container-width-desktop);
+        background-image: linear-gradient(180deg,
+            rgba(0, 0, 0, 1) 0px,
+            rgba(0, 0, 0, 0.55) 64px,
+            rgba(0, 0, 0, 0) 143px), url(../images/desktop/homepage-hotel-amet-desktop.jpg);
+    
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: linear-gradient(180deg,
+              rgba(0, 0, 0, 1) 0px,
+              rgba(0, 0, 0, 0.55) 64px,
+              rgba(0, 0, 0, 0) 143px), url(../images/desktop/homepage-hotel-amet-desktop@2x.jpg);
+        }
+      }
+    
+  }
+  .slide_5{
+    //background:yellow;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    //margin: 0 auto;
+    margin-inline: auto;
+    background-position: bottom;//center;
+    background-size: cover;
+    background-attachment: scroll;
+
+      background-image: linear-gradient(180deg,
+          rgba(0, 0, 0, 1) 0px,
+          rgba(0, 0, 0, 0.55) 64px,
+          rgba(0, 0, 0, 0) 143px), url(../images/mobile/room-hero-mobile.jpg);
+
+      @include mq(mobile) {
+        width: res($container-width-mobile);
+        background-image: linear-gradient(180deg,
+            rgba(0, 0, 0, 1) 0px,
+            rgba(0, 0, 0, 0.55) 64px,
+            rgba(0, 0, 0, 0) 143px), url(../images/mobile/room-hero-mobile.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+            background-image: linear-gradient(180deg,
+                rgba(0, 0, 0, 1) 0px,
+                rgba(0, 0, 0, 0.55) 64px,
+                rgba(0, 0, 0, 0) 143px), url(../images/mobile/room-hero-mobile-alt@2x.jpg);
+          }
+      }
+    
+      @include mq(tablet) {
+        width: res($container-width-tablet);
+        background-image: linear-gradient(180deg,
+            rgba(0, 0, 0, 1) 0px,
+            rgba(0, 0, 0, 0.55) 64px,
+            rgba(0, 0, 0, 0) 143px), url(../images/tablet/room-hero-tablet.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+            background-image: linear-gradient(180deg,
+                rgba(0, 0, 0, 1) 0px,
+                rgba(0, 0, 0, 0.55) 64px,
+                rgba(0, 0, 0, 0) 143px), url(../images/tablet/room-hero-tablet@2x.jpg);
+          }
+      }
+    
+      @include mq(desktop) {
+        width: res($container-width-desktop);
+        background-image: linear-gradient(180deg,
+            rgba(0, 0, 0, 1) 0px,
+            rgba(0, 0, 0, 0.55) 64px,
+            rgba(0, 0, 0, 0) 143px), url(../images/desktop/room-hero-desktop.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+            background-image: linear-gradient(180deg,
+                rgba(0, 0, 0, 1) 0px,
+                rgba(0, 0, 0, 0.55) 64px,
+                rgba(0, 0, 0, 0) 143px), url(../images/desktop/room-hero-desktop@2x.jpg);
+          }
+      }
+  }
+
+  .direc
+  {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.65);
+    fill: var(--button-accent-color);
+  }
+  .direc--mirror
+  {
+    transform: rotate(180deg);
+  }
