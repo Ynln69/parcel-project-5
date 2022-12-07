@@ -242,18 +242,21 @@
 .box-button {
   display: flex;
   flex-direction: column;
-  margin-top: 150px;
+      margin-bottom: 40px;
   @media screen and (min-width: 414px) {
-    margin-top: 40px;
+    margin-bottom: 40px;
   }
 
   @media screen and (min-width: 1024px) {
-    margin-left: 5px;
-    margin-top: 155px;
+    // margin-left: 5px;
+    margin-top: -55px;
+    // margin-left: auto;
+      
+      width: 480px;
   }
 
   @media screen and (min-width: 1280px) {
-    margin-top: 155px;
+    margin-top: -64px;
   }
 }
 
@@ -311,4 +314,8 @@
     // opacity: 0;
     display: none;
   }
+}
+
+.container-detail-hotel{
+  overflow: hidden;
 }
