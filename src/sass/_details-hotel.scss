@@ -1,209 +1,99 @@
-.logo-hotel {
-  font-family: 'FilmP3';
-  font-style: normal;
-  font-weight: 700;
-  line-height: 69px;
-  letter-spacing: 0.3em;
-  text-decoration: none;
-  color: var(--wight-text-color);
-  font-size: res(40px);
-  margin-left: 150px;
-
-  @media screen and (min-width: 1024px) {
-    margin-left: 545px;
-    font-size: 64px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin-left: 740px;
-    font-size: 64px;
-  }
-}
-
 .details-hotel {
-  margin-inline: auto;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background-image: var(--background-gradient),
     url(../images/mobile/homepage-hotel-amet-mobile.jpg);
 
-  max-width: res(430px);
-  height: 735px;
-
   @include mq(retina) {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    background-image: var(--background-gradient),
       url(../images/mobile/homepage-hotel-amet-mobile@2x.jpg);
   }
 
-  @media screen and (min-width: $container-width-mobile) {
-    max-width: $container-width-tablet;
-    padding: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  @include mq(tablet) {
+    background-image: var(--background-gradient),
       url(../images/tablet/homepage-hotel-amet-tablet.jpg);
 
     @include mq(retina) {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      background-image: var(--background-gradient),
         url(../images/tablet/homepage-hotel-amet-tablet@2x.jpg);
     }
   }
-
-  @media screen and (min-width: $container-width-tablet) {
-    max-width: $container-width-desktop;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  @include mq(desktop) {
+    background-image: var(--background-gradient),
       url(../images/desktop/homepage-hotel-amet-desktop.jpg);
-
-    height: 620px;
-    padding: 0;
-
     @include mq(retina) {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      background-image: var(--background-gradient),
         url(../images/desktop/homepage-hotel-amet-desktop@2x.jpg);
     }
   }
 }
 
-.box__logo {
-  @media screen and (min-width: 320px) {
-    padding-top: 24px;
-  }
+.details-hotel__thumb {
+  display: grid;
+  justify-items: end;
+  justify-content: start;
+  margin-left: 24px;
 
-  @media screen and (min-width: 414px) {
-    padding-top: 24px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    padding-top: 30px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    padding-top: 48px;
+  @include mq(tablet) {
+    margin-left: 148px;
   }
 }
 
-.service__list {
-  // width: 274px;
-  @extend %list;
-  display: flex;
-  margin-right: 33px;
+.logo-hotel {
+  margin-bottom: 12px;
 
-  @media screen and (min-width: 320px) and (max-width: 1023px) {
-    margin-top: 30px;
-    position: relative;
-    top: 20px;
-    left: -250px;
-    width: 500px;
-  }
+  color: var(--wight-text-color);
+  font-family: font(_film_);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
+  text-decoration: none;
 
-  @media screen and (min-width: 414px) and (max-width: 1023px) {
-    position: relative;
-    top: 0px;
-    left: -130px;
-    width: 440px;
-    height: 270px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    height: 270px;
-  }
-}
-
-.service__item {
-  @media screen and (min-width: 320px) and (max-width: 1023px) {
-    margin-left: 20px;
-  }
-
-  @media screen and (min-width: 414px) and (max-width: 1023px) {
-    // position: absolute;
-    // top: -20px;
-    // left: 90px;
-    gap: 15px;
-    margin-left: 20px;
-    height: 270px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    height: 270px;
+  @include mq(tablet) {
+    margin-bottom: 16px;
+    font-size: 64px;
+    line-height: calc(69 / 64);
   }
 }
 
 .details-hotel__title {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
-  letter-spacing: 0.02em;
-  margin-left: 745px;
-  margin-top: 16px;
+  margin-bottom: 20px;
 
   color: var(--wight-text-color);
+  font-family: font(_montserrat);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
 
-  @media screen and (min-width: 320px) {
-    font-size: 16px;
-    margin-left: 165px;
-  }
+  @include mq(tablet) {
+    margin-bottom: 8px;
 
-  @media screen and (min-width: 414px) {
-    font-size: 20px;
-    margin-left: 205px;
-    margin-top: 12px;
-  }
-
-  @media screen and (min-width: 1024px) {
     font-size: 24px;
-    margin-left: 655px;
-    margin-top: 16px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    font-size: 24px;
-    margin-left: 850px;
-    margin-top: 16px;
+    line-height: calc(29 / 24);
   }
 }
 
 .details-hotel__text {
-  width: 585px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.02em;
-  margin-left: 285px;
-  margin-top: 8px;
+  width: 243px;
+  margin-bottom: 48px;
 
   color: var(--second-grey-color);
+  font-family: font(_montserrat);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.02em;
 
-  @media screen and (min-width: 320px) {
-    width: 243px;
-    font-size: 12px;
-    margin-left: 12px;
-    margin-top: 20px;
-  }
-
-  @media screen and (min-width: 414px) {
-    width: 243px;
-    font-size: 12px;
-    margin-left: 32px;
-    margin-top: 20px;
-  }
-
-  @media screen and (min-width: 1024px) {
+  @include mq(tablet) {
     width: 549px;
-    font-size: 16px;
-    margin-left: 195px;
-    margin-top: 8px;
-  }
+    margin-bottom: 40px;
 
-  @media screen and (min-width: 1280px) {
-    width: 549px;
     font-size: 16px;
-    margin-left: 390px;
-    margin-top: 8px;
+    line-height: calc(20 / 16);
   }
 }
 
@@ -243,22 +133,6 @@
 .box-button {
   display: flex;
   flex-direction: column;
-      margin-bottom: 40px;
-  @media screen and (min-width: 414px) {
-    margin-bottom: 40px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    // margin-left: 5px;
-    margin-top: -55px;
-    // margin-left: auto;
-      
-      width: 480px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin-top: -64px;
-  }
 }
 
 .box-button--position {
@@ -315,8 +189,4 @@
     // opacity: 0;
     display: none;
   }
-}
-
-.container-detail-hotel{
-  overflow: hidden;
 }

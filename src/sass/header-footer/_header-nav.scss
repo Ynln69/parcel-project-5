@@ -44,7 +44,7 @@
     width: res($container-width-desktop - 170px);
   }
 
-  @include mq(mobile-only){
+  @include mq(mobile-only) {
     gap: calc(24px * var(--coef));
   }
 
@@ -83,6 +83,9 @@
 
     @include mq(tablet) {
       font-size: 20px;
+    }
+    &:hover {
+      text-decoration: underline;
     }
   }
 
