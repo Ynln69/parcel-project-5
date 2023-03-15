@@ -1,43 +1,66 @@
 .details {
-  margin-inline: auto;
-  max-width: $container-width-mobile;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+  width: 100%;
+  background-image: var(--background-gradient),
     url(../images/mobile/homepage-book-a-table-mobile.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
   @include mq(retina) {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    background-image: var(--background-gradient),
       url(../images/mobile/homepage-book-a-table-mobile@2x.jpg);
   }
 
-  @media screen and (min-width: $container-width-mobile) {
-    max-width: $container-width-tablet;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+  @include mq(tablet) {
+    background-image: var(--background-gradient),
       url(../images/tablet/homepage-book-a-table-tablet.jpg);
 
     @include mq(retina) {
-      background-image: linear-gradient(
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
+      background-image: var(--background-gradient),
         url(../images/tablet/homepage-book-a-table-tablet@2x.jpg);
     }
   }
 
-  @media screen and (min-width: $container-width-tablet) {
-    max-width: res($container-width-desktop);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+  @include mq(desktop) {
+    background-image: var(--background-gradient),
       url(../images/desktop/homepage-book-a-table-desktop.jpg);
 
     @include mq(retina) {
-      background-image: linear-gradient(
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
+      background-image: var(--background-gradient),
         url(../images/desktop/homepage-book-a-table-desktop@2x.jpg);
     }
+  }
+}
+.details__main {
+  padding-top: 24px;
+  padding-bottom: 40px;
+
+  @include mq(tablet) {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  @include mq(desktop) {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+}
+
+.deteils-thumb__text {
+  display: grid;
+  justify-items: start;
+  justify-content: center;
+  padding-left: 130px;
+
+  @include mq(tablet) {
+    justify-items: start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 225px;
+  }
+  @include mq(desktop) {
+    padding-left: 235px;
   }
 }
 .details__title {
@@ -47,6 +70,8 @@
   }
 }
 .logo-details {
+  margin-bottom: 12px;
+
   font-family: font(_film_);
   font-weight: 700;
   font-size: 40px;
@@ -83,14 +108,22 @@
   }
 }
 .details__text {
-  font-weight: 600;
+  display: inline-block;
+  width: 259px;
+  margin-bottom: 48px;
 
-  line-height: calc(20 / 16);
-  letter-spacing: 0.02em;
   color: var(--second-grey-color);
-  max-width: 250px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.02em;
+  text-align: left;
   @include mq(tablet) {
-    max-width: 610px;
+    width: 610px;
+    margin-bottom: 40px;
+
+    font-size: 16px;
+    line-height: calc(20 / 16);
   }
 }
 .details__thumb {
@@ -140,80 +173,47 @@
     height: 270px;
   }
 }
+.detalis-container {
+  gap: 18px;
+  display: flex;
+  flex-direction: column;
 
-.details__pic {
-  max-width: 100%;
-  display: block;
+  @include mq(tablet) {
+    flex-direction: row-reverse;
+    align-items: end;
+    gap: 24px;
+  }
 }
-
-.details__btn__thumb .button {
+.details-btn__thumb .button {
   @media screen and (min-width: 320px) {
     font-size: 15px;
     height: 48px;
     padding: 14px 26px;
-    margin-right: auto;
-    margin-left: auto;
     width: 236px;
   }
 
-  @media screen and (min-width: 414px) {
+  @include mq(mobile) {
     font-size: 15px;
     width: 236px;
     height: 48px;
     padding: 14px 26px;
   }
 
-  @media screen and (min-width: 1024px) {
+  @include mq(tablet) {
     font-size: 15px;
     width: 236px;
     height: 48px;
     padding: 14px 26px;
-
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
-.details__btn__thumb {
+.details-btn__thumb {
   display: flex;
   flex-direction: column;
-  row-gap: 16px;
   align-items: center;
-
-  @media screen and (min-width:320px) and (max-width:1023px) {
-    margin-bottom: 40px;
-  }
+  gap: 16px;
 
   @include mq(tablet) {
-    margin-left: 528px;
-      position: relative;
-      bottom: 40px;
-    }
-  
-  @include mq(desktop) {
-    margin-right: 23px;
-  }
-}
-
-.details__main {
-  padding-top: 24px;
-  padding-bottom: 49px;
-  padding-left: 140px;
-
-  @include mq(tablet) {
-    padding-top: 50px;
-    padding-bottom: 40px;
-    padding-left: 278;
-  }
-
-  @include mq(desktop) {
-    padding-top: 50px;
-    padding-bottom: 40px;
-    padding-left: 338;
+    padding-bottom: 77px;
   }
 }
