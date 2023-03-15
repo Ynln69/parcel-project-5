@@ -8,10 +8,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--second-yellow-color);
-  }
 
-  &__icon {
+    color: var(--second-yellow-color);
     fill: currentColor;
+
+    &:hover,
+    &:focus {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: var(--yellow-text-color);
+      fill: var(--black-text-color);
+    }
   }
 }

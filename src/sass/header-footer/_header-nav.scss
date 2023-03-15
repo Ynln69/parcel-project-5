@@ -75,17 +75,19 @@
   &__link {
     display: flex;
     @extend %link;
+
     color: var(--second-yellow-color);
     font-weight: 500;
     font-size: res(16px);
     line-height: 1.2;
     letter-spacing: 0.02;
+    transition: transform 0.3s ease;
 
     @include mq(tablet) {
       font-size: 20px;
     }
     &:hover {
-      text-decoration: underline;
+      transform: scale(1.2);
     }
   }
 

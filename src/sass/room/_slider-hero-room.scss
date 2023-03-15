@@ -1,0 +1,199 @@
+.slick__list-room {
+  @extend %list;
+  width: auto;
+  margin: 0 auto;
+  display: flex;
+
+  @include mq(mobile) {
+    width: $container-width-mobile;
+  }
+  @include mq(tablet) {
+    width: $container-width-tablet;
+  }
+  @include mq(desktop) {
+    width: $container-width-desktop;
+  }
+}
+
+.slick__box-room {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.slick__box-room--first {
+  background-image: url(../images/mobile/room-hero-mobile.jpg);
+  background-repeat: no-repeat;
+  // background-position: center;
+  background-size: cover;
+  width: 414px;
+  height: 740px;
+
+  @media screen and (min-width: 100px) and (max-width: 1024px) {
+    width: 414px;
+  }
+
+  @include mq(retina) {
+    background-image: url(../images/mobile/room-hero-mobile@2x.jpg);
+  }
+}
+
+.slick__box-room--second {
+  background-image: url(../images/mobile/room-hero-m-2.jpg);
+  background-repeat: no-repeat;
+  // background-position: center;
+  background-size: cover;
+  width: 414px;
+  height: 740px;
+
+  @media screen and (min-width: 100px) and (max-width: 1024px) {
+    width: 414px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/room-hero-m-2@2x.jpg);
+  }
+}
+.slick__box-room--third {
+  background-image: url(../images/mobile/room-hero-m-3.jpg);
+  background-repeat: no-repeat;
+  // background-position: center;
+  background-size: cover;
+  width: 414px;
+  height: 740px;
+
+  @media screen and (min-width: 100px) and (max-width: 1024px) {
+    width: 414px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/room-hero-m-3@2x.jpg);
+  }
+}
+
+@include mq(tablet) {
+  .slick__box-room--first {
+    background-image: url(../images/tablet/room-hero-tablet.jpg);
+    width: 1024px;
+    height: 720px;
+  }
+
+  .slick__box-room--second {
+    background-image: url(../images/tablet/room-hero-t-2.jpg);
+    width: 1024px;
+    height: 720px;
+  }
+
+  .slick__box-room--third {
+    background-image: url(../images/tablet/room-hero-t-3.jpg);
+    width: 1024px;
+    height: 720px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .slick__box-room--first {
+      background-image: url(../images/tablet/room-hero-tablet@2x.jpg);
+    }
+
+    .slick__box-room--second {
+      background-image: url(../images/tablet/room-hero-t-2@2x.jpg);
+    }
+
+    .slick__box-room--third {
+      background-image: url(../images/tablet/room-hero-t-3.jpg);
+    }
+  }
+}
+
+@include mq(desktop) {
+  .slick__box-room--first {
+    background-image: url(../images/desktop/room-hero-desktop.jpg);
+    width: 1280px;
+    height: 720px;
+  }
+
+  .slick__box-room--second {
+    background-image: url(../images/desktop/room-hero-d-2.jpg);
+    width: 1280px;
+    height: 720px;
+  }
+  .slick__box-room--third {
+    background-image: url(../images/desktop/room-hero-d-3.jpg);
+    width: 1024px;
+    height: 720px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .slick__box-room--first {
+      background-image: url(../images/desktop/room-hero-desktop@2x.jpg);
+    }
+
+    .slick__box-room--second {
+      background-image: url(../images/desktop/room-hero-d-2@2x.jpg);
+    }
+
+    .slick__box-room--third {
+      background-image: url(../images/desktop/room-hero-d-3@2x.jpg);
+    }
+  }
+}
+
+.my-slick-prev-room,
+.my-slick-next-room {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+
+  border: none;
+  background-color: transparent;
+}
+
+.my-slick-prev-room {
+  background-image: url(../images/cil_arrow-left.svg);
+  z-index: 1;
+
+  @media screen and (max-width: 1023px) {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 47px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: 85px;
+    bottom: 268px;
+  }
+}
+
+.my-slick-next-room {
+  background-image: url(../images/cil_arrow-right.svg);
+  z-index: 1;
+
+  @media screen and (max-width: 1023px) {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 47px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    right: 85px;
+    bottom: 268px;
+  }
+}

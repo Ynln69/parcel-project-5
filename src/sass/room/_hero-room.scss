@@ -1,56 +1,42 @@
-.hero-room {
-  max-width: $container-width-mobile;
-  margin-inline: auto;
+.section-hero {
+  width: 100vw;
   background-color: gray;
-  background-image: linear-gradient(
+}
+.hero-room {
+  position: relative;
+  width: auto;
+  margin: 0 auto;
+  background: linear-gradient(#000 0%, #0000008c 54.17%, #0000 100%);
+  @include mq(mobile) {
+    width: $container-width-mobile;
+  }
+
+  @include mq(tablet) {
+    width: $container-width-tablet;
+  }
+
+  @include mq(desktop) {
+    width: $container-width-desktop;
+  }
+
+  .hero-room__gardient {
+    position: absolute;
+    width: 100%;
+    height: 143px;
+    z-index: 100;
+    background: linear-gradient(
       180deg,
-      rgba(0, 0, 0, 1) 0px,
-      rgba(0, 0, 0, 0.55) 64px,
-      rgba(0, 0, 0, 0) 143px
-    ),
-    url(../images/desktop/room-hero-desktop.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  @include mq(retina) {
-    background-image: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.9) 0px,
-        rgba(0, 0, 0, 0.55) 64px,
-        rgba(0, 0, 0, 0) 143px
-      ),
-      url(../images/desktop/room-hero-desktop@2x.jpg);
-  }
-
-  @media screen and (min-width: $container-width-mobile) {
-    max-width: $container-width-tablet;
-  }
-
-  @media screen and (min-width: $container-width-tablet) {
-    max-width: $container-width-desktop;
-  }
-
-  &__container {
-    padding-top: 480px;
-    position: relative;
-    color: var(--wight-text-color);
+      #000000 0%,
+      rgba(0, 0, 0, 0.55) 54.17%,
+      rgba(0, 0, 0, 0) 100%
+    );
 
     @include mq(tablet) {
-      padding-bottom: 24px;
-      padding-top: 468px;
+      height: 116px;
     }
-
     @include mq(desktop) {
-      padding-bottom: 48px;
-      padding-top: 524px;
+      height: 147px;
     }
-  }
-
-  &__img {
-    position: absolute;
-    top: 0;
-    left: 0;
   }
 
   &__title {
@@ -64,14 +50,24 @@
     text-transform: uppercase;
     line-height: calc(32 / 28);
     letter-spacing: 0.05em;
+    position: absolute;
+    left: 15px;
+    bottom: 193px;
 
+    @media screen and (max-width: 1023px) {
+      text-align: left;
+    }
     @include mq(tablet) {
       font-size: 36px;
       line-height: calc(41 / 36);
     }
-
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+      left: 47px;
+      bottom: 211px;
+    }
     @include mq(desktop) {
-      margin-bottom: 24px;
+      left: 85px;
+      bottom: 155px;
     }
   }
 
@@ -82,6 +78,10 @@
   &__text {
     width: res(325px);
     margin-bottom: 14px;
+    position: absolute;
+    bottom: 118px;
+    left: 15px;
+
     color: var(--wight-text-color);
     font-weight: 700;
     font-size: res(12px);
@@ -94,9 +94,15 @@
       font-size: 16px;
       line-height: calc(20 / 16);
     }
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+      bottom: 104px;
+      left: 47px;
+    }
 
     @include mq(desktop) {
       margin-bottom: 0;
+      bottom: 48px;
+      left: 85px;
     }
   }
 
