@@ -16,9 +16,14 @@
         </div>
         <img
           srcset="
-            ./images/mobile/room-content1-mobile.jpg    1x,
-            ./images/mobile/room-content1-mobile@2x.jpg 2x
+            ./images/mobile/room-content1-mobile@2x.jpg   488w,
+            ./images/mobile/room-content1-mobile.jpg      244w,
+            ./images/tablet/room-content1-tablet@2x.jpg   800w,
+            ./images/tablet/room-content1-tablet.jpg      400w,
+            ./images/desktop/room-content1-desktop@2x.jpg 508w,
+            ./images/desktop/room-content1-desktop.jpg    254w
           "
+          sizes="(min-width: 1280px) 254px, (min-width: 1024px) 400px, (min-width: 414px) 244px, 100vw"
           src="./images/mobile/room-content1-mobile.jpg"
           alt="кімната"
           class="rooms-about__img"
@@ -31,21 +36,21 @@
           src="./partials/hotel-about-double-lux-room-slider-combained.html"
         ></include>
       </div>
-        <div class="rooms__container-btn">
-          <button
-            type="button"
-            class="button button__primary button__primary--black rooms__btn rooms__btn--s"
-            onclick="location.href='page-room.html'"
-          >
-            Детальніше
-          </button>
-          <button
-            type="button"
-            class="button button__primary button__primary--black rooms__btn data-price-modal-open"
-          >
-            Переглянути ціни
-          </button>
-        </div>
+      <div class="rooms__container-btn">
+        <button
+          type="button"
+          class="button button__primary button__primary--black rooms__btn rooms__btn--s"
+          onclick="location.href='page-room.html'"
+        >
+          Детальніше
+        </button>
+        <button
+          type="button"
+          class="button button__primary button__primary--black rooms__btn data-price-modal-open"
+        >
+          Переглянути ціни
+        </button>
+      </div>
     </div>
   </div>
 </section>
