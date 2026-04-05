@@ -6,8 +6,7 @@
 
 ## Demo
 
-- **Netlify:** [mimiho.netlify.app](https://mimiho.netlify.app) *(або ваше посилання)*
-- **GitHub Pages:** [ynln69.github.io/parcel-project-5](https://ynln69.github.io/parcel-project-5/)
+- **Netlify:** [mimiho.netlify.app]([https://website-mimino.netlify.app/]) 
 
 ## Технології
 
