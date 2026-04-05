@@ -82,7 +82,7 @@
 }
 
 .button__secondary{
-    @include button-secondary(var(--button-bg-color--black), var(--button-border-accent-color), var(--wight-text-color));
+    @include button-secondary(var(--button-bg-color--black), var(--button-border-accent-color), var(--white-text-color));
     
     &:hover, &:focus {
         background-color: var(--button-accent-color);
@@ -93,7 +93,7 @@
 
 // Кнопки для модалок десктоп і таблет
 .button__modal{
-    @include button-modal(var(--button-bg-color--black), var(--button-border-accent-color), var(--wight-text-color));
+    @include button-modal(var(--button-bg-color--black), var(--button-border-accent-color), var(--white-text-color));
 
     &:hover, &:focus {
         background-color: var(--button-accent-color);
@@ -114,7 +114,7 @@
 }
 
 .button__mobile--sharp{
-    @include button-mobile(var(--button-bg-color--black), var(--button-border-accent-color), 1px, var(--wight-text-color));
+    @include button-mobile(var(--button-bg-color--black), var(--button-border-accent-color), 1px, var(--white-text-color));
 
     &:hover, &:focus, &:active{
         background-color: var(--button-accent-color);
@@ -123,7 +123,7 @@
 }
 
 .button__mobile--circled {
-    @include button-mobile(var(--button-bg-color--black), var(--button-border-accent-color), 25px, var(--wight-text-color));
+    @include button-mobile(var(--button-bg-color--black), var(--button-border-accent-color), 25px, var(--white-text-color));
 
     &:hover, &:focus, &:active{
         background-color: var(--button-accent-color);

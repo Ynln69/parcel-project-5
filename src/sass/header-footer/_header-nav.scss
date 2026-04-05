@@ -123,7 +123,7 @@
     list-style-type: none;
     gap: res(12px);
 
-    color: var(--wight-text-color);
+    color: var(--white-text-color);
 
     @include mq(tablet) {
       border: 1px solid var(--second-yellow-color);
@@ -141,7 +141,7 @@
     font-weight: 400;
     font-size: res(14px);
     line-height: 1.22;
-    color: var(--wight-text-color);
+    color: var(--white-text-color);
     letter-spacing: 0.02em;
 
     @include mq(tablet) {

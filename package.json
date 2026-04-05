@@ -5,7 +5,8 @@
   "homepage": "https://Ynln69.github.io/parcel-project-5",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-5/"
+    "build": "parcel build src/*.html --public-url /",
+    "build:gh-pages": "parcel build src/*.html --public-url /parcel-project-5/"
   },
   "repository": {
     "type": "git",

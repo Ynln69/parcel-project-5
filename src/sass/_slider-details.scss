@@ -4,12 +4,13 @@ $mobile-slider-space-between: 20px;
 
 $tablet-slider-width: 878px;
 $slider-height: 348px;
-$tablet-slider-space-between: 34px;
+$tablet-slider-space-between: 24px;
 
 $desktop-slider-width: 982px;
-$desktop-slider-space-between: 86px;
+$desktop-slider-space-between: 32px;
 
 $arrow-width: 32px;
+$arrow-space: 56px;
 
 .slider-container {
   @include mq(tablet) {
@@ -19,7 +20,7 @@ $arrow-width: 32px;
 
 .details-section-slider {
   width: $mobile-slider-width;
-  height: $mobile-slider-height;
+  height: $mobile-slider-height + $arrow-space;
 
   position: relative;
   margin-left: auto;
@@ -30,14 +31,22 @@ $arrow-width: 32px;
   z-index: 1;
 
   list-style: none;
-  
+
   @include mq(tablet) {
     width: $tablet-slider-width;
-    height: $slider-height;
+    height: $slider-height + $arrow-space;
   }
 
   @include mq(desktop) {
     width: $desktop-slider-width;
+  }
+}
+
+.details-section-slider .swiper-wrapper {
+  height: $mobile-slider-height;
+
+  @include mq(tablet) {
+    height: $slider-height;
   }
 }
 
@@ -77,7 +86,8 @@ $arrow-width: 32px;
 
 .details-section-slider__button-prev {
   width: 32px;
-  top: 90%;
+  top: auto;
+  bottom: 8px;
   left: 0;
 
   background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M31.0832 14.9999H5.00568L11.0054 9.00025L9.59118 7.58606L1.17725 16L9.59118 24.4139L11.0054 22.9997L5.00556 16.9999H31.0832V14.9999Z' fill='white'/%3E%3C/svg%3E%0A");
@@ -86,7 +96,8 @@ $arrow-width: 32px;
 
 .details-section-slider__button-next {
   width: 32px;
-  top: 90%;
+  top: auto;
+  bottom: 8px;
   right: $mobile-slider-width - $arrow-width * 3;
 
   background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.4921 7.58606L21.0779 9.00025L27.0777 15.0001H1V17.0001H27.0775L21.0779 22.9997L22.4921 24.4139L30.9061 16L22.4921 7.58606Z' fill='white'/%3E%3C/svg%3E ");
@@ -119,9 +130,7 @@ $arrow-width: 32px;
 
 .details-section-slider__img {
   border-radius: 2px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-// .details-section-slider__slide--width-auto {
-//   @include mq(tablet) {
-//     width: auto;
-//   }
-// }

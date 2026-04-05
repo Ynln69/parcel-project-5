@@ -1,37 +1,62 @@
-# Parcel template
+# MIMIHO — Ресторанно-готельний комплекс
 
-Этот проект был создан при помощи Parcel. Для знакомства и настройки
-дополнительных возможностей [обратись к документации](https://parceljs.org/).
+Багатосторінковий адаптивний вебсайт для ресторанно-готельного комплексу **MIMIHO** (м. Полтава).
 
-## Подготовка нового проекта
+Командний проект, виконаний у рамках курсу **GoIT — Full Stack Developer** (блок верстки).
 
-## Файлы и папки
+## Demo
 
-- Все паршалы файлов стилей должны лежать в папке `src/sass` и импортироваться в
-  файлы стилей страниц. Например, для `index.html` файл стилей называется
-  `index.scss`.
-- Изображения добавляй в папку `src/images`. Сборщик оптимизирует их, но только
-  при деплое продакшн версии проекта. Все это происходит в облаке, чтобы не
-  нагружать твой компьютер, так как на слабых машинах это может занять много
-  времени.
+- **Netlify:** [mimiho.netlify.app](https://mimiho.netlify.app) *(або ваше посилання)*
+- **GitHub Pages:** [ynln69.github.io/parcel-project-5](https://ynln69.github.io/parcel-project-5/)
 
-## Деплой
+## Технології
 
-Для настройки деплоя проекта необходимо выполнить несколько дополнительных шагов
-по настройке твоего репозитория. Зайди во вкладку `Settings` и в подсекции
-`Actions` выбери выбери пункт `General`.
+| Категорія | Інструменти |
+|---|---|
+| Збірка | Parcel 2.6 |
+| Стилі | SCSS, CSS Custom Properties, modern-normalize |
+| Шаблонізація | posthtml-include (компонентний підхід через HTML-партіали) |
+| Слайдери | Swiper 8, Slick Carousel |
+| Адаптивність | Mobile-first, 3 брейкпоінти (414px / 1024px / 1280px) |
+| Шрифти | FilmP3, Montserrat, Times New Roman (woff/woff2) |
+| Деплой | GitHub Actions (GitHub Pages), Netlify |
 
-![GitHub actions settings](./assets/actions-config-step-1.png)
+## Сторінки
 
-```json
-"homepage": "https://your_username.github.io/your_repo_name/",
-"scripts": {
-  "build": "parcel build src/*.html --public-url /your_repo_name/"
-},
+- **Головна** — hero-секція, опис ресторану та готелю, слайдери, контакти, Google Maps
+- **Ресторан** — hero, опис кухні, меню
+- **Готель** — hero, типи номерів (двомісний люкс, тримісний, двомісний)
+- **Номер** — hero зі слайдером автоперегортання, зручності номеру
+
+## Функціональність
+
+- Адаптивна верстка під мобільні, планшети та десктоп
+- Слайдери з автоплеєм та навігацією стрілками
+- Модальні вікна бронювання (столик, номер, ціни)
+- Retina-ready зображення (srcset 1x/2x)
+- SEO-оптимізація (meta description, Open Graph, canonical, alt-тексти)
+
+## Встановлення та запуск
+
+```bash
+# Клонування
+git clone https://github.com/Ynln69/parcel-project-5.git
+cd parcel-project-5
+
+# Встановлення залежностей
+npm install
+
+# Запуск dev-сервера (localhost:1234)
+npm start
+
+# Продакшн-збірка
+npm run build
 ```
 
-Далее необходимо зайти в настройки GitHub-репозитория (`Settings` > `Pages`) и
-выставить раздачу продакшн версии файлов из папки `/root` ветки `gh-pages`, если
-это небыло сделано автоматически.
+## Команда
 
-![GitHub Pages settings](./assets/repo-settings.png)
+Проект розроблений командою студентів курсу GoIT (Full Stack Developer).
+
+## Ліцензія
+
+ISC
