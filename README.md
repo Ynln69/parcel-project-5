@@ -4,10 +4,6 @@
 
 Командний проект, виконаний у рамках курсу **GoIT — Full Stack Developer** (блок верстки).
 
-## Demo
-
-- **Netlify:** [mimiho.netlify.app]([https://website-mimino.netlify.app/]) 
-
 ## Технології
 
 | Категорія | Інструменти |
